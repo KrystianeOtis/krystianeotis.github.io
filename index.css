@@ -1,31 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
-html{
+html {}
 
-}
-body{
+body {}
 
+img {
+    height: 200px;
 }
-img{
 
-}
-h1, h2{
+h1,
+h2 {
     font-family: 'PT Sans',
-    sans-serif;
+        sans-serif;
 }
-p{
+
+p {
     font-family: 'PT Sans',
-    sans-serif;
+        sans-serif;
 }
-ul.nav {
-    
-}
-li a{
 
-}
-.copyright{
+ul.nav {}
 
-}
-.byui{
+li a {}
 
-}
+.copyright {}
+
+.byui {}
