@@ -2,11 +2,11 @@
 
 html {
     background-color: white;
+    max-width: 600px;
+    margin: auto;
 }
 
 body {
-    max-width: 550px;
-    margin: auto;
     padding-top: 8em;
     font-family: 'PT Sans',
         sans-serif;
