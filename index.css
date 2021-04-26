@@ -15,7 +15,7 @@ body {
 img {
     position: absolute;
     height: 170px;
-    filter: drop-shadow(0 0 0.55rem#111111);
+    box-shadow: 5px 5px 7px rgb(41, 41, 41);
     margin-left: 500px;
     top: 170px;
     z-index: 4;
@@ -41,6 +41,7 @@ h2 {
     margin-bottom: 0;
     margin-right: 50px;
     font-weight: normal;
+    text-indent: 10px;
 }
 
 p {
@@ -67,8 +68,6 @@ footer {
 .copyright p {
     text-align: center;
     color: white;
-
-
 }
 
 .byui {
