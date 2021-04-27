@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        body {
+            background-color: #E9EEF2;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .pricing_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 10em;
+            width: 70%;
+        }
+
+        .card1,
+        .card2,
+        .card3 {
+            background-color: white;
+            height: 700px;
+            width: 100%;
+            grid-row-start: 2;
+            box-shadow: #D1E9FB 0px 10px 0px;
+            text-align: center;
+        }
+
+        .card2 {
+            height: 800px;
+        }
+
+        .mostPopular {
+            grid-row-start: 1;
+            grid-column: 2;
+            color: white;
+            background-color: #12AAEB;
+            width: 100%;
+            padding: 1em 0em;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        p {
+            color: #88939D;
+            line-height: 2em;
+            letter-spacing: 3px;
+        }
+
+        h1,
+        h2,
+        .perMonth {
+            color: #12AAEB;
+        }
+
+        .business_button {
+            background-color: #FFCF2D;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="pricing_grid">
+            <div class="card1">
+                <img src="personal_icon.png" alt="calendar image">
+                <h2>PERSONAL</h2>
+                <p>
+                    1 Domain<br>
+                    UNLIMITED Storage<br>
+                    No free Domain
+                </p>
+                <h1>$<strong>3</strong>.99</h1>
+                <p class="perMonth">per month</p>
+                <button>SIGN UP</button>
+            </div>
+            <div class="mostPopular">MOST POPULAR</div>
+            <div class="card2">
+                <img src="Business_icon.png" alt="">
+                <h2>BUSINESS</h2>
+                <p>
+                    UNLIMITED Domains <br>
+                    UNLIMITED Storage<br>
+                    Free Domain<br>
+                </p>
+                <h1>$<strong>5</strong>.99</h1>
+                <p class="perMonth">per month</p>
+                <button class="business_button">SIGN UP</button>
+            </div>
+            <div class="card3">
+                <img src="enterprise_icon.png" alt="">
+                <h2>Enterprise</h2>
+                <p>
+                    UNLIMITED Domains<br>
+                    UNLIMITED Storage<br>
+                    FREE SSL
+                </p>
+                <h1>$<strong>9</strong>.99</h1>
+                <p class="perMonth">per month</p>
+                <button>SIGN UP</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
