@@ -1,5 +1,10 @@
 @media only screen and (min-width: 63.5em) {
-    body {
-        background-color: fuchsia;
+
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    img{
+        display: block;
+        
     }
 }
