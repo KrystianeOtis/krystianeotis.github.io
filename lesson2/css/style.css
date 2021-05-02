@@ -1,41 +1,83 @@
 body {
-    background-color: rgb(230, 224, 224);
-
-padding:1.5em;
-
-
+    background-color: white;
+    padding: 1.5em;
+    max-width: 1080px;
+    margin: 0 auto;
 
 }
+
 main {
     display: grid;
     grid-template-columns: 1fr;
-    column-gap: 35px;
-    row-gap: 10px;
     font-family: 'DM Sans',
-    sans-serif;
+        sans-serif;
+
 
 }
-h1{
+
+header {
     font-family: 'Roboto Slab',
-    serif;
-    text-align: center;
-    font-size: 2.5em;
+        serif;
+    font-size: 1.2em;
+    line-height: 30px;
+
+
 }
-h3{
+
+header,
+footer {
+    background-color: #002828ea;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 10px;
+
+}
+
+.subheading {
+    background-color: #395c5cea;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px 2px 5px 8px;
+    margin: 0px;
+}
+
+h3 {
     margin-bottom: 5px;
 }
-h3,
-p {
 
+a,
+h3,
+.description {
     font-style: italic;
-    color:rgb(49, 47, 47);
+    color: rgb(49, 47, 47);
+    padding-left: 18px;
+
 }
 
 section {
-    margin: auto;
+    background-color: #dbdbdbea;
+    border-radius: 10px;
+    margin: 30px 15px 30px 15px;
+
 }
 
 img {
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-left: 18px;
     box-shadow: 5px 5px 10px rgb(63, 61, 61);
+
+}
+
+footer {
+    padding: 2% 15% 2% 15%;
+    color: white;
+    font-family: 'DM Sans',
+        sans-serif;
+
+}
+
+.byui {
+    color: white;
 }

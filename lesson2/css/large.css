@@ -1,10 +1,11 @@
 @media only screen and (min-width: 63.5em) {
 
-    main{
+    main {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    img{
+
+    img {
         display: block;
-        
+
     }
 }
