@@ -1,9 +1,5 @@
 body {
     background-color: white;
-    padding: 1.5em;
-    max-width: 1080px;
-    margin: 0 auto;
-
 }
 
 main {
@@ -19,18 +15,20 @@ header {
     font-family: 'Roboto Slab',
         serif;
     font-size: 1.2em;
-    line-height: 30px;
+    letter-spacing: 4px;
+
 
 
 }
 
 header,
 footer {
+     margin: 0%;
+     padding: 2% 19% 2% 19%;
     background-color: #002828ea;
     color: white;
     text-align: center;
     padding: 8px;
-    border-radius: 10px;
 
 }
 
@@ -53,17 +51,19 @@ h3,
     font-style: italic;
     color: rgb(49, 47, 47);
     padding-left: 18px;
+    padding-right: 10px;
 
 }
 
 section {
     background-color: #dbdbdbea;
     border-radius: 10px;
-    margin: 30px 15px 30px 15px;
+    margin: 20px;
 
 }
 
 img {
+    max-width: 80%;
     margin-top: 10px;
     margin-left: 18px;
     box-shadow: 5px 5px 10px rgb(63, 61, 61);
@@ -80,4 +80,5 @@ footer {
 
 .byui {
     color: white;
+    padding:0px;
 }
