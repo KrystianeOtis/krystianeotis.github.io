@@ -46,6 +46,40 @@ nav {
     display: block;
 }
 
+/*Color Scheme and Color Scheme Shapes*/
+ .triangle-topleft1 {
+     width: 0;
+     height: 0;
+     border-top: 100px solid #011936;
+     border-right: 100px solid transparent;
+ }
+ .triangle-topleft2 {
+     width: 0;
+     height: 0;
+     border-top: 100px solid #465362;
+     border-right: 100px solid transparent;
+ }
+ .triangle-topleft3 {
+     width: 0;
+     height: 0;
+     border-top: 100px solid #82a3a1;
+     border-right: 100px solid transparent;
+ }
+ .triangle-topleft4 {
+     width: 0;
+     height: 0;
+     border-top: 100px solid #9fc490;
+     border-right: 100px solid transparent;
+ }
+ .triangle-topleft5 {
+     width: 0;
+     height: 0;
+     border-top: 100px solid #C0DFA1;
+     border-right: 100px solid transparent;
+ }
+
+
+
 @media only screen and (min-width: 34.5em) {
     nav {
         max-width: 100%;
