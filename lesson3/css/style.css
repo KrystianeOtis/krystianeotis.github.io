@@ -78,6 +78,20 @@ nav {
      border-right: 100px solid transparent;
  }
 
+ /*Footer*/
+footer {
+    margin: 0%;
+    padding: 2% 19% 2% 19%;
+    background-color: #002828ea;
+    color: white;
+    text-align: center;
+    padding: 8px;
+
+}
+#byui {
+    color: white;
+    padding: 0px;
+}
 
 
 @media only screen and (min-width: 34.5em) {
