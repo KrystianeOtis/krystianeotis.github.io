@@ -1,9 +1,52 @@
 /*Small media*/
-/*CSS for Menu/Nav bar*/
-nav {
+html {
+    color:;
+    font-family: 'Roboto Condensed',
+    sans-serif;
+}
+header{
+    text-align: center;
+}
+main{
     margin: 0 auto;
     max-width: 360px;
-    background-color: #12aaeb;
+    background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: bolder;
+}
+section h5{
+    float:left;
+    margin-left: 3px;
+    color:white;
+}
+section p {
+    float:left;
+    margin-left: 50px;
+    font-family: 'Roboto Condensed',
+        sans-serif;
+}
+
+section {
+    margin: 0 auto;
+    margin-bottom: 35px;
+    max-width: 360px;
+
+}
+
+
+/*CSS for Menu/Nav bar*/
+nav, footer{
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: #82A3A1;
 }
 
 #navigation {
@@ -26,18 +69,20 @@ nav {
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
-    color: black;
+    font-family: 'Raleway',
+        sans-serif;
+    color: #011936;
     font-weight: 700;
 }
 
 #navigation a:hover,
 #navigation a .active:hover {
     color: white;
-    background-color: black;
+    background-color: #011936;
 }
 
 #navigation a.active {
-    background-color: rgba(0, 0, 0.55);
+    background-color: #9fc490;
     color: white;
     /* border-bottom: 5px solid black; */
 }
@@ -47,52 +92,91 @@ nav {
 }
 
 /*Color Scheme and Color Scheme Shapes*/
-.triangle-topleft1 {
+#triangle-topleft1 {
     width: 0;
     height: 0;
     border-top: 100px solid #011936;
     border-right: 100px solid transparent;
 }
+   #triangle-bottomright1 {
+       width: 0;
+       height: 0;
+       border-bottom: 100px solid #011936;
+       border-left: 100px solid transparent;
+       float:right;
+   }
 
-.triangle-topleft2 {
+#triangle-topleft2 {
     width: 0;
     height: 0;
     border-top: 100px solid #465362;
     border-right: 100px solid transparent;
 }
+  #triangle-bottomright2 {
+      width: 0;
+      height: 0;
+      border-bottom: 100px solid #465362;
+      border-left: 100px solid transparent;
+      float: right;
+  }
 
-.triangle-topleft3 {
+#triangle-topleft3 {
     width: 0;
     height: 0;
     border-top: 100px solid #82a3a1;
     border-right: 100px solid transparent;
 }
+  #triangle-bottomright3 {
+      width: 0;
+      height: 0;
+      border-bottom: 100px solid #82a3a1;
+      border-left: 100px solid transparent;
+      float: right;
+  }
 
-.triangle-topleft4 {
+#triangle-topleft4 {
     width: 0;
     height: 0;
     border-top: 100px solid #9fc490;
     border-right: 100px solid transparent;
 }
-
-.triangle-topleft5 {
+  #triangle-bottomright4 {
+      width: 0;
+      height: 0;
+      border-bottom: 100px solid #9fc490;
+      border-left: 100px solid transparent;
+      float: right;
+  }
+#triangle-topleft5 {
     width: 0;
     height: 0;
     border-top: 100px solid #C0DFA1;
     border-right: 100px solid transparent;
 }
+  #triangle-bottomright5 {
+      width: 0;
+      height: 0;
+      border-bottom: 100px solid #C0DFA1;
+      border-left: 100px solid transparent;
+      float: right;
+  }
 
-/*Footer*/
-footer {
-    margin: 0%;
-    padding: 2% 19% 2% 19%;
-    background-color: #002828ea;
-    color: white;
+/*External link to color palette*/
+#color-palette,
+#color-palette a {
     text-align: center;
-    padding: 8px;
-
+    color: #9fc490;
 }
 
+#color-palette a:hover,
+#color-palette a .active:hover {
+    color: #465362;
+}
+/*footer*/
+footer{
+text-align: center;
+color: white;
+}
 #byui {
     color: white;
     padding: 0px;
@@ -100,7 +184,7 @@ footer {
 
 /*Medium media*/
 @media only screen and (min-width: 34.5em) {
-    nav {
+    nav, footer{
         max-width: 100%;
     }
 
