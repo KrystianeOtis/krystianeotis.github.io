@@ -1,11 +1,19 @@
 /*Small media*/
 html {
-    color:;
+
     font-family: 'Roboto Condensed',
     sans-serif;
 }
-header{
+body,footer,footer div{
+    margin: 0;
+    padding: 0;
+}
+header h1{
     text-align: center;
+}
+.logo{
+
+    width: 20%;
 }
 main{
     margin: 0 auto;
