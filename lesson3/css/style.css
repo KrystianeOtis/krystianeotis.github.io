@@ -53,6 +53,9 @@ section {
     max-width: 360px;
 
 }
+section h1{
+    border-bottom: solid black;
+}
 
 
 /*CSS for Menu/Nav bar*/
