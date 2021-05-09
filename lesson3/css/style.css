@@ -111,7 +111,7 @@ nav {
 #navigation a:hover,
 #navigation a .active:hover {
     color: white;
-    background-color: #011936;
+    background-color: #C0DFA1;
 }
 
 #navigation a.active {
@@ -228,19 +228,12 @@ nav {
 
 /*Medium media*/
 @media only screen and (min-width: 34.5em) {
-    header {
-        background-color: #82A3A1;
-    }
-
-    nav,
-    footer {
+    nav {
         max-width: 100%;
-
     }
 
     #navigation {
         grid-template-columns: repeat(7, auto);
-
     }
 
     #navigation li {
@@ -255,9 +248,9 @@ nav {
     #navigation li:first-child {
         display: none;
     }
-
-    footer {
-
+    footer, #byui {
+        background-color: white;
+        color: #465362;
         left: 0;
         bottom: 0;
         width: 100%;
