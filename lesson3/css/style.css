@@ -5,11 +5,10 @@ html {
     sans-serif;
 }
 main{
-    display: grid;
-    grid-template-columns: 1fr;
     margin: 0 auto;
     max-width: 360px;
     background-color: white;
+    padding-bottom: 20px;
 }
 body{
     margin: 0;
@@ -27,6 +26,7 @@ footer {
     text-align: center;
     padding: 8px;
     color: white;
+
 }
 
 #byui {
@@ -36,7 +36,7 @@ footer {
 .logo{
 
     width: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     margin-top: 10%;
 }
 
