@@ -118,14 +118,12 @@ nav {
 
 /*Color Scheme and Color Scheme Shapes*/
 .hexcode {
-    float: left;
-    margin-left: 3px;
     color: white;
 }
 
 .colors p {
     float: left;
-    margin-left: 50px;
+    margin-left: 140px;
     font-family: 'Roboto Condensed',
         sans-serif;
 }
