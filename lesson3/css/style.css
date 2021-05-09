@@ -10,7 +10,7 @@ body{
 }
 
 header {
-    margin: 0%;
+
     padding: 2% 19% 2% 19%;
     text-align: center;
     padding: 8px;
@@ -18,11 +18,8 @@ header {
 }
 
 footer {
-    padding: 2% 15% 2% 15%;
-    margin: 0%;
     text-align: center;
     padding: 8px;
-    position: absolute;
     color: white;
 }
 
@@ -78,7 +75,10 @@ nav,footer{
     max-width: 360px;
     background-color: #82A3A1;
 }
-
+nav{
+    padding-left: 8px;
+    padding-right: 8px;
+}
 #navigation {
     list-style: none;
     padding: 0;
