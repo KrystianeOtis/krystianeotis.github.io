@@ -55,14 +55,6 @@ h5 {
     font-weight: bolder;
 }
 
-
-section {
-    margin: 0 auto;
-    margin-bottom: 35px;
-    max-width: 360px;
-
-}
-
 .subheading {
     border-bottom: solid #9fc490;
     margin-bottom: 0;
@@ -255,6 +247,7 @@ nav {
         bottom: 0;
         width: 100%;
     }
+
 }
 
 /*Large media*/
