@@ -29,10 +29,11 @@ footer {
 }
 .logo{
 
-    width: 50%;
+    width: 100%;
 }
 main{
     margin: 0 auto;
+
     max-width: 360px;
     background-color: white;
 }
@@ -46,17 +47,7 @@ h5 {
         sans-serif;
     font-weight: bolder;
 }
-section h5{
-    float:left;
-    margin-left: 3px;
-    color:white;
-}
-section p {
-    float:left;
-    margin-left: 50px;
-    font-family: 'Roboto Condensed',
-        sans-serif;
-}
+
 
 section {
     margin: 0 auto;
@@ -122,6 +113,18 @@ nav{
 }
 
 /*Color Scheme and Color Scheme Shapes*/
+.hexcode {
+    float: left;
+    margin-left: 3px;
+    color: white;
+}
+
+.colors p {
+    float: left;
+    margin-left: 50px;
+    font-family: 'Roboto Condensed',
+        sans-serif;
+}
 #triangle-topleft1 {
     width: 0;
     height: 0;
@@ -206,6 +209,7 @@ nav{
 
 /*Medium media*/
 @media only screen and (min-width: 34.5em) {
+
     nav, footer{
         max-width: 100%;
 
@@ -228,7 +232,7 @@ nav{
         display: none;
     }
     footer {
-        position: fixed;
+
         left: 0;
         bottom: 0;
         width: 100%;
