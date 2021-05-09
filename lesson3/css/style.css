@@ -64,8 +64,8 @@ section {
     max-width: 360px;
 
 }
-section h1{
-    border-bottom: solid black;
+.subheading {
+    border-bottom: solid #9fc490;
 }
 
 
