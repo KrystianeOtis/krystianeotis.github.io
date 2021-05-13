@@ -12,5 +12,5 @@ window.addEventListener('load', (event) => {
     lu.textContent = document.lastModified;
 
     const cry = document.querySelector('#copyright-year');
-    cry.textContent = new Date().getFullYear();
+    cry.textContent = new Date("January 25 2015").getFullYear();
 });
