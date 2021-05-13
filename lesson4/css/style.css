@@ -163,6 +163,7 @@ nav {
     header img {
         padding-left: 10px;
         width: 120px;
+        height: auto;
     }
 
     #headings h1 {
@@ -211,6 +212,7 @@ nav {
 @media only screen and (min-width: 54.5em) {
     header img {
         width: 150px;
+        height: auto;
     }
 
     #headings h1 {
