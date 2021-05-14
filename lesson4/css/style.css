@@ -201,11 +201,13 @@ nav {
     #navigation li:first-child {
         display: none;
     }
-    main{
+
+    main {
         max-width: 600px;
         margin: 0 auto;
-        display:grid;
+        display: grid;
     }
+
     #content-box {
         margin: 10px auto;
         border: 1px dashed #000;
@@ -251,12 +253,5 @@ nav {
     #content-box {
         width: 800px;
         height: 200px;
-        margin: 10px auto;
-        border: 1px dashed #000;
-        text-align: center;
-        color: white;
-        background-color: #C0DFA1;
     }
-
-
 }
