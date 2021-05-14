@@ -67,10 +67,11 @@ h1 {
 
 .subheading {
     border-bottom: solid #9fc490;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
-.content-box {
+
+#content-box {
     display: block;
     margin: 10px auto;
     border: 1px dashed #000;
@@ -78,6 +79,11 @@ h1 {
     background-color: white;
     color: black;
     font-style: italic;
+}
+
+#hero img {
+    margin: auto;
+    max-width: 360px;
 }
 
 footer {
@@ -195,6 +201,19 @@ nav {
     #navigation li:first-child {
         display: none;
     }
+    main{
+        max-width: 600px;
+        margin: 0 auto;
+        display:grid;
+    }
+    #content-box {
+        margin: 10px auto;
+        border: 1px dashed #000;
+        text-align: center;
+        font-size: 3em;
+        color: white;
+        background-color: #C0DFA1;
+    }
 
     footer,
     footer a {
@@ -209,6 +228,11 @@ nav {
 
 /*Large media*/
 @media only screen and (min-width: 54.5em) {
+    main {
+        max-width: 800px;
+        margin: 16px auto;
+    }
+
     header img {
         width: 150px;
         height: auto;
@@ -223,9 +247,16 @@ nav {
         margin: 16px auto;
     }
 
-    #content {
-        max-width: 800px;
-        margin: auto;
+
+    #content-box {
+        width: 800px;
+        height: 200px;
+        margin: 10px auto;
+        border: 1px dashed #000;
+        text-align: center;
+        color: white;
+        background-color: #C0DFA1;
     }
+
 
 }
