@@ -254,4 +254,8 @@ nav {
         width: 800px;
         height: 200px;
     }
+
+    #contact-info {
+        background-color: #C0DFA1;
+    }
 }
