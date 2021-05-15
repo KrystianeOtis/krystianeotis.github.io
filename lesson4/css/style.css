@@ -71,7 +71,7 @@ h1 {
 }
 
 
-#content-box {
+.content-box {
     display: block;
     margin: 10px auto;
     border: 1px dashed #000;
@@ -80,6 +80,8 @@ h1 {
     color: black;
     font-style: italic;
 }
+
+
 
 #hero img {
     margin: auto;
@@ -186,7 +188,7 @@ nav {
     }
 
     #navigation {
-        grid-template-columns: repeat(7, auto);
+        grid-template-columns: repeat(6, auto);
     }
 
     #navigation li {
@@ -206,14 +208,20 @@ nav {
         max-width: 600px;
         margin: 0 auto;
         display: grid;
+
     }
 
-    #content-box {
-        margin: 10px auto;
+    #inner-grid {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        justify-content: center;
+        grid-column-gap:20px
+
+    }
+
+    .content-box {
+
         border: 1px dashed #000;
-        text-align: center;
-        font-size: 3em;
-        color: white;
         background-color: #C0DFA1;
     }
 
@@ -249,13 +257,4 @@ nav {
         margin: 16px auto;
     }
 
-
-    #content-box {
-        width: 800px;
-        height: 200px;
-    }
-
-    #contact-info {
-        background-color: #C0DFA1;
-    }
 }
