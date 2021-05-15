@@ -218,9 +218,11 @@ nav {
         grid-column-gap:20px
 
     }
+    #contact-info{
+        max-width: 100%;
 
+    }
     .content-box {
-
         border: 1px dashed #000;
         background-color: #C0DFA1;
     }
