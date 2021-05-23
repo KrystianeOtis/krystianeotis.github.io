@@ -23,6 +23,7 @@ body {
     font-family: 'Roboto Condensed',
         sans-serif;
 }
+
 #pancake_event {
     position: relative;
     display: block;
@@ -33,6 +34,7 @@ body {
     font-size: 25px;
     font-style: bold;
 }
+
 header {
     padding: 5px 0;
     display: flex;
@@ -91,7 +93,39 @@ h1 {
     color: black;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+}
 
+#box2 {
+    text-align: right;
+}
+
+.weather {
+    background-color: #C0DFA1;
+    border: 5px solid white;
+}
+
+#forecast {
+    text-align: center;
+    list-style: none;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0;
+}
+
+#forecast img {
+    max-width: 100%;
+}
+
+#forecast li {
+
+    margin: 0.5rem;
+}
 
 #hero img {
     margin: auto;
@@ -110,9 +144,9 @@ footer a {
     color: white;
     padding: 0px;
 }
-#map{
-    float:left;
-}
+
+
+
 .logo {
 
     width: 100%;
@@ -120,9 +154,9 @@ footer a {
     margin-top: 10%;
 }
 
-#article-img{
-    float:right;
-    padding-left: 5px;
+#article-img {
+    float: right;
+    margin-left: 5px;
     margin-bottom: 5px;
 }
 
@@ -252,6 +286,8 @@ nav {
 
 }
 
+
+
 /*Large media*/
 @media only screen and (min-width: 54.5em) {
     header img {
@@ -267,6 +303,7 @@ nav {
         width: 800px;
         margin: 16px auto;
     }
+
     footer {
         width: 800px;
         margin: 0 auto;
@@ -275,6 +312,12 @@ nav {
     main {
         width: 800px;
         margin: 16px auto;
+    }
+    .weather {
+        position: absolute;
+        margin-left: 5rem;
+        margin-top: 10rem;;
+
     }
 
 }
