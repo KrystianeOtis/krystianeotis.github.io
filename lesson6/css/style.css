@@ -253,7 +253,7 @@ nav {
 
     main {
         max-width: 600px;
-        margin: 0 auto;
+
         display: grid;
 
     }
@@ -328,10 +328,7 @@ nav {
         margin: 0 auto;
     }
 
-    main {
-        width: 800px;
-        margin: 16px auto;
-    }
+  
 
     .content-box.weather {
         margin-top: 100px;
