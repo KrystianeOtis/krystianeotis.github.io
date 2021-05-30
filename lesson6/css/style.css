@@ -218,7 +218,6 @@ nav {
         padding-left: 10px;
         width: 120px;
         height: auto;
-        position: absolute;
     }
 
     #headings h1 {
@@ -286,15 +285,14 @@ nav {
         padding: 0;
     }
 
-   
-
-
-
-
-    #contact-info {
+    .content-box.contact-info {
         max-width: 100%;
 
     }
+     #map img {
+         float: left;
+
+     }
 
     footer,
     footer a {
