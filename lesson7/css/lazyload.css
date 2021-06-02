@@ -1,0 +1,59 @@
+/*Small media*/
+
+main {
+    display: block;
+    margin: 0 auto;
+    max-width: 360px;
+
+}
+
+
+img {
+
+    height: auto;
+    margin: .5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+/*Medium media*/
+@media only screen and (min-width: 34.5em) {
+    main {
+        max-width: 600px;
+    }
+
+    .container {
+        margin: 1rem auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1048px;
+    }
+
+    img {
+
+
+        margin: .5rem;
+    }
+
+}
+
+/*Large media*/
+@media only screen and (min-width: 54.5em) {
+    img {
+        width: 300px;
+        height: auto;
+        margin: .5rem;
+    }
+.container {
+    margin: 1rem auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1048px;
+}
+    main {
+        max-width: 1048px;
+    }
+
+}

@@ -12,8 +12,8 @@ window.addEventListener('load', () => {
     }
 
     const displayWindChill = () => {
-        let temperature = document.getElementById("temp").textContent;
-        let wind = document.getElementById("windSpeed").textContent;
+        let temperature = parseInt(document.getElementById("temp").textContent);
+        let wind = parseInt(document.getElementById("windSpeed").textContent);
         let result = calcWindChill(temperature, wind);
         document.getElementById("windChill").innerHTML = result;
     }

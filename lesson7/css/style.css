@@ -35,13 +35,14 @@ img {
     width: 250px;
     height: auto;
     margin: .5rem;
-}
-.norm:hover {
-    box-shadow: 0 0 50px #333;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
-picture {
-    font-size: smaller;
+.norm:hover {
+    box-shadow: 0 0 50px #333;
 }
 
 h1 {
@@ -120,9 +121,10 @@ nav {
 
 /*Medium media*/
 @media only screen and (min-width: 34.5em) {
-     main {
-         max-width: 600px;
-     }
+    main {
+        max-width: 600px;
+    }
+
     .container {
         /* display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -131,9 +133,15 @@ nav {
         resize: horizontal; */
         border: 10px solid red;
         margin: 1rem auto;
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 1048px;
+    }
+
+    img {
+        width: 300px;
+        height: auto;
+        margin: .5rem;
     }
 
     nav {
@@ -177,6 +185,7 @@ nav {
         height: auto;
         margin: .5rem;
     }
+
     main {
         max-width: 1048px;
     }
@@ -193,4 +202,3 @@ nav {
     }
 
 }
-

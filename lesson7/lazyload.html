@@ -6,19 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lazy Load Activity</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/lazyload.css">
+    <script src="js/ladyload.js"></script>
+
 </head>
 
 <body>
-    <header>
-        <h1>Progressive Loading (Images)</h1>
-    </header>
-    <main>
-        <script src="app.js" defer></script>
-        <img src='images/placeholder.png' data-src='https://source.unsplash.com/random/400x300' alt='NAME'>
-        <picture><img class="norm" src="https://source.unsplash.com/random/300x400">
-        </picture>
-    </main>
-</body>
 
-</html>
+    <main>
+        <h1>Progressive Loading (Images)</h1>
+        <div class="container">
+
+            <img src='images/placeholder.png' data-src='https://source.unsplash.com/random/300x400' alt='NAME'>
+            <picture><img class="norm" src="https://source.unsplash.com/random/300x400">
+            </picture>
+            <picture><img class="norm" src="https://source.unsplash.com/random/300x400">
+            </picture>
+            <picture><img class="norm" src="https://source.unsplash.com/random/300x400">
+            </picture>
+            <picture><img class="norm" src="https://source.unsplash.com/random/300x400">
+            </picture>
+            <picture><img class="norm" src="https://source.unsplash.com/random/300x400">
+            </picture>
+            <script src="app.js" defer></script>
+        </div>
+    </main>
