@@ -22,14 +22,6 @@ window.addEventListener('load', (event) => {
     weekday[6] = "Saturday";
     week.textContent = weekday[d.getDay()];
 
-    const pancake_event = document.getElementById('pancake_event');
-    if (d.getDay() == 5) {
-
-        pancake_event.style.display = "block";
-    } else {
-        pancake_event.style.display = "none";
-    }
-
     const dayNum = document.getElementById('day');
     dayNum.textContent = d.getDate();
 
@@ -43,4 +35,3 @@ window.addEventListener('load', (event) => {
     const cry = document.querySelector("#copyright-year");
     cry.textContent = d.getFullYear();
 })
-
