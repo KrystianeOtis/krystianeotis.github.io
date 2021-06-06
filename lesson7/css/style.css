@@ -11,7 +11,7 @@
 main {
     display: block;
     margin: 0 auto;
-    max-width: 360px;
+    max-width: 375px;
 
 }
 
@@ -32,21 +32,20 @@ h5 {
 }
 
 img {
-    width: 250px;
-    height: auto;
-    margin: .5rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
 
 }
 
-.norm:hover {
-    box-shadow: 0 0 50px #333;
+
+.description {
+    margin: 9px 0 50px 25px;
+
 }
 
 h1 {
-    margin: 0 0 0 10px;
+    margin: 0 0 15px 10px;
 }
 
 footer {
@@ -122,26 +121,33 @@ nav {
 /*Medium media*/
 @media only screen and (min-width: 34.5em) {
     main {
-        max-width: 600px;
+        max-width: 768px;
+        padding-left: 15px;
     }
 
-    .container {
+    #container {
         /* display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 
         overflow: auto;
         resize: horizontal; */
-        border: 10px solid red;
+
         margin: 1rem auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         max-width: 1048px;
+        gap: 15px;
     }
 
-    img {
-        width: 300px;
-        height: auto;
-        margin: .5rem;
+    section div {
+        width: 330px;
+        box-shadow: 3px 3px 3px grey;
+    }
+
+    .description {
+
+        margin: 9px 0 30px 10px;
+
     }
 
     nav {
@@ -180,19 +186,31 @@ nav {
 
 /*Large media*/
 @media only screen and (min-width: 54.5em) {
-    img {
-        width: 400px;
-        height: auto;
-        margin: .5rem;
-    }
 
     main {
+        max-width: 1200px;
+    }
+
+    #container {
+
+        grid-template-columns: 1fr 1fr 1fr;
         max-width: 1048px;
+    }
+
+
+
+    section div:hover {
+        width: 330px;
+        box-shadow: 0 0 50px #333;
     }
 
     #navigation {
         width: 800px;
         margin: 16px auto;
+    }
+
+    h1 {
+        margin: 0 0 15px 80px;
     }
 
     footer {
