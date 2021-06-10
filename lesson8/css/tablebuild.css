@@ -3,9 +3,13 @@
 #7fb9c2 along with standard white and black. */
 
 body {
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 292px;
     font-family: 'Ubuntu',
         sans-serif;
-    ;
+    box-shadow: 10px 10px 10px rgb(112, 150, 173);
+
 }
 
 table,
@@ -17,6 +21,7 @@ td {
     padding: 10px;
 
 }
+
 caption {
     background-color: #7fb9c2;
     font-size: 1.7em;
@@ -38,6 +43,13 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background-color: #e7f0ed;
 }
-td:nth-child(3n) {
-    color: lime;
+
+tbody tr:nth-child(4) td:nth-child(3) {
+    background-color: #628ca6;
+    color: white;
+}
+
+tfoot td {
+    background-color: #7fb9c2;
+    font-size: small;
 }
