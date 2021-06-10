@@ -8,6 +8,11 @@ body {
     width: 292px;
     font-family: 'Ubuntu',
         sans-serif;
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -webkit-box-shadow: 10px 10px 10px rgb(112, 150, 173);
+    /* Firefox 3.5 - 3.6 */
+    -moz-box-shadow: 10px 10px 10px rgb(112, 150, 173);
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
     box-shadow: 10px 10px 10px rgb(112, 150, 173);
 
 }
