@@ -232,7 +232,7 @@ nav {
         resize: horizontal; */
 
 
-        max-width: 1048px;
+        max-width: 600px;
     }
 
 
@@ -277,18 +277,9 @@ nav {
         max-width: 1200px;
     }
 
-    #container {
-        max-width: 1048px;
-    }
-
-
     #navigation {
         width: 800px;
         margin: 16px auto;
-    }
-
-    h1 {
-        margin: 0 0 15px 80px;
     }
 
     footer {
