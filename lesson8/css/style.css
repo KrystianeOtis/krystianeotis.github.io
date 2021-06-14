@@ -30,6 +30,7 @@ h5 {
         sans-serif;
     font-weight: bolder;
 }
+
 .subheading {
     border-bottom: solid #9fc490;
     margin-bottom: 10px;
@@ -69,6 +70,7 @@ label {
     font-weight: 600;
     width: 200px;
 }
+
 input,
 textarea {
     /* To make sure that all text fields have the same font settings
@@ -162,6 +164,7 @@ input[type="button"]:hover {
     font-weight: 700;
     display: none;
 }
+
 /*Menu & Nav bar*/
 nav,
 footer {
@@ -224,6 +227,7 @@ nav {
         padding-left: 15px;
     }
 
+
     #container {
         /* display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -235,6 +239,9 @@ nav {
         max-width: 600px;
     }
 
+    h1 {
+        margin: 0 0 15px 100px;
+    }
 
     nav {
         max-width: 100%;
@@ -280,6 +287,10 @@ nav {
     #navigation {
         width: 800px;
         margin: 16px auto;
+    }
+
+    h1 {
+        margin: 0 0 15px 300px;
     }
 
     footer {

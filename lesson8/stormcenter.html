@@ -43,14 +43,14 @@
         <form action="" method="get" id="container">
             <section>
                 <h2 class="subheading">Contact Information</h2>
-
-                <label for="name">Full Name:
-                    <input type="text" name="name" id="name" required></label>
-
-
-                <label for="email">Email:
-                    <input type="email" name="email" placeholder="user@email.com" required> </label>
-
+                <div>
+                    <label for="name">Full Name:
+                        <input type="text" name="name" id="name" required></label>
+                </div>
+                <div>
+                    <label for="email">Email:
+                        <input type="email" name="email" placeholder="user@email.com" required> </label>
+                </div>
 
                 <label for="phone">Phone Number:
                     <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
@@ -67,8 +67,9 @@
                     <label>Storm Date:
                         <input type="date" name="storm-date"></label></div>
 
-                <div>
+
                     <label for="storm-type-choice">Storm Type:</label>
+                    <div>
                     <input list="storm-type-list" id="storm-type-choice" name="storm-type-choice" />
                     <datalist id="storm-type-list">
                         <option value="Flash Flood">
