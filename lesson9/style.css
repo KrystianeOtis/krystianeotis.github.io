@@ -1,0 +1,75 @@
+/*
+#004d71 triton blue
+#89abbc
+#95d600
+#55595A
+#7d7d80
+*/
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.tritons img {
+    width: 50px;
+}
+
+.profile-pic img {
+    max-width: 50px;
+    border-radius: 60px;
+}
+
+.head {
+    padding: 10px;
+    background-color: #dbe4ea;
+}
+
+th {
+    background: #7d7d80;
+    color: white;
+    font-size: 1.5em;
+
+}
+
+td {
+    padding: 10px;
+    border: none;
+}
+
+tr:nth-child(even) {
+    background-color: #004d71;
+
+}
+
+/* tr:nth-child(odd) {
+    background-color: #dbe4ea;
+  } */
+
+.active {
+    background-color: #ddfff1;
+    border-radius: 20px;
+}
+
+.active i {
+    color: #34bf76;
+}
+
+.selected-row {
+    background-color: #e7f2fd;
+}
+
+.waiting {
+    background-color: #fcf0b6;
+    border-radius: 20px;
+}
+
+.waiting i {
+    color: #fffc37;
+}
+
+.material-icons {
+    color: #98989e;
+}
+
+.material-icons:hover {
+    color: #1087d6;
+}
