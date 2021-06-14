@@ -38,10 +38,10 @@
 
     <main>
         <h1>Storm Center</h1>
-        <section id="container">
 
-            <form action="" method="get" >
-                <h2>Contact Information</h2>
+
+            <form action="" method="get" id="container">
+                <h2 class="subheading">Contact Information</h2>
 
                     <label for="name">Full Name:
                     <input type="text" name="name" id="name" required></label>
@@ -60,7 +60,7 @@
                         <input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)"
                             autocomplete="shipping postal-codep" required>
 
-                <h2>Storm Details</h2>
+                <h2 class="subheading">Storm Details</h2>
                 <div>
                     <label>Storm Date:
                         <input type="date" name="storm-date"></label></div>
@@ -116,14 +116,14 @@
                             <label for="time3">No</label>
                 </div>
 
-                <h2>Additional Information</h2>
+                <h3 class="subheading">Additional Information</h3>
                 <div><label for="msg">Comments:</label>
                     <textarea id="msg" name="user_message" placeholder="Optional"></textarea></div>
 
                 <div class="button"><button type="submit">Submit Storm Report</button></div>
             </form>
 
-        </section>
+        
     </main>
 
     <footer>

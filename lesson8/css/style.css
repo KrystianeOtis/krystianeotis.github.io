@@ -30,6 +30,10 @@ h5 {
         sans-serif;
     font-weight: bolder;
 }
+.subheading {
+    border-bottom: solid #9fc490;
+    margin-bottom: 10px;
+}
 
 h1 {
     margin: 0 0 15px 10px;
@@ -136,16 +140,6 @@ input[type="button"] {
 
 input[type="button"]:hover {
     background-color: #ddf;
-}
-
-input:invalid {
-    background-color: #fdd;
-    color: #000;
-}
-
-input:valid {
-    background-color: #dfd;
-    color: #000;
 }
 
 .flexly {
