@@ -19,10 +19,10 @@ async function getProphets() { // async function - The async and await keywords 
                 h2.textContent = prophets[i].name + ' ' + prophets[i].lastname; //concats first name and last name
                 birthdate.textContent = 'Date of birth: ' + prophets[i].birthdate; // concats the prophets DOB with given paragraph text
                 birthplace.textContent = 'Place of birth: ' + prophets[i].birthplace; // concats the birth place with given paragraph text
-                image.setAttribute('src', prophets[i].imageurl);
+                image.setAttribute('src', prophets[i].imageurl); //adds the correct image with the matching prophet that is iterated
                 image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prophets[i].order);
 
-                card.appendChild(h2);
+                card.appendChild(h2); // appendChild - appends a node as the last child of a node
                 card.appendChild(birthdate);
                 card.appendChild(birthplace);
                 card.appendChild(image);
@@ -32,6 +32,6 @@ async function getProphets() { // async function - The async and await keywords 
         });
 }
 
-window.addEventListener('load', (event) => {
+window.addEventListener('load', (event) => { //registers when page is loaded
     getProphets();
 })
