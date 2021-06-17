@@ -20,7 +20,7 @@ async function getProphets() { // async function - The async and await keywords 
                 birthdate.textContent = 'Date of birth: ' + prophets[i].birthdate; // concats the prophets DOB with given paragraph text
                 birthplace.textContent = 'Place of birth: ' + prophets[i].birthplace; // concats the birth place with given paragraph text
                 image.setAttribute('src', prophets[i].imageurl); //adds the correct image with the matching prophet that is iterated
-                image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prophets[i].order);
+                image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prophets[i].order); // sets the alt attribute to be the prophets first and last name
 
                 card.appendChild(h2); // appendChild - appends a node as the last child of a node
                 card.appendChild(birthdate);
