@@ -35,3 +35,4 @@ async function getProphets() { // async function - The async and await keywords 
 window.addEventListener('load', (event) => { //registers when page is loaded
     getProphets();
 })
+
