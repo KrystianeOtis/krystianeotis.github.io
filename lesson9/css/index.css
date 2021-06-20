@@ -214,10 +214,32 @@ nav {
     div.cards {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: .25em;
         max-width: 768px;
 
     }
+
+    .cards section {
+        grid-column: span 2;
+    }
+
+
+    /* .cards section:nth-child(odd) {
+        background: red;
+
+    }
+
+    .cards img:nth-child(odd) {
+        background: red;
+        grid-column: 2
+    }
+
+    .cards section:nth-child(even) {
+        background: blue;
+
+    } */
+
 
     #headings h1 {
         font-size: 2.5rem;
