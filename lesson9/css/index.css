@@ -45,8 +45,9 @@ div.cards {
 .cards img {
 
     display: block;
-    max-width: 350px;
-    height: auto;
+    max-width: 300px;
+    max-height: 205px;
+
     /* margin-left: auto;
     margin-right: auto; */
     box-shadow: 1px 1px 10px black;
