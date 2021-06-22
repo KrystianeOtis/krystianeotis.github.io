@@ -18,7 +18,7 @@ async function getTowns() { // async function - The async and await keywords ena
                     let yearFounded = document.createElement('p'); //paragraph elements
                     let currentPopulation = document.createElement('p');
                     let averageRainfall = document.createElement('p');
-
+                    let photoDiv = document.createElement('div')
                     let photo = document.createElement('img'); // adds image elements
 
                     h2.textContent = towns[i].name;
@@ -36,7 +36,9 @@ async function getTowns() { // async function - The async and await keywords ena
                     text.appendChild(yearFounded);
                     text.appendChild(currentPopulation);
                     text.appendChild(averageRainfall);
-                    card.appendChild(photo);
+                    
+                    card.appendChild(photoDiv)
+                    photoDiv.appendChild(photo);
 
                     document.querySelector('div.cards').appendChild(card);
                 }
