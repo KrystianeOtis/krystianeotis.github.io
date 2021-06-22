@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
-     <script src="js/dates.js"></script>
+    <script src="js/dates.js"></script>
     <script src="js/index.js"></script>
 
 </head>
@@ -40,27 +40,42 @@
         </ul>
     </nav>
     <main>
-        <div class="cards"></div>
+        <div class="cards">
+
+        </div>
     </main>
 
 
     <footer>
-        <div class="content-box contact-info"">
-        <img id=" map" src="images/prestonmap.jpg" alt="Map of Preston Idaho">
-            <h4>Contact Information</h4>
-            <i class="material-icons">location_on</i>
-            <p>Preston, Idaho 83263</p>
-            <i class="material-icons">phone</i>
-            <p>(208) 241-3474</p>
-            <i class="material-icons">email</i>
-            <p>prestonfishingpros@gmail.com</p>
-            <a class="icon" target="_blank" href="https://www.facebook.com/"><img src="images/facebook.png"
-                    alt="Facebook Icon" /></a>
-            <a class="icon" target="_blank" href="https://www.instagram.com/"><img src="images/instagram.png"
-                    alt="Instagram Icon" /></a>
-            <a class="icon" target="_blank" href="https://twitter.com/explore"><img src="images/twitter.png"
-                    alt="Twitter Icon" /></a>
-        </div>
+        <section class="contact-info-footer">
+            <div class="right-side">
+                <h4>Contact Information</h4>
+                <div id="location">
+                    <i class="material-icons">location_on</i>
+                    <p>Preston, Idaho 83263</p>
+                </div>
+                <div id="phone">
+                    <i class="material-icons">phone</i>
+                    <p>(208) 241-3474</p>
+                </div>
+                <div id="email">
+                    <i class="material-icons">email</i>
+                    <p>prestonfishingpros@gmail.com</p>
+                </div>
+
+
+                <div class="social-icons">
+                    <a class="icon" target="_blank" href="https://www.facebook.com/"><img src="images/facebook.png"
+                            alt="Facebook Icon" /></a>
+                    <a class="icon" target="_blank" href="https://www.instagram.com/"><img src="images/instagram.png"
+                            alt="Instagram Icon" /></a>
+                    <a class="icon" target="_blank" href="https://twitter.com/explore"><img src="images/twitter.png"
+                            alt="Twitter Icon" /></a>
+                </div>
+            </div>
+
+            <img id="map" src="images/prestonmap.jpg" alt="Map of Preston Idaho">
+        </section>
         <div>
             <p class="copyright">
                 &copy; <span id="copyright-year"></span> | <a target="_blank"
@@ -76,3 +91,4 @@
 </body>
 
 </html>
+

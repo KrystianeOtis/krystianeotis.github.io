@@ -12,11 +12,13 @@ async function getTowns() { // async function - The async and await keywords ena
             for (let i = 0; i < towns.length; i++) { // for loop to iterate through the towns array
                 if (towns[i].name == 'Preston' || towns[i].name == 'Fish Haven' || towns[i].name == 'Soda Springs') {
                     let card = document.createElement('section'); // turning each card into a section
+                    let text = document.createElement('div'); // create a div
                     let h2 = document.createElement('h2'); // giving each section a heading2
                     let motto = document.createElement('h3'); // giving each section a heading3
                     let yearFounded = document.createElement('p'); //paragraph elements
                     let currentPopulation = document.createElement('p');
                     let averageRainfall = document.createElement('p');
+
                     let photo = document.createElement('img'); // adds image elements
 
                     h2.textContent = towns[i].name;
@@ -28,11 +30,12 @@ async function getTowns() { // async function - The async and await keywords ena
                     photo.setAttribute('src', 'images/' + towns[i]['photo']); //adds the correct image to match town from local file
                     photo.setAttribute('alt', towns[i].name); // sets the alt to town name
 
-                    card.appendChild(h2); // appendChild - appends a node as the last child of a node
-                    card.appendChild(motto);
-                    card.appendChild(yearFounded);
-                    card.appendChild(currentPopulation);
-                    card.appendChild(averageRainfall);
+                    card.appendChild(text); //append div to section
+                    text.appendChild(h2); // appendChild - appends a node as the last child of a node
+                    text.appendChild(motto);
+                    text.appendChild(yearFounded);
+                    text.appendChild(currentPopulation);
+                    text.appendChild(averageRainfall);
                     card.appendChild(photo);
 
                     document.querySelector('div.cards').appendChild(card);
