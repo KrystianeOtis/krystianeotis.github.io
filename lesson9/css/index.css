@@ -223,9 +223,11 @@ nav {
         margin-top: 5%;
 
     }
+
     .cards div img {
         align-content: center;
     }
+
     .cards section:nth-child(odd) {
         flex-direction: row-reverse;
 
@@ -290,14 +292,16 @@ nav {
 @media only screen and (min-width: 54.5em) {
 
     .cards {
-        margin: 0 auto;
-        width: 800px;
-        display: flex;
-        justify-content: space-between;
+
+        justify-content: start;
+
+
     }
 
     .cards section {
-        flex-direction: column;
+        flex-flow: column wrap;
+
+        max-width: 305px;
     }
 
     header img {
