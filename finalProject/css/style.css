@@ -1,4 +1,13 @@
 /*Small media*/
+html{
+
+    font-family: 'Vollkorn SC',
+    serif;
+}
+p{
+font-family: 'Mate',
+serif;
+}
 nav {
     margin: 0 auto;
     max-width: 360px;
