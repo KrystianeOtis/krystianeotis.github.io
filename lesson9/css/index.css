@@ -292,8 +292,10 @@ nav {
 @media only screen and (min-width: 54.5em) {
 
     .cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
 
-        justify-content: start;
 
 
     }
@@ -302,6 +304,10 @@ nav {
         flex-flow: column wrap;
 
         max-width: 305px;
+    }
+
+    .cards section div {
+        display: block;
     }
 
     header img {
