@@ -1,0 +1,260 @@
+/*Small media*/
+html {
+
+    font-family: 'Roboto Condensed',
+        sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    text-align: center;
+    padding: 8px;
+
+}
+
+footer {
+    text-align: center;
+    padding: 8px;
+    background-color: #82A3A1;
+    color: white;
+
+}
+
+#byui {
+    color: white;
+    padding: 0px;
+}
+
+.logo {
+
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: bolder;
+}
+
+.subheading {
+    border-bottom: solid #9fc490;
+    margin-bottom: 0;
+}
+
+
+/*CSS for Menu/Nav bar*/
+nav,
+footer {
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: #82A3A1;
+}
+
+nav {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+}
+
+#navigation li:first-child {
+    display: block;
+}
+
+#navigation li {
+    display: none;
+}
+
+#navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    font-family: 'Raleway',
+        sans-serif;
+    color: #011936;
+    font-weight: 700;
+}
+
+#navigation a:hover,
+#navigation a .active:hover {
+    color: white;
+    background-color: #C0DFA1;
+}
+
+#navigation a.active {
+    background-color: #9fc490;
+    color: white;
+    /* border-bottom: 5px solid black; */
+}
+
+#navigation.responsive li {
+    display: block;
+}
+
+/*Color Scheme and Color Scheme Shapes*/
+.hexcode {
+    color: white;
+}
+
+.colors p {
+    float: left;
+    margin-left: 140px;
+    font-family: 'Roboto Condensed',
+        sans-serif;
+}
+
+#triangle-topleft1 {
+    width: 0;
+    height: 0;
+    border-top: 100px solid #011936;
+    border-right: 100px solid transparent;
+}
+
+#triangle-bottomright1 {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #011936;
+    border-left: 100px solid transparent;
+    float: right;
+}
+
+#triangle-topleft2 {
+    width: 0;
+    height: 0;
+    border-top: 100px solid #465362;
+    border-right: 100px solid transparent;
+}
+
+#triangle-bottomright2 {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #465362;
+    border-left: 100px solid transparent;
+    float: right;
+}
+
+#triangle-topleft3 {
+    width: 0;
+    height: 0;
+    border-top: 100px solid #82a3a1;
+    border-right: 100px solid transparent;
+}
+
+#triangle-bottomright3 {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #82a3a1;
+    border-left: 100px solid transparent;
+    float: right;
+}
+
+#triangle-topleft4 {
+    width: 0;
+    height: 0;
+    border-top: 100px solid #9fc490;
+    border-right: 100px solid transparent;
+}
+
+#triangle-bottomright4 {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #9fc490;
+    border-left: 100px solid transparent;
+    float: right;
+}
+
+#triangle-topleft5 {
+    width: 0;
+    height: 0;
+    border-top: 100px solid #C0DFA1;
+    border-right: 100px solid transparent;
+}
+
+#triangle-bottomright5 {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #C0DFA1;
+    border-left: 100px solid transparent;
+    float: right;
+}
+
+/*External link to color palette*/
+#color-palette,
+#color-palette a {
+    text-align: center;
+    color: #9fc490;
+}
+
+#color-palette a:hover,
+#color-palette a .active:hover {
+    color: #465362;
+}
+
+
+/*Medium media*/
+@media only screen and (min-width: 34.5em) {
+    nav {
+        max-width: 100%;
+    }
+
+    #navigation {
+        grid-template-columns: repeat(7, auto);
+    }
+
+    #navigation li {
+        display: block;
+        /*change state in small view*/
+    }
+
+    #navigation a {
+        text-align: center;
+    }
+
+    #navigation li:first-child {
+        display: none;
+    }
+
+    footer,
+    #byui {
+        background-color: white;
+        color: #465362;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+}
+
+/*Large media*/
+@media only screen and (min-width: 54.5em) {
+    #navigation {
+        width: 800px;
+        margin: 16px auto;
+    }
+
+}
