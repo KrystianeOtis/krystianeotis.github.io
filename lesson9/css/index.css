@@ -47,9 +47,6 @@ div.cards {
     display: block;
     max-width: 300px;
     max-height: 205px;
-
-    /* margin-left: auto;
-    margin-right: auto; */
     box-shadow: 1px 1px 10px black;
 
 
@@ -205,10 +202,7 @@ nav {
 
 /*Medium media [tablet]*/
 @media only screen and (min-width: 34.5em) {
-    /* main {
-        max-width: 768px;
 
-    } */
 
     header img {
         padding-left: 10px;
@@ -216,7 +210,6 @@ nav {
         height: auto;
     }
 
-    /* alternate rows */
     div.cards {
         display: flex;
         justify-content: center;
@@ -242,35 +235,7 @@ nav {
 
     }
 
-    .cards section:nth-child(odd) img {}
 
-    /*
-    .cards section {
-        grid-column: span 2;
-    }
-
-
-    .cards section:nth-child(odd) {
-
-        text-align: left;
-        padding-left: 20px;
-    }
-
-
-
-    .cards section:nth-child(even) {
-
-        text-align: right;
-        padding-right: 20px;
-
-    }
-
-
-
-    .cards section:nth-of-type(2) img {
-        grid-column: 2/3;
-
-    } */
 
     #headings h1 {
         font-size: 2.5rem;
@@ -282,10 +247,7 @@ nav {
         margin-left: 17px;
     }
 
-    #map img {
-        float: left;
 
-    }
 
     nav {
         max-width: 100%;
@@ -316,11 +278,7 @@ nav {
     .contact-info-footer {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-
-    .contact-info-footer #map {
-        flex: 0.5;
+        justify-content: space-around;
     }
 
 
@@ -342,23 +300,11 @@ nav {
 /*Large media [desktop]*/
 @media only screen and (min-width: 54.5em) {
 
-    /* main {
-        max-width: 1200px;
-    } */
-
-    /* div.cards {
-        grid-template-columns: 1fr 1fr 1fr;
-        max-width: 1200px;
-        max-height: 485px;
-    }
-
-    .cards section {
-        margin: 0 5px 0px 10px;
-    } */
     .cards {
-        display: block;
-        justify-content: center;
-        width: 100%;
+        margin: 0 auto;
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .cards section {
