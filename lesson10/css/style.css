@@ -6,6 +6,17 @@
 #9fc490,
 #C0DFA1,
 */
+html {
+    background-color: white;
+
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+    max-width: 360px;
+
+}
 
 body {
 
@@ -13,52 +24,15 @@ body {
         sans-serif;
 }
 
-main {
+#pancake_event {
+    position: relative;
     display: block;
-    margin: 0 auto;
-}
-
-div.cards {
-
-
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.cards section {
-    color: white;
-    background-color: #82a3a1;
-    border: 2px solid #647688;
     text-align: center;
-    padding: 10px;
-
-    margin-bottom: 1em;
-    box-shadow: 1px 1px 10px black;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 5%;
-
-}
-
-.cards div img {
-    max-width: 350px;
-    box-shadow: 1px 1px 10px black;
-
-
-
-}
-
-.cards p {
-    color: black;
-}
-
-.logo {
-
-    width: 100%;
-    margin-bottom: 5%;
-    margin-top: 10%;
+    padding: 15px;
+    background-color: #011936;
+    color: #c3fc8a;
+    font-size: 25px;
+    font-style: bold;
 }
 
 header {
@@ -66,6 +40,18 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: bolder;
 }
 
 header img {
@@ -84,19 +70,6 @@ h1 {
     margin: 0 0 0 17px;
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: -10px;
-    text-shadow: 1px 1px 2px #011936;
-}
-
-h3 {
-    font-size: .85em;
-    color: white;
-    text-shadow: 1px 1px 2px #011936;
-    font-style: oblique;
-}
-
 #motto {
     font-style: italic;
     letter-spacing: 1pt;
@@ -105,33 +78,65 @@ h3 {
     font-size: .9rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Raleway',
-        sans-serif;
-
+.subheading {
+    border-bottom: solid #9fc490;
+    margin-bottom: 10px;
 }
 
-/* .content-box {
+
+.content-box {
     display: block;
     margin: 10px auto;
     border: 1px dashed #000;
     padding: 15px;
     background-color: white;
     color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+}
+
+#box2 {
+    text-align: right;
+}
+
+.weather {
+    background-color: #C0DFA1;
+}
+
+#forecast {
+    text-align: center;
+    list-style: none;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0;
+}
+
+#forecast img {
+    max-width: 100%;
+}
+
+#forecast li {
+
+    margin: 0.5rem;
+}
+
+#hero img {
+    margin: auto;
+    max-width: 360px;
+}
 
 footer {
     text-align: center;
     padding: 8px;
     background-color: #82A3A1;
     color: white;
+
 }
 
 footer a {
@@ -140,6 +145,15 @@ footer a {
 }
 
 
+
+.logo {
+
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+#article-img {}
 
 /*Menu & Nav bar*/
 nav,
@@ -197,40 +211,13 @@ nav {
 }
 
 
-/*Medium media [tablet]*/
+/*Medium media*/
 @media only screen and (min-width: 34.5em) {
-
 
     header img {
         padding-left: 10px;
         width: 120px;
         height: auto;
-    }
-
-    div.cards {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .cards section {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 0;
-        margin-top: 5%;
-
-    }
-
-    .cards div img {
-        align-content: center;
-    }
-
-    .cards section:nth-child(odd) {
-        flex-direction: row-reverse;
-
     }
 
     #headings h1 {
@@ -264,16 +251,48 @@ nav {
         display: none;
     }
 
-    .contact-info-footer {
+    main {
+        max-width: 800px;
+
+        display: grid;
+
+    }
+
+    .content-box.weather {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        padding: 10px;
+        margin-top: 90px;
+        margin-left: 20px;
+        background-color: rgba(191, 222, 160, 0.88);
+        border: 5px solid white;
+        line-height: 10px;
+
+    }
+
+    .content-box.weather h3 {
+        text-align: center;
+    }
+
+    #article-img {
+        float: right;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+    .content-box.forecast{
+        width: 800px;
+        padding: 0;
+    }
+
+    .content-box.contact-info {
         max-width: 100%;
 
     }
+     #map img {
+         float: left;
 
-    .contact-info-footer {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-    }
+     }
 
     footer,
     footer a {
@@ -288,28 +307,8 @@ nav {
 
 
 
-/*Large media [desktop]*/
+/*Large media*/
 @media only screen and (min-width: 54.5em) {
-
-    div.cards {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-
-
-
-    }
-
-    .cards section {
-        flex-flow: column wrap;
-
-        max-width: 305px;
-    }
-
-    .cards section div {
-        display: block;
-    }
-
     header img {
         width: 150px;
         height: auto;
@@ -324,12 +323,18 @@ nav {
         margin: 16px auto;
     }
 
-
-
     footer {
         width: 800px;
         margin: 0 auto;
+    }
+
+
+
+    .content-box.weather {
+        margin-top: 100px;
+        margin-left: 50px;
 
     }
 
 }
+
