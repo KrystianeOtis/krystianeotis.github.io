@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+    <link href="css/weatherapi.css" rel="stylesheet">
+    <script src="js/weatherapi.js"></script>
+</head>
+
+<body>
+    <main>
+        <section id="currentSection">
+            <h1>Rexburg</h1>
+            <div id="weatherCondition"></div>
+            <div id="currentDayHeader"></div>
+            <span id="navigationTag">
+                <p>&#10094;</p>
+                <div id="currentTemp"></div>
+                <p>&#10095;</p>
+            </span>
+
+        </section>
+        </section>
+        <section id="forecastSection">
+            <div id="currentDayForecast">
+                <p id="currentDayName"></p>
+                <p id="currentDayTemp"></p>
+                <div class="wi wi-day-sunny"></div>
+            </div>
+            <div id="nextDay">
+                <p id="nextDayName"></p>
+                <p id="nextDayTemp"></p>
+                <div class="wi wi-day-cloudy"></div>
+            </div>
+            <div id="nextNextDay">
+                <p id="nextNextDayName"></p>
+                <p id="nextNextDayTemp"></p>
+                <div class="wi wi-day-rain"></div>
+            </div>
+            <hr>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

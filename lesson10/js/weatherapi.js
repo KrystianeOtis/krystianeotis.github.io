@@ -1,5 +1,6 @@
 async function getWeather() {
-    const requestURL = 'https://api.openweathermap.org/data/2.5/weather?zip=83440,&appid=953894ad13f71540f4d4ee5b185b63d7'; // url for the weather data api
+    const requestURL = ' https://api.openweathermap.org/data/2.5/weather?zip=83263&appid=953894ad13f71540f4d4ee5b185b63d7&units=imperial'; // url for the weather data api
+
 
     fetch(requestURL)
         .then(function (response) {
