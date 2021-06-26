@@ -1,60 +1,125 @@
-async function getWeather() { // async function - The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
-    const requestURL = 'https://api.openweathermap.org/data/2.5/weather?zip=83263&appid=953894ad13f71540f4d4ee5b185b63d7&units=imperial'; // url for the prophet api
+// Weather Summary
+async function getWeather() {
+    const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=953894ad13f71540f4d4ee5b185b63d7&units=imperial'; // url for the weather data api
+    fetch(apiURL)
+        .then((response) => response.json())
+        .then((jsObject) => {
+            console.log(jsObject);
 
-    fetch(requestURL) //a basic fetch() method and feed it the required argument, the URL and use the .then() method that returns a Promise which response we will work with as an argument to an anonymous function.
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (jsonObject) {
-            console.table(jsonObject); // temporary checking for valid response and data parsing
+            document.getElementById('current-temp').textContent = jsObject.main.temp;
 
             const weather = jsonObject['weather']; //store the results of the converted response into an array
-            for (let i = 0; i < prophets.length; i++) { // for loop to iterate through the prophets array
-                let card = document.createElement('section'); // turning each card into a seaction
-                let h2 = document.createElement('h2'); // giving each section a heading2
-                let birthdate = document.createElement('p'); //paragraph elements
-                let birthplace = document.createElement('p');
-                let image = document.createElement('img'); // adds image elements
 
-                h2.textContent = prophets[i].name + ' ' + prophets[i].lastname; //concats first name and last name
-                birthdate.textContent = 'Currently: ' + prophets[i].birthdate; // concats the prophets DOB with given paragraph text
-                birthplace.textContent = 'High: ' + prophets[i].birthplace; // concats the birth place with given paragraph text
-                birthdate.textContent = 'Wind Chill: ' + prophets[i].birthdate; // concats the prophets DOB with given paragraph text
-                birthdate.textContent = 'Humidity: ' + prophets[i].birthdate; // concats the prophets DOB with given paragraph text
-                birthdate.textContent = 'Wind Speed: ' + prophets[i].birthdate; // concats the prophets DOB with given paragraph text
-                image.setAttribute('src', prophets[i].imageurl); //adds the correct image with the matching prophet that is iterated
-                image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prophets[i].order); // sets the alt attribute to be the prophets first and last name
+            let card = document.createElement('section');
+            let currently = document.createElement('p');
+            let temp_max = document.createElement('p');
+            p2.id = 'temp';
+            let windChill = document.createElement('p')
+            windChill.id = 'windchill';
+            let humidity = document.createElement('p');
+            let windSpeed = document.createElement('p');
+            p4.id = 'windspeed';
 
-                card.appendChild(h2); // appendChild - appends a node as the last child of a node
-                card.appendChild(birthdate);
-                card.appendChild(birthplace);
-                card.appendChild(image);
 
-                document.querySelector('div.cards').appendChild(card);
+
+            currently.textContent = 'Currently: ' + main.temp;
+            temp_max.textContent = 'High: ' + main.temp_max;
+            windChill.textContent = 'Wind Chill: ' + ;
+            humidity.textContent = 'Humidity: ' + main.humidity;
+            windSpeed.textContent = 'Wind Speed: ' + wind.speed;
+
+            // calculate Wind Chill
+
+            const calcWindChill = (temperature, speed) => {
+                if (temperature <= 50 && speed > 3) {
+                    return Math.round(
+                        35.74 + (0.6215 * temperature) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * (temperature *
+                            Math.pow(speed, 0.16)))) + "°F"
+                } else {
+                    return "NA"
+                }
             }
+
+            const displayWindChill = () => {
+                let temperature = parseInt(document.getElementById("temp").textContent);
+                let wind = parseInt(document.getElementById("windSpeed").textContent);
+                let result = calcWindChill(temperature, wind);
+                document.getElementById("windChill").innerHTML = result;
+            }
+            displayWindChill();
+
+            card.appendChild(currently);
+            card.appendChild(temp_max);
+            card.appendChild(windChill);
+            card.appendChild(humidity);
+            card.appendChild(windSpeed);
+            card.appendChild(windChill);
+
+            document.querySelector('div.cards').appendChild(card);
+
         });
 }
 
-window.addEventListener('load', (event) => { //registers when page is loaded
-    getProphets();
+window.addEventListener('load', (event) => {
+    getWeatherSummary();
 })
 
-window.addEventListener('load', () => {
-    const calcWindChill = (temperature, speed) => {
-        if (temperature <= 50 && speed > 3) {
-            return Math.round(
-                35.74 + (0.6215 * temperature) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * (temperature *
-                    Math.pow(speed, 0.16)))) + "°F"
-        } else {
-            return "NA"
-        }
-    }
+// window.addEventListener('load', () => {
+//     const calcWindChill = (temperature, speed) => {
+//         if (temperature <= 50 && speed > 3) {
+//             return Math.round(
+//                 35.74 + (0.6215 * temperature) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * (temperature *
+//                     Math.pow(speed, 0.16)))) + "°F"
+//         } else {
+//             return "NA"
+//         }
+//     }
 
-    const displayWindChill = () => {
-        let temperature = parseInt(document.getElementById("temp").textContent);
-        let wind = parseInt(document.getElementById("windSpeed").textContent);
-        let result = calcWindChill(temperature, wind);
-        document.getElementById("windChill").innerHTML = result;
-    }
-    displayWindChill();
+//     const displayWindChill = () => {
+//         let temperature = parseInt(document.getElementById("temp").textContent);
+//         let wind = parseInt(document.getElementById("windSpeed").textContent);
+//         let result = calcWindChill(temperature, wind);
+//         document.getElementById("windChill").innerHTML = result;
+//     }
+//     displayWindChill();
+// })
+
+
+// id code 5604473
+
+// 5 day forecast
+async function getWeather() {
+    const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=953894ad13f71540f4d4ee5b185b63d7&units=imperial'; // url for the weather data api
+    fetch(apiURL)
+        .then((response) => response.json())
+        .then((jsObject) => {
+            console.log(jsObject);
+
+            document.getElementById('current-temp').textContent = jsObject.main.temp;
+
+            const weather = jsonObject['weather']; //store the results of the converted response into an array
+
+            let card = document.createElement('section');
+            let fiveday = document.createElement('section');
+            let h2 = document.createElement('h2');
+            let p = document.createElement('p');
+            let icon = document.createElement('p');
+
+            h2.textContent = five.name;
+            p.textContent = five.main.temp;
+            icon.textContent = five.weather[0].icon;
+
+            fiveday.appendChild(h2);
+            fiveday.appendChild(p);
+            fiveday.appendChild(icon);
+
+
+
+            document.querySelector('div.cards').appendChild(card);
+
+        });
+}
+
+window.addEventListener('load', (event) => {
+    getForecast();
 })
