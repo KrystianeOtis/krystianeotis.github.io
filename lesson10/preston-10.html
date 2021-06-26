@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/prestonweather.js"></script>
+
     <script src="js/script.js"></script>
 
 </head>
@@ -65,19 +65,19 @@
                 <div id="box2">
 
                     <!--currently-->
-                    <p>Rainy</p>
+                    <p id="condition"></p>
 
                     <!--high temp-->
-                    <p><span id="temp">49</span>°F</p>
+                    <p><span id="temp"></span>°F</p>
 
                     <!--wind chill-->
                     <p><span id="windChill"></span></p>
 
                     <!--humidity-->
-                    <p>95%</p>
+                    <p><span id="humidity"></span>%</p>
 
                     <!--wind speed-->
-                    <p><span id="windSpeed">12</span>mph</p>
+                    <p><span id="windSpeed"></span>mph</p>
 
                 </div>
             </div>
@@ -86,13 +86,16 @@
         <div class="content-box forecast">
             <h3>5 Day Forecast</h3>
             <ul id="forecast">
-                <li>Wed <img src="images/sun2.png" alt="sun"> 89°</li>
-                <li>Thur <img src="images/sun2.png" alt="sun"> 87°</li>
-                <li>Fri<img src="images/sun2.png" alt="sun">78°</li>
-                <li>Sat <img src="images/sun2.png" alt="sun">75°</li>
-                <li>Sun <img src="images/sun2.png" alt="sun"> 72°</li>
+                <li><span id="dayName"></span><span id="weatherImg"></span><span id="dayTemp"></span></li>
+                <li><span id="dayName"></span><span id="weatherImg"></span><span id="dayTemp"></span></li>
+                <li><span id="dayName"></span><span id="weatherImg"></span><span id="dayTemp"></span></li>
+                <li><span id="dayName"></span><span id="weatherImg"></span><span id="dayTemp"></span></li>
+                <li><span id="dayName"></span><span id="weatherImg"></span><span id="dayTemp"></span></li>
             </ul>
         </div>
+
+        <!-- 
+        comparison of a edate in javascript -->
 
         <div class="content-box article">
             <h3><a target="_blank" href="https://visitidaho.org/travel-tips/idaho-trout-fishing-paradise/">Idaho: A
@@ -163,6 +166,13 @@
             </p>
         </div>
     </footer>
+
+    <script src="js/prestonweather.js"></script>
+
+
+    <script>
+        getWeather();
+    </script>
 
 </body>
 
