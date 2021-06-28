@@ -1,0 +1,53 @@
+body {
+    font-family: 'Cinzel', serif;
+    color: #926203;
+}
+
+#aoe div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+}
+
+#aoe h1 {
+    font-size: 2.2em;
+    text-align: center;
+    line-height: 1.1em;
+}
+
+#aoe p {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.text-input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    widows: 360px;
+    ;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1em;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    color: #4d3402;
+}
+
+​ .submit-button {
+    display: block;
+    background-color: #4F221C;
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 13px 35px;
+    text-transform: uppercase;
+    margin: 20px auto;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+}
