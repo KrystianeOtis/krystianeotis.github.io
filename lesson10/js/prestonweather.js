@@ -21,15 +21,23 @@ async function getWeather() {
         .then((jsObject) => {
             console.log(jsObject);
 
-            document.getElementById('condition').textContent = jsObject.weather[0].main;
-            document.getElementById('temp').textContent = Math.round(jsObject.main.temp_max);
-            document.getElementById('windChill').textContent = calcWindChill(jsObject.main.temp_max, jsObject.wind.speed);
-            document.getElementById('humidity').textContent = Math.round(jsObject.main.humidity);
-            document.getElementById('windSpeed').textContent = Math.round(jsObject.wind.speed);
+            let forecastData = jsObject.list
 
-            
+            let filteredList = forecastData.filter(day => day.dt_txt.includes("18:00:00"))
 
-        })
+            forecast.forEach(jsObject => {
+                let date = new Date(jsObject.dt_text * 1000);
+                let days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+                let name = days[date.getDay()];
+            }
+
+            document.getElementById('dayName').textContent = jsObject.list[0].main;
+            document.getElementById('weatherImg').textContent = Math.round(jsObject.main.temp_max);
+            document.getElementById('dayTemp').textContent = calcWindChill(jsObject.main.temp_max, jsObject.wind.speed);
+
+
+
+        });
 
 
 }
