@@ -16,8 +16,8 @@ async function getWeather() {
 
 
         })
-        
-    const apiURL2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=953894ad13f71540f4d4ee5b185b63d7&units=imperial'; // url for the weather data api
+
+    const apiURL2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=953894ad13f71540f4d4ee5b185b63d7'; // url for the weather data api
     fetch(apiURL2)
         .then((response) => response.json())
         .then((jsObject) => {
@@ -26,17 +26,22 @@ async function getWeather() {
             let forecastData = jsObject.list
 
             let filteredList = forecastData.filter(day => day.dt_txt.includes("18:00:00"))
+            let days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
 
-            forecast.forEach(jsObject => {
-                let date = new Date(jsObject.dt_text * 1000);
-                let days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
-                let name = days[date.getDay()];
+            
+            for (let i = 0; i < filteredList.length; i++) {
+                console.log(i);
+                console.log(filteredList);
+
+                // document.getElementById('weatherImg' + (i + 1)).textContent =
+                document.getElementById('dayTemp' + (i + 1)).textContent = Math.round(filteredList[i].main.temp) + "°F";
+
+
+                let day = new Date(jsObject.list[i].dt_text);
+                document.getElementById('dayName' + (i + 1)).textContent = days[0];
+                console.log(day.getDay());
+                console.log(day);
             }
-
-            document.getElementById('dayName').textContent = jsObject.list[0].main;
-            document.getElementById('weatherImg').textContent = Math.round(jsObject.main.temp_max);
-            document.getElementById('dayTemp').textContent = calcWindChill(jsObject.main.temp_max, jsObject.wind.speed);
-
 
 
         });
@@ -52,4 +57,7 @@ const calcWindChill = (temperature, speed) => {
 
 }
 
-
+// let img = document.getElementById('img' + dayNum);
+// img.setAttribute('src', 'https://openweathermap.org/img/wn/' + weather.list[i].weather[0].icon + '@2x.png')
+// https: //openweathermap.org/weather-conditions
+//     filteredList[i].weather[0].icon

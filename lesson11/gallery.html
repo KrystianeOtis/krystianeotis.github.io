@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Gallery</title>
+    <meta name="description" content="Weather Pictures from the surrounding local area">
+    <link rel="icon" href="images/icon3.png" type="image/gif">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/windchill.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+
+    <nav>
+        <ul id="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a  href="https://krystianeotis.github.io/lesson9/index.html">Home</a></li>
+            <li><a href="https://krystianeotis.github.io/lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="https://krystianeotis.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a class="active" href="https://krystianeotis.github.io/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Weather Gallery</h1>
+        <section id="container">
+            <div><img src="images/fog2.jpg" alt="Fog" loading="lazy">
+                <p class="description">Foggy day in Caribou Targee National Forest</p>
+            </div>
+            <div><img src="images/frost.jpg" alt="Frost" loading="lazy">
+                <p class="description">Frosty morning in Downey </p>
+            </div>
+            <div><img c src="images/snow2.jpg" alt="Snow" loading="lazy">
+                <p class="description">Beautiful snowfall at Oneida Narrows</p>
+            </div>
+            <div><img src="images/lightning.jpg" alt="Lightning" loading="lazy">
+                <p class="description">Lightning storm near Soda Springs</p>
+            </div>
+            <div> <img src="images/cumulonimbus.jpg" alt="Cumulonimbus Clouds" loading="lazy">
+                <p class="description">Cumulonimbus clouds rolling in over Preston</p>
+            </div>
+            <div><img src="images/cumulus.jpg" alt="Cumulus Clouds" loading="lazy">
+                <p class="description">Partly cloudy day over Alexander Reservoir</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <div>
+            <p class="copyright">
+                &copy; <span id="copyright-year"></span> | <a target="_blank"
+                    href="https://krystianeotis.github.io/index.html">Krystiane Otis</a> | Idaho | <a target="_blank"
+                    href="https://www.byui.edu/online">BYUI Online Learning</a>
+            </p>
+            <p class="dateupdate">
+                <span id="name-of-day"></span>, <span id="day"></span> <span id="month"></span> <span id="year"></span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
