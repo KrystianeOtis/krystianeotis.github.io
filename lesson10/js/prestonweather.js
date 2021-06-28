@@ -1,6 +1,6 @@
 // Weather Summary
 async function getWeather() {
-    
+
     const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=953894ad13f71540f4d4ee5b185b63d7&units=imperial'; // url for the weather data api
     fetch(apiURL)
         .then((response) => response.json())
@@ -16,6 +16,7 @@ async function getWeather() {
 
 
         })
+        
     const apiURL2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=953894ad13f71540f4d4ee5b185b63d7&units=imperial'; // url for the weather data api
     fetch(apiURL2)
         .then((response) => response.json())
