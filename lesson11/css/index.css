@@ -119,10 +119,10 @@ h5 {
 
 
 
- .icon img {
-     width: 35px;
-     margin-bottom: 5px;
- }
+.icon img {
+    width: 35px;
+    margin-bottom: 5px;
+}
 
 
 
@@ -275,30 +275,37 @@ nav {
         margin-top: 30px;
         padding-top: 10px;
     }
+
     .right-side {
-        display:grid;
-        grid-template-columns: 50px 1fr ;
+        display: grid;
+        grid-template-columns: 50px 1fr;
 
 
     }
-    .right-side p{
+
+    .right-side p {
         text-align: left;
         align-items: start;
     }
-    i.material-icons{
 
+    i.material-icons {
+        grid-column: 1/2;
         align-self: center;
     }
-    .right-side h4{
+
+    .right-side h4 {
         grid-column: 1/3;
     }
-    .social-icons{
+
+    .social-icons {
         grid-column: 1/3;
     }
-    .icon img{
+
+    .icon img {
         width: 35px;
     }
-    #map{
+
+    #map {
         margin-top: 20px;
 
     }
