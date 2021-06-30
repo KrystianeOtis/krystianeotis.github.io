@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Fishing Pros</title>
+    <meta name="description" content="Fishing and Weather Resource for Outdoor Activities in Preston, Idaho">
+    <link rel="icon" href="images/icon3.png" type="image/gif">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/dates.js"></script>
+
+    <script src="js/index.js"></script>
+
+</head>
+
+<body>
+    <div id="pancake_event">
+
+        <p> Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header>
+        <img id="logo" src="images/PFPlogo.png" alt="Preston Fishing Pros Logo">
+        <section id="headings">
+            <h1>Preston Fishing Pros</h1>
+            <div id="motto">Grab your tackle box,<br> We're going fishing!</div>
+        </section>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="https://krystianeotis.github.io/lesson9/index.html">Home</a></li>
+            <li><a class="active" href="https://krystianeotis.github.io/lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="https://krystianeotis.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://krystianeotis.github.io/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="subheading">Preston Idaho</h2>
+
+        <picture class="hero-img">
+            <source srcset="images/river600.jpg" media="(min-width:34.5em) and (max-width:800px)">
+            <source srcset="images/river800.jpg" media="(min-width:800px)">
+            <img class="hero" src="images/river360.jpg" alt="Hero image">
+        </picture>
+
+        <div class="content-box weather">
+            <h3><u>Weather Summary</u></h3>
+            <div class="wrapper">
+                <div id="box1">
+                    <p>Currently: </p>
+                    <p>High:</p>
+                    <p>Wind Chill:</p>
+                    <p>Humidity:</p>
+                    <p>Wind Speed:</p>
+                </div>
+                <div id="box2">
+
+                    <!--currently-->
+                    <p id="condition"></p>
+
+                    <!--high temp-->
+                    <p><span id="temp"></span>°F</p>
+
+                    <!--wind chill-->
+                    <p><span id="windChill"></span></p>
+
+                    <!--humidity-->
+                    <p><span id="humidity"></span>%</p>
+
+                    <!--wind speed-->
+                    <p><span id="windSpeed"></span>mph</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box forecast">
+            <h3>5 Day Forecast</h3>
+            <ul id="forecast">
+                <li><span id="dayName1"></span><span id="weatherImg1"></span><span id="dayTemp1"></span></li>
+                <li><span id="dayName2"></span><span id="weatherImg2"></span><span id="dayTemp2"></span></li>
+                <li><span id="dayName3"></span><span id="weatherImg3"></span><span id="dayTemp3"></span></li>
+                <li><span id="dayName4"></span><span id="weatherImg4"></span><span id="dayTemp4"></span></li>
+                <li><span id="dayName5"></span><span id="weatherImg5"></span><span id="dayTemp5"></span></li>
+            </ul>
+        </div>
+
+        <!--
+        comparison of a edate in javascript -->
+
+        <div class="content-box article">
+            <h3><a target="_blank" href="https://visitidaho.org/travel-tips/idaho-trout-fishing-paradise/">Idaho: A
+                    Trout Fishing Paradise</a></h3>
+            <p>By Steve Stuebner</a></p>
+
+            <picture id="article-img">
+                <source srcset="images/fishbucket350.jpg" media="(min-width:34.5em) and (max-width:800px)">
+                <source srcset="images/fishbucket350.jpg" media="(min-width:800px)">
+                <img id="article-img" src="images/fishbucket300.jpg" alt="Fisherman and a bucket of fish">
+            </picture>
+            <p>It’s a gorgeous day in Swan Valley, Idaho — perfect for floating and fishing the South Fork of the
+                Snake River. Temps are in the 80s, the skies cobalt blue, and I see a bald eagle flying overhead as
+                we turn the corner on the South Fork and tuck into a willow-lined side channel, an oxbow of the big
+                river.</p>
+            <p> In the secluded side channel, mayflies are dancing on the water’s surface, but I’m fishing with
+                a
+                Dave’s hopper since it’s warm and sunny. Throw the Yellowstone fine-spotted cutthroats a big
+                hunk of
+                meat! What the heck!</p>
+            <p>I cast about 30 feet downriver to a subtle eddy line with my fly rod. The
+                brilliant sunlight sparkles on the water and lights up the yellow and red body of the hopper.
+                And
+                then I see a big cut rise up high and gobble that fly. I set the hook, yelling “fish on!” to my
+                partner. I enjoy a fun fight in the side channel. I bring him toward my net, and then I hear one
+                of
+                our dogs growl. I look up and it’s a bull moose with huge antlers on shore. Ah yes, I say to my
+                fishing partner, gotta love the South Fork! Gotta love Idaho!</p>
+            <p> The South Fork is one of the top blue-ribbon trout streams in the state of Idaho, if not the
+                nation.
+                The same can be said of the nearby Henrys Fork, world-renowned for its challenging dry fly wade
+                fishing for big rainbow trout. Located in the heart of the Northern Rockies, Idaho is chock full
+                of
+                high-quality trout streams, hundreds of miles of them.</p>
+            <p> But where do you start? Where to begin? In this story on Idaho trout waters, we’ll recommend
+                five
+                sure-fire places to catch trout — on a do-it-yourself level, or in the lap of luxury on a guided
+                trip.</p>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="content-box contact-info"">
+        <img id=" map" src="images/prestonmap.jpg" alt="Map of Preston Idaho">
+            <h4>Contact Information</h4>
+            <i class="material-icons">location_on</i>
+            <p>Preston, Idaho 83263</p>
+            <i class="material-icons">phone</i>
+            <p>(208) 241-3474</p>
+            <i class="material-icons">email</i>
+            <p>prestonfishingpros@gmail.com</p>
+            <a class="icon" target="_blank" href="https://www.facebook.com/"><img src="images/facebook.png"
+                    alt="Facebook Icon" /></a>
+            <a class="icon" target="_blank" href="https://www.instagram.com/"><img src="images/instagram.png"
+                    alt="Instagram Icon" /></a>
+            <a class="icon" target="_blank" href="https://twitter.com/explore"><img src="images/twitter.png"
+                    alt="Twitter Icon" /></a>
+        </div>
+        <div>
+            <p class="copyright">
+                &copy; <span id="copyright-year"></span> | <a target="_blank"
+                    href="https://krystianeotis.github.io/index.html">Krystiane Otis</a> | Idaho | <a target="_blank"
+                    href="https://www.byui.edu/online">BYUI Online Learning</a>
+            </p>
+            <p class="dateupdate">
+                <span id="name-of-day"></span>, <span id="day"></span> <span id="month"></span> <span id="year"></span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/prestonweather.js"></script>
+
+
+    <script>
+        getWeather();
+    </script>
+
+</body>
+
+</html>
