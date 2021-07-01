@@ -26,7 +26,17 @@ async function getWeather() {
             let forecastData = jsObject.list
 
             let filteredList = forecastData.filter(day => day.dt_txt.includes("18:00:00"))
-            let days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+
+
+            var weekday = new Array(7);
+            weekday[0] = "Sun";
+            weekday[1] = "Mon";
+            weekday[2] = "Tue";
+            weekday[3] = "Wed";
+            weekday[4] = "Thu";
+            weekday[5] = "Fri";
+            weekday[6] = "Sat";
+
 
 
             for (let i = 0; i < filteredList.length; i++) {
@@ -43,14 +53,13 @@ async function getWeather() {
                 document.getElementById('dayTemp' + (i + 1)).textContent = Math.round(filteredList[i].main.temp) + "°F";
 
 
-                let day = new Date(filteredList[i].dt);
+                let day = new Date(filteredList[i].dt_txt);
                 let dayofweek = day.getDay();
-                document.getElementById('dayName' + (i + 1)).textContent = dayofweek;
-                 console.log(filteredList[i].dt);
-                 console.log(day);
-                // console.log(dayofweek);
-            }
+                document.getElementById('dayName' + (i + 1)).textContent = weekday[dayofweek];
+                console.log(filteredList[i].dt_txt);
+                console.log(day);
 
+            }
 
         });
 
@@ -64,4 +73,3 @@ const calcWindChill = (temperature, speed) => {
             Math.pow(speed, 0.16)))) + "°F"
 
 }
-
