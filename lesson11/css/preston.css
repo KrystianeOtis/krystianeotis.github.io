@@ -1,6 +1,5 @@
 /*Small media*/
 
-
 main {
     display: block;
     margin: 0 auto;
@@ -9,7 +8,7 @@ main {
 }
 
 body {
-
+    overflow-x:hidden;
     font-family: 'Roboto Condensed',
         sans-serif;
 }
@@ -33,7 +32,6 @@ header {
 }
 
 
-
 h1,
 h2,
 h3,
@@ -43,9 +41,6 @@ h5 {
         sans-serif;
     font-weight: bolder;
 }
-
-
-
 
 
 h1 {
@@ -63,9 +58,9 @@ h1 {
 .content-box {
     display: block;
     margin: 10px auto;
-    border: 1px dashed #000;
+
     padding: 15px;
-    background-color: white;
+   border: solid rgba(214, 226, 202, 0.88);
     color: black;
 }
 
@@ -81,13 +76,13 @@ h1 {
 }
 
 .weather {
-    background-color: #C0DFA1;
+     background-color: rgba(214, 226, 202, 0.88);
+
 }
 
 #forecast {
     text-align: center;
     list-style: none;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: 0;
@@ -101,76 +96,51 @@ h1 {
 
     margin: 0.5rem;
 }
+.content-box h3 {
+    text-align: center;
+}
+img.hero {
 
-#hero img {
-    margin: auto;
-    max-width: 360px;
+    max-width: 100%;
+height: auto;
 }
 
-
-
-
 /*Medium media*/
-@media only screen and (min-width: 34.5em) {
-
-    header img {
-        padding-left: 10px;
-        width: 120px;
-        height: auto;
-    }
-
-    #headings h1 {
-        font-size: 2.5rem;
-    }
-
-    #motto {
-        letter-spacing: 1.5pt;
-        font-size: larger;
-        margin-left: 17px;
-    }
-
+@media only screen and (min-width: 35.5em) {
 
 
     main {
-        max-width: 800px;
-
         display: grid;
+        margin: auto;
+        max-width: 800px;
+        padding-left: 20px;
+        padding-right: 20px;
 
     }
+.hero-img {
+
+   justify-self: center;
+}
 
     .content-box.weather {
-        height: 200px;
-        width: 200px;
+        height: 185px;
+        width: 180px;
         position: absolute;
         padding: 10px;
-        margin-top: 90px;
-        margin-left: 20px;
+        margin-top: 12%;
+        margin-left: 10%;
         background-color: rgba(191, 222, 160, 0.88);
         border: 5px solid white;
         line-height: 10px;
 
     }
 
-    .content-box.weather h3 {
-        text-align: center;
-    }
+
 
     #article-img {
         float: right;
         margin-left: 5px;
         margin-bottom: 5px;
-    }
-
-    .content-box.forecast {
-
-        width: 800px;
-        padding: 0;
-    }
-
-    .content-box.contact-info {
-        max-width: 100%;
-
-
     }
 
 }
@@ -180,8 +150,15 @@ h1 {
 
 
     .content-box.weather {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        padding: 10px;
         margin-top: 100px;
-        margin-left: 50px;
+        margin-left: 100px;
+        background-color: rgba(191, 222, 160, 0.88);
+        border: 5px solid white;
+        line-height: 10px;
 
     }
 }
