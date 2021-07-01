@@ -8,14 +8,13 @@ body {
 main {
     display: block;
     margin: 0 auto;
-    max-width: 360px;
+
 }
 
 div.cards {
-
-
     margin-left: auto;
     margin-right: auto;
+    max-width: 360px;
 
 }
 
@@ -198,15 +197,15 @@ nav {
         justify-content: center;
         flex-wrap: wrap;
         flex-direction: column;
-        width: 90%;
+        max-width: 700px;
     }
 
     .cards section {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin: 0;
-        margin-top: 5%;
+        margin: 10px;
+
 
     }
 
@@ -229,7 +228,8 @@ nav {
     div.cards {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        max-width: 1200px;
 
     }
 
