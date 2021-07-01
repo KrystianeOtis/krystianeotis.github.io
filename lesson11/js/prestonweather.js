@@ -26,23 +26,40 @@ async function getWeather() {
             let forecastData = jsObject.list
 
             let filteredList = forecastData.filter(day => day.dt_txt.includes("18:00:00"))
-            let days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
 
-            
+
+            var weekday = new Array(7);
+            weekday[0] = "Sun";
+            weekday[1] = "Mon";
+            weekday[2] = "Tue";
+            weekday[3] = "Wed";
+            weekday[4] = "Thu";
+            weekday[5] = "Fri";
+            weekday[6] = "Sat";
+
+
+
             for (let i = 0; i < filteredList.length; i++) {
                 console.log(i);
-                console.log(filteredList);
 
-                // document.getElementById('weatherImg' + (i + 1)).textContent =
+
+                console.log(filteredList[i]);
+
+                let imgspan = document.getElementById('weatherImg' + (i + 1))
+                let weatherimg = document.createElement('img');
+                weatherimg.setAttribute('src', 'https://openweathermap.org/img/wn/' + filteredList[i].weather[0].icon + '@2x.png');
+                imgspan.appendChild(weatherimg)
+
                 document.getElementById('dayTemp' + (i + 1)).textContent = Math.round(filteredList[i].main.temp) + "°F";
 
 
-                let day = new Date(jsObject.list[i].dt_text);
-                document.getElementById('dayName' + (i + 1)).textContent = days[0];
-                console.log(day.getDay());
+                let day = new Date(filteredList[i].dt_txt);
+                let dayofweek = day.getDay();
+                document.getElementById('dayName' + (i + 1)).textContent = weekday[dayofweek];
+                console.log(filteredList[i].dt_txt);
                 console.log(day);
-            }
 
+            }
 
         });
 
@@ -56,8 +73,3 @@ const calcWindChill = (temperature, speed) => {
             Math.pow(speed, 0.16)))) + "°F"
 
 }
-
-// let img = document.getElementById('img' + dayNum);
-// img.setAttribute('src', 'https://openweathermap.org/img/wn/' + weather.list[i].weather[0].icon + '@2x.png')
-// https: //openweathermap.org/weather-conditions
-//     filteredList[i].weather[0].icon

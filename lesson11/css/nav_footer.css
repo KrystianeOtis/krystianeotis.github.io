@@ -1,4 +1,3 @@
-/*Small media*/
 body {
 
     font-family: 'Roboto Condensed',
@@ -10,41 +9,11 @@ main {
     margin: 0 auto;
 }
 
-div.cards {
-
-
-    margin-left: auto;
-    margin-right: auto;
-
+.icon {
+    display: none;
 }
 
-.cards section {
-    color: white;
-    background-color: #82a3a1;
-    border: 2px solid #647688;
-    text-align: center;
-    padding: 10px;
 
-    margin-bottom: 1em;
-    box-shadow: 1px 1px 10px black;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 5%;
-
-}
-
-.cards div img {
-    max-width: 350px;
-    box-shadow: 1px 1px 10px black;
-
-
-
-}
-
-.cards p {
-    color: black;
-}
 
 .logo {
 
@@ -76,18 +45,7 @@ h1 {
     margin: 0 0 0 17px;
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: -10px;
-    text-shadow: 1px 1px 2px #011936;
-}
 
-h3 {
-    font-size: .85em;
-    color: white;
-    text-shadow: 1px 1px 2px #011936;
-    font-style: oblique;
-}
 
 #motto {
     font-style: italic;
@@ -107,6 +65,10 @@ h5 {
 
 }
 
+
+/* .right-side p, i.material-icons{
+ margin: 0 0;
+} */
 
 
 
@@ -192,30 +154,103 @@ nav {
 @media only screen and (min-width: 34.5em) {
 
 
-    div.cards {
+    header img {
+        padding-left: 10px;
+        width: 120px;
+        height: auto;
+    }
+
+
+    #headings h1 {
+        font-size: 2.5rem;
+    }
+
+    #motto {
+        letter-spacing: 1.5pt;
+        font-size: larger;
+        margin-left: 17px;
+    }
+
+    nav {
+        max-width: 100%;
+    }
+
+    #navigation {
+        grid-template-columns: repeat(6, auto);
+    }
+
+    #navigation li {
+        display: block;
+        /*change state in small view*/
+    }
+
+    #navigation a {
+        text-align: center;
+    }
+
+    #navigation li:first-child {
+        display: none;
+    }
+
+    .contact-info-footer {
+        max-width: 100%;
+
+    }
+
+    .contact-info-footer {
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .cards section {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 0;
-        margin-top: 5%;
-
-    }
-
-    .cards div img {
-        align-content: center;
-    }
-
-    .cards section:nth-child(odd) {
         flex-direction: row-reverse;
+        justify-content: center;
+        margin-top: 30px;
+        padding-top: 10px;
+    }
 
+    .right-side {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+
+
+
+    }
+    .icon {
+        display: inline-block;
+    }
+    footer h4{
+       
+        font-style: oblique;
+        margin: 0 0;
+    }
+
+    .right-side p {
+        text-align: left;
+        align-items: start;
+    }
+
+    i.material-icons {
+
+        align-self: center;
+    }
+
+    .right-side h4 {
+        grid-column: 1/3;
+    }
+
+    .social-icons {
+        grid-column: 1/3;
+    }
+
+    .icon img {
+        width: 35px;
+    }
+
+
+    footer,
+    footer a {
+        background-color: white;
+        color: #465362;
+        left: 0;
+        bottom: 0;
+        max-width: 800px;
     }
 
 }
@@ -225,21 +260,28 @@ nav {
 /*Large media [desktop]*/
 @media only screen and (min-width: 54.5em) {
 
-    div.cards {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
 
+
+    header img {
+        width: 150px;
+        height: auto;
     }
 
-    .cards section {
-        flex-flow: column wrap;
-
-        max-width: 305px;
+    #headings h1 {
+        font-size: 3rem;
     }
 
-    .cards section div {
-        display: block;
+    #navigation {
+        width: 800px;
+        margin: 16px auto;
+    }
+
+
+
+    footer {
+        width: 800px;
+        margin: 0 auto;
+
     }
 
 }
