@@ -32,6 +32,7 @@ async function getWeather() {
             for (let i = 0; i < filteredList.length; i++) {
                 console.log(i);
 
+
                 console.log(filteredList[i]);
 
                 let imgspan = document.getElementById('weatherImg' + (i + 1))
@@ -45,9 +46,9 @@ async function getWeather() {
                 let day = new Date(filteredList[i].dt);
                 let dayofweek = day.getDay();
                 document.getElementById('dayName' + (i + 1)).textContent = dayofweek;
-                console.log(filteredList.dt);
-                console.log(day);
-                console.log(dayofweek);
+                 console.log(filteredList[i].dt);
+                 console.log(day);
+                // console.log(dayofweek);
             }
 
 
