@@ -48,75 +48,6 @@ h1 {
     margin: 0 0 15px 10px;
 }
 
-footer {
-    text-align: center;
-    padding: 8px;
-    background-color: #82A3A1;
-    color: white;
-}
-
-footer a {
-    color: white;
-    padding: 0px;
-}
-
-
-
-/*Menu & Nav bar*/
-nav,
-footer {
-    margin: 0 auto;
-    max-width: 360px;
-    background-color: #82A3A1;
-}
-
-nav {
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-#navigation {
-    list-style: none;
-    padding: 0;
-    grid-template-columns: auto;
-    display: grid;
-}
-
-#navigation li:first-child {
-    display: block;
-}
-
-#navigation li {
-    display: none;
-}
-
-#navigation a {
-    display: block;
-    padding: 0.75rem;
-    text-align: left;
-    text-decoration: none;
-    font-family: 'Raleway',
-        sans-serif;
-    color: #011936;
-    font-weight: 700;
-}
-
-#navigation a:hover,
-#navigation a .active:hover {
-    color: white;
-    background-color: #C0DFA1;
-}
-
-#navigation a.active {
-    background-color: #9fc490;
-    color: white;
-    border-bottom: 5px solid #011936;
-}
-
-#navigation.responsive li {
-    display: block;
-}
-
 
 /*Medium media*/
 @media only screen and (min-width: 34.5em) {
@@ -126,12 +57,6 @@ nav {
     }
 
     #container {
-        /* display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-
-        overflow: auto;
-        resize: horizontal; */
-
         margin: 1rem auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -150,35 +75,6 @@ nav {
 
     }
 
-    nav {
-        max-width: 100%;
-    }
-
-    #navigation {
-        grid-template-columns: repeat(6, auto);
-    }
-
-    #navigation li {
-        display: block;
-        /*change state in small view*/
-    }
-
-    #navigation a {
-        text-align: center;
-    }
-
-    #navigation li:first-child {
-        display: none;
-    }
-
-    footer,
-    footer a {
-        background-color: white;
-        color: #465362;
-        left: 0;
-        bottom: 0;
-        max-width: 800px;
-    }
 
 }
 
@@ -205,19 +101,12 @@ nav {
         transform: scale(1.01);
     }
 
-    #navigation {
-        width: 800px;
-        margin: 16px auto;
-    }
+
 
     h1 {
         margin: 0 0 15px 80px;
     }
 
-    footer {
-        width: 800px;
-        margin: 0 auto;
-
-    }
+  
 
 }
