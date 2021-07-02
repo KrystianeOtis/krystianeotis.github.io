@@ -37,7 +37,10 @@ img {
     margin-right: auto;
 
 }
-
+.subheading {
+    border-bottom: solid #9fc490;
+    margin-bottom: 10px;
+}
 
 .description {
     margin: 9px 0 50px 25px;
@@ -107,6 +110,6 @@ h1 {
         margin: 0 0 15px 80px;
     }
 
-  
+
 
 }
