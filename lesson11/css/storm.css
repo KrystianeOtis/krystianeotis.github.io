@@ -3,66 +3,35 @@
 main {
     display: block;
     margin: 0 auto;
-    max-width: 375px;
+    max-width: 360px;
 
 }
 
-body {
-
-    font-family: 'Roboto Condensed',
-        sans-serif;
-}
 section div {
     width: 100%;
     margin-bottom: 20px;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Raleway',
-        sans-serif;
-    font-weight: bolder;
-}
+
 .danger{
     width:45%;
 }
 .radiobuttons{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: left;
+
 }
 .subheading {
     border-bottom: solid #9fc490;
     margin-bottom: 10px;
 }
 
-h1 {
-    margin: 0 0 15px 10px;
-}
-
-footer {
-    text-align: center;
-    padding: 8px;
-    background-color: #82A3A1;
-    color: white;
-}
-
-footer a {
-    color: white;
-    padding: 0px;
-}
 
 /* the form */
 form {
-    /* Center the form on the page */
     margin: 0 auto;
-
-    /* Form outline */
-    padding: .5em;
     border: 1px solid #CCC;
     border-radius: 1em;
+     padding: 2em;
 }
 
 
@@ -116,7 +85,6 @@ button {
     left: 0;
     right: 0;
     padding: 0.5em;
-    /* make this element invisible until we are ready for it */
     display: none;
 }
 
@@ -140,10 +108,7 @@ input[type="button"]:hover {
     background-color: #ddf;
 }
 
-.flexly {
-    display: flex;
-    align-items: center;
-}
+
 
 #ratingvalue {
     margin: 0 15px;
@@ -160,28 +125,12 @@ input[type="button"]:hover {
     display: none;
 }
 
-.ticksmarks {
-    display: flex;
-    justify-content: space-between;
-    padding: $unit $unit*2;
-}
-
-.tickmarks {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 1px;
-    background: gray;
-    height: $unit;
-    line-height: $unit * 5;
-    margin-bottom: $unit*2;
-}
 
 /*Medium media*/
 @media only screen and (min-width: 34.5em) {
     main {
-        max-width: 768px;
-        padding-left: 15px;
+        max-width: 700px;
+
     }
 
     form {
@@ -189,47 +138,22 @@ input[type="button"]:hover {
         margin: 0 auto;
 
         /* Form outline */
-        padding: 3em;
+        padding: 2em;
         border: 1px solid #CCC;
         border-radius: 1em;
     }
-
-    #container {
-
-        max-width: 600px;
-
-    }
-
-    h1 {
-        text-align: left;
-        margin: 0 0 15px 100px;
-    }
-
-
 
 
 
 }
 
-
 /*Large media*/
 @media only screen and (min-width: 54.5em) {
 
+main {
+    max-width: 800px;
 
-    .stormheading{
-      /* margin: 0 auto; */
-      display: flex;
-      width: 100%;
-      justify-content: flex-start;
-    }
-
-    main > div > h1 {
-        width: 100%;
-    }
-
-    h1 {
-        /* margin: 0 0 15px 300px; */
-    }
+}
 
 
 }
