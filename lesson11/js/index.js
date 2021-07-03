@@ -36,7 +36,7 @@ async function getTowns() { // async function - The async and await keywords ena
                     text.appendChild(yearFounded);
                     text.appendChild(currentPopulation);
                     text.appendChild(averageRainfall);
-                    
+
                     card.appendChild(photoDiv)
                     photoDiv.appendChild(photo);
 

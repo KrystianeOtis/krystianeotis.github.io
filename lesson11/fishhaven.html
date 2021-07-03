@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/nav_footer.css">
     <link rel="stylesheet" href="css/preston.css">
-    <script src="js/dates.js"></script>
-    <script src="js/index.js"></script>
+
 
 </head>
 
@@ -102,7 +101,11 @@
             </div>
         </div>
 
+        <div>
+            <h3>Local Upcoming Events</h3>
+            <div id="events"></div>
 
+        </div>
 
         <div class="content-box article">
             <h3><a target="_blank"
@@ -177,11 +180,15 @@
         </div>
     </footer>
 
+    <script src="js/dates.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/fishhavenweather.js"></script>
+    <script src="js/event.js"></script>
 
 
     <script>
         getWeather();
+        getEvent("Fish Haven");
     </script>
 
 </body>

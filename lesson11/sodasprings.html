@@ -15,20 +15,19 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/nav_footer.css">
     <link rel="stylesheet" href="css/preston.css">
-    <script src="js/dates.js"></script>
-    <script src="js/index.js"></script>
+
 
 </head>
 
 <body>
-     <header>
-         <a id="logo" href="https://krystianeotis.github.io/lesson11/index.html"><img src="images/PFPlogo.png"
-                 alt="Preston Fishing Pros Logo" /></a>
-         <section id="headings">
-             <h1>Preston Fishing Pros</h1>
-             <div id="motto">Grab your tackle box,<br> We're going fishing!</div>
-         </section>
-     </header>
+    <header>
+        <a id="logo" href="https://krystianeotis.github.io/lesson11/index.html"><img src="images/PFPlogo.png"
+                alt="Preston Fishing Pros Logo" /></a>
+        <section id="headings">
+            <h1>Preston Fishing Pros</h1>
+            <div id="motto">Grab your tackle box,<br> We're going fishing!</div>
+        </section>
+    </header>
 
     <nav>
         <ul id="navigation">
@@ -101,7 +100,11 @@
                 <div id="dayTemp5"></div>
             </div>
         </div>
+        <div>
+            <h3>Local Upcoming Events</h3>
+            <div id="events"></div>
 
+        </div>
 
         <div class="content-box article">
             <h3><a target="_blank" href="https://visitidaho.org/travel-tips/a-beginners-guide-to-camping-in-idaho/">A
@@ -121,9 +124,9 @@
             <p> In the past year, more and more people are embracing camping as a way to spend time with their families,
                 enjoy the outdoors, and explore somewhere new. Idaho is a camper’s dream, offering everything from
                 amenity-rich RV parks to backpacking routes that take you to the wildest corners of the state.</p>
-                <p> New to camping in Idaho? Here’s everything you need to know to get your journey started...<a
-                    target="_blank"
-                    href="https://visitidaho.org/travel-tips/idaho-trout-fishing-paradise/">continue to full article</a>
+            <p> New to camping in Idaho? Here’s everything you need to know to get your journey started...<a
+                    target="_blank" href="https://visitidaho.org/travel-tips/idaho-trout-fishing-paradise/">continue to
+                    full article</a>
             </p>
 
 
@@ -172,11 +175,13 @@
         </div>
     </footer>
 
+    <script src="js/dates.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/sodaspringsweather.js"></script>
-
-
+    <script src="js/event.js"></script>
     <script>
         getWeather();
+        getEvent("Soda Springs");
     </script>
 
 </body>
