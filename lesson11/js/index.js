@@ -12,6 +12,7 @@ async function getTowns() { // async function - The async and await keywords ena
             for (let i = 0; i < towns.length; i++) { // for loop to iterate through the towns array
                 if (towns[i].name == 'Preston' || towns[i].name == 'Fish Haven' || towns[i].name == 'Soda Springs') {
                     let card = document.createElement('section'); // turning each card into a section
+                    
                     let text = document.createElement('div'); // create a div
                     let h2 = document.createElement('h2'); // giving each section a heading2
                     let motto = document.createElement('h3'); // giving each section a heading3
@@ -44,6 +45,10 @@ async function getTowns() { // async function - The async and await keywords ena
                 }
             }
         });
+}
+
+function cardnav() {
+
 }
 
 window.addEventListener('load', (event) => { //registers when page is loaded

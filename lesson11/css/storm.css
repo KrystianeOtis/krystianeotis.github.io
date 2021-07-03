@@ -12,7 +12,10 @@ body {
     font-family: 'Roboto Condensed',
         sans-serif;
 }
-
+section div {
+    width: 100%;
+    margin-bottom: 20px;
+}
 h1,
 h2,
 h3,
@@ -22,7 +25,14 @@ h5 {
         sans-serif;
     font-weight: bolder;
 }
-
+.danger{
+    width:45%;
+}
+.radiobuttons{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
 .subheading {
     border-bottom: solid #9fc490;
     margin-bottom: 10px;
@@ -60,7 +70,7 @@ label {
     /* Uniform size & alignment */
     display: inline-block;
     font-weight: 600;
-    width: 200px;
+    width: 100%;
 }
 
 input,
@@ -70,11 +80,12 @@ textarea {
     font: 1em sans-serif;
 
     /* Uniform text field size */
-    width: 300px;
+    width: 100%;
     box-sizing: border-box;
 
     /* Match form field borders */
     border: 1px solid #999;
+
 }
 
 input:focus,
@@ -109,8 +120,6 @@ button {
     display: none;
 }
 
-
-
 input,
 button,
 select,
@@ -119,14 +128,9 @@ textarea {
     margin-bottom: .25rem;
 }
 
-
-
 input:focus {
     box-shadow: 0 0 10px #bbb;
 }
-
-
-
 
 input[type="button"] {
     color: blue;
@@ -156,6 +160,22 @@ input[type="button"]:hover {
     display: none;
 }
 
+.ticksmarks {
+    display: flex;
+    justify-content: space-between;
+    padding: $unit $unit*2;
+}
+
+.tickmarks {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 1px;
+    background: gray;
+    height: $unit;
+    line-height: $unit * 5;
+    margin-bottom: $unit*2;
+}
 
 /*Medium media*/
 @media only screen and (min-width: 34.5em) {
@@ -186,20 +206,29 @@ input[type="button"]:hover {
     }
 
 
+
+
+
 }
 
 
 /*Large media*/
 @media only screen and (min-width: 54.5em) {
 
-    main {
-        max-width: 1200px;
+
+    .stormheading{
+      /* margin: 0 auto; */
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
     }
 
-
+    main > div > h1 {
+        width: 100%;
+    }
 
     h1 {
-        margin: 0 0 15px 300px;
+        /* margin: 0 0 15px 300px; */
     }
 
 
