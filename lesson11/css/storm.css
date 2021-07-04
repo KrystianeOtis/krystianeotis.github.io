@@ -12,14 +12,16 @@ section div {
     margin-bottom: 20px;
 }
 
-.danger{
-    width:45%;
+.danger {
+    width: 45%;
 }
-.radiobuttons{
+
+.radiobuttons {
     display: flex;
     flex-direction: row-reverse;
 
 }
+
 .subheading {
     border-bottom: solid #9fc490;
     margin-bottom: 10px;
@@ -31,7 +33,7 @@ form {
     margin: 0 auto;
     border: 1px solid #CCC;
     border-radius: 1em;
-     padding: 2em;
+    padding: 2em;
 }
 
 
@@ -129,7 +131,9 @@ input[type="button"]:hover {
 /*Medium media*/
 @media only screen and (min-width: 34.5em) {
     main {
-        max-width: 700px;
+        max-width: 800px;
+        padding-left: 20px;
+        padding-right: 20px;
 
     }
 
@@ -150,10 +154,10 @@ input[type="button"]:hover {
 /*Large media*/
 @media only screen and (min-width: 54.5em) {
 
-main {
-    max-width: 800px;
+    main {
+        max-width: 800px;
 
-}
+    }
 
 
 }
