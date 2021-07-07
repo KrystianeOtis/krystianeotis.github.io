@@ -115,4 +115,45 @@ section .progress li.circle {
   -ms-grid-column-align: center;
       justify-self: center;
 }
+
+section .button {
+  border-radius: 50px;
+  text-decoration: none;
+  border: 2px solid #ffffff48;
+  background-color: inherit;
+  width: 0 auto;
+  padding: 27px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  margin-top: 49px;
+}
+
+section .button:hover {
+  background-color: #ffffff28;
+  color: #00a2ff;
+  -webkit-box-shadow: 0 0 15px #00d9ff48;
+          box-shadow: 0 0 15px #00d9ff48;
+}
+
+section .terms {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section .terms a:link,
+section .terms a:visited,
+section .terms a:hover,
+section .terms a:active {
+  color: #ffffff48;
+  text-decoration: none;
+}
+
+section .terms a:hover {
+  color: #ffffff88;
+}
 /*# sourceMappingURL=create-account.css.map */

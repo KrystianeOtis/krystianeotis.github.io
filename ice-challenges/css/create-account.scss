@@ -90,7 +90,8 @@ section {
             border-style: solid;
             border-width: 2px;
         }
-        li.circle{
+
+        li.circle {
             border: 2px solid $transparent;
             border-radius: 100%;
             width: 1.3em;
@@ -100,5 +101,42 @@ section {
         }
     }
 
-    
+    .button {
+        border-radius: 50px;
+        text-decoration: none;
+        border: 2px solid $seethrough;
+        background-color: inherit;
+        width: 0 auto;
+        padding: 27px;
+        cursor: pointer;
+        color: white;
+        font-size: 1.1em;
+        letter-spacing: 0.05em;
+        font-weight: bold;
+        margin-top: 49px;
+
+    }
+
+    .button:hover {
+        background-color: $glass;
+        color: rgb(0, 162, 255);
+        box-shadow: 0 0 15px #00d9ff48;
+    }
+
+    .terms {
+        text-align: center;
+        align-self: center;
+
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: $seethrough;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $transparent;
+        }
+    }
 }
