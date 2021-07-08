@@ -450,24 +450,26 @@ html {
 
 /* body rules */
 body {
-  font-family: Verdana;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
   font-size: 16px;
 }
 
 header {
-  background-color: #17a8e4;
+  background-color: #e4c517;
   padding: 1rem 2%;
 }
 
 header h1 {
   margin: 0;
   font-size: 1.5rem;
+  font-weight: 700;
 }
 
 header h2 {
   margin: 0;
   font-size: 1.2rem;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 nav {
@@ -496,7 +498,7 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
+nav nav a:hover {
   background-color: #444;
 }
 
@@ -506,7 +508,8 @@ main {
 }
 
 main h1 {
-  color: #17a8e4;
+  color: #e4c517;
+  font-weight: 700;
 }
 
 main figure img {
@@ -524,7 +527,7 @@ main figcaption {
 }
 
 footer {
-  background-color: #17a8e4;
+  background-color: #e4c517;
   text-align: center;
   padding: 1rem 2%;
 }
