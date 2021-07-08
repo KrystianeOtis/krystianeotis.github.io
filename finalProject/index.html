@@ -4,71 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Inn & Suites</title>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Mate:ital@0;1&family=Vollkorn+SC:wght@400;700&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate&family=Vollkorn+SC:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/styles.css">
 
 </head>
 
 <body>
-
-    <div class="sidebar">
-        <div class="logo-details">
-            <i class='bx bxs-home'></i>
-            <span class="logo-name">Temple Inn</span>
-        </div>
-        <ul class="nav-links">
-            <li>
-                <a href="https://krystianeotis.github.io/finalProject/index.html">
-                    <i class='bx bxs-grid-alt'></i>
-                    <span class="link-name">Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://krystianeotis.github.io/finalProject/temple.html">
-                    <i class='bx bx-collection'></i>
-                    <span class="link-name">Temple</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://krystianeotis.github.io/finalProject/reservation.html">
-                    <i class='bx bx-collection'></i>
-                    <span class="link-name">Reservation</span>
-                </a>
-            </li>
-
-            <li>
-                <div class="icon-links">
-                    <a href="#">
-                        <i class='bx bx-collection'></i>
-                        <span class="link-name">Services</span>
-                    </a>
-                    <i class='bx bxs-chevron-down arrow'></i>
-                </div>
-                <ul class="sub-menu">
-                    <li><a class="link-name"
-                            href="https://krystianeotis.github.io/finalProject/reception.html">Reception</a></li>
-                    <li><a class="link-name"
-                            href="https://krystianeotis.github.io/finalProject/temple-missionary.html">Full-Time Temple
-                            Missionary</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="https://krystianeotis.github.io/finalProject/contact.html">
-                    <i class='bx bx-collection'></i>
-                    <span class="link_name">Contact</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <section class="home-section">
-        <div class="home-content">
+    <header>
+        <nav>
             <i class='bx bx-menu'></i>
-            <span class="text">drop down sidebar</span>
-    </section>
+            <div class="logo"><a href="#">Temple Inn & Suites</a></div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name">Temple Inn & Suites</span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links">
+                    <li><a href="https://krystianeotis.github.io/finalProject/index.html">Home</a></li>
+
+                    <li>
+                        <a href="https://krystianeotis.github.io/finalProject/temple.html">
+                            Temple
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://krystianeotis.github.io/finalProject/reservation.html">
+                            Reservation
+                        </a>
+                    </li>
+                    <a href="#">Services</a>
+                    <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                    <ul class="js-sub-menu sub-menu">
+                        <li><a href="https://krystianeotis.github.io/finalProject/reception.html">Reception</a></li>
+                        <li><a href="https://krystianeotis.github.io/finalProject/temple-missionary.html">Full-Time
+                                Temple Missionary</a></li>
+                    </ul>
+
+                    <li>
+                        <a href="https://krystianeotis.github.io/finalProject/contact.html">Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <script src="js/style.js"></script>
 </body>
 
