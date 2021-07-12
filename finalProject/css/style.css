@@ -3,8 +3,6 @@ body {
         serif;
 }
 
-
-
 .sidebar {
     position: fixed;
     top: 0;
@@ -138,16 +136,3 @@ body {
     opacity: 1;
     display: block;
 }
-
-
-/*
-#005C7A
-#4D1932
-#8B5B6E
-#EED5D8
-*/
-
-/* p {
-    font-family: 'Mate',
-        serif;
-} */

@@ -1,7 +1,13 @@
-nav li {
-    width: 25%;
-    float: left;
+nav{
+    ul{
+        white-space:nowrap
+        li{
+            display: inline-block;
+        }
+    }
 }
+
+
 
 
 

@@ -491,9 +491,9 @@ nav li:hover .menu-sub {
 }
 
 @media only screen and (min-width: 32.5em) {
-  nav li {
-    width: 25%;
-    float: left;
+  nav ul white-space:nowrap
+li {
+    display: inline-block;
   }
 }
 
