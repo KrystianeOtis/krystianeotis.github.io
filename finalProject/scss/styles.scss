@@ -2,14 +2,18 @@
 
 @import "variables";
 
+@import "background";
+
+// @import "small";
+
 @import "nav";
 
-@import "medium";
+// @import "medium";
 
-@import "large"
+// @import "large"
 
 // @media only screen and (min-width: 32.5em) {
-
+//     @import "medium";
 // }
 
 // /* end of media query */
