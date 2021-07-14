@@ -348,7 +348,7 @@ body {
 
 .navigation {
   height: 70px;
-  background: #262626;
+  background: #2c2022;
 }
 
 .brand {
@@ -358,6 +358,11 @@ body {
   line-height: 70px;
   text-transform: uppercase;
   font-size: 1.4em;
+}
+
+.brand img {
+  height: 50px;
+  margin-top: 10px;
 }
 
 .brand a,
@@ -391,14 +396,14 @@ nav ul li a:visited {
   display: block;
   padding: 0 20px;
   line-height: 70px;
-  background: #262626;
+  background: #2c2022;
   color: #ffffff;
   text-decoration: none;
 }
 
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  background: #2581DC;
+  background: #574145;
   color: #ffffff;
 }
 
@@ -431,7 +436,7 @@ nav ul li ul li a {
   position: absolute;
   top: 0;
   right: 0;
-  background: #262626;
+  background: #2c2022;
   height: 70px;
   width: 70px;
 }

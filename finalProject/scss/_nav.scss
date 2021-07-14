@@ -6,6 +6,12 @@
 
 // Logo and branding
 .brand {
+    img {
+        height: 50px;
+        margin-top: 10px;
+        // padding-left: 20px;
+    }
+
     position: absolute;
     padding-left: 20px;
     float: left;
