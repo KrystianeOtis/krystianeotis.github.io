@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lines</title>
+    <link rel="stylesheet" href="lines.css">
+</head>
+
+<body>
+    <svg viewBox="0 0 340 333">
+
+        <path class="path" fill="white" stroke="black" stroke-width="4" d="M66.039,133.545c0,0-21-57,18-67s49-4,65,8
+  s30,41,53,27s66,4,58,32s-5,44,18,57s22,46,0,45s-54-40-68-16s-40,88-83,48s11-61-11-80s-79-7-70-41
+  C46.039,146.545,53.039,128.545,66.039,133.545z" pathLength="1" />
+
+    </svg>
+<!-- When drawing lines with SVG, you often have a <path> element with a stroke. You set a stroke-dasharray that is as long
+    as the path itself, as well as a stroke-offset that extends so far that the entire stroked path appears hidden
+    initially. Then you animate the stroke-offset back to 0 so you can watch it “draw” the shape.
+
+    Figuring out the length of the path is the trick, which fortunately you can do in JavaScript by selecting the path
+    and doing pathEl.getTotalLength(). It’ll probably be some weird decimal. A smidge unfortunate we can’t get that in
+    CSS, but c’est la vie. -->
+</body>
+</html>
