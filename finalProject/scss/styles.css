@@ -706,6 +706,12 @@ nav ul li ul li a {
   margin: 0 auto;
   padding: 4rem;
   width: 48rem;
+  background: white;
+  border: solid 5px rgba(241, 221, 223, 0.692);
+}
+
+.container img {
+  width: 100%;
 }
 
 .accordion .accordion-item {

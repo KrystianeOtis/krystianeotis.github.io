@@ -87,6 +87,11 @@
     margin: 0 auto;
     padding: 4rem;
     width: 48rem;
+    background: white;
+    border: solid 5px $footer-background;
+    img{
+        width: 100%;
+    }
 }
 
 .accordion {
