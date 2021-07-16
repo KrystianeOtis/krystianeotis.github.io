@@ -27,3 +27,4 @@ const calcWindChill = (temperature, speed) => {
             Math.pow(speed, 0.16)))) + "°F"
 
 }
+

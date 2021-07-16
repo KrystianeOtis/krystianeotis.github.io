@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Inn & Suites</title>
     <link rel="icon" href="images/favicon (4).ico" type="image/gif">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mate&family=Vollkorn+SC:wght@400;700&display=swap"
@@ -16,12 +17,13 @@
 
 </head>
 
-<body>
+<body id="app">
 
     <section class="navigation">
         <div class="nav-container">
             <div class="brand">
-                <a href="https://krystianeotis.github.io/finalProject/index.html"><img src="images/templewhite50.png" alt="Temple Inn & Suites Logo">
+                <a href="https://krystianeotis.github.io/finalProject/index.html"><img src="images/templewhite50.png"
+                        alt="Temple Inn & Suites Logo">
                 </a>
             </div>
             <nav>
@@ -71,87 +73,92 @@
             A call to action to make a hotel reservation
             <br>Readily available navigation and contact information for the hotel chain
             <br>Summary information about a temple of your choosing</p> -->
-            <!-- <div class="bg-image"> <img src="images\mollie-sivaram-1Wkl8h-7pFM-unsplash.jpg" alt=""></div> -->
 
-            <div class="bg-text">
-<img src="images\sara-darcaj-oXJ2SGSvZZs-unsplash.jpg" alt="">
-                <h2>Blurred Background</h2>
-                <h1 style="font-size:50px">I am John Doe</h1>
-                <p>And I'm a Photographer</p>
+
+        <div class="bg-text">
+
+            <div class="form-header">
+                <h1>Make A Reservation</h1>
             </div>
-        <div id="booking" class="section">
-            <div class="section-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="booking-form">
-                            <div class="form-header">
-                                <h1>Book a Room</h1>
-                            </div>
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <span class="form-label">Check In</span>
-                                            <input class="form-control" type="date" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <span class="form-label">Check out</span>
-                                            <input class="form-control" type="date" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <!-- <div class="col-md-4">
-                                            <div class="form-group">
-                                                <span class="form-label">No of rooms</span>
-                                                <select class="form-control">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                </select>
-                                                <span class="select-arrow"></span>
-                                            </div>
-                                        </div> -->
-                                    <!-- <div class="col-md-4">
-                                            <div class="form-group">
-                                                <span class="form-label">Adults</span>
-                                                <select class="form-control">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                </select>
-                                                <span class="select-arrow"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <span class="form-label">Children</span>
-                                                <select class="form-control">
-                                                    <option>0</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                </select>
-                                                <span class="select-arrow"></span>
-                                            </div>
-                                        </div> -->
-                                </div>
-                                <div class="form-btn">
-                                    <button class="submit-btn">Check availability</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+            <form>
+
+
+                <div class="form-group">
+                    <span class="form-label">Check In</span>
+                    <input class="form-control" type="date" required>
                 </div>
-            </div>
-        </div>
 
+
+                <div class="form-group">
+                    <span class="form-label">Check out</span>
+                    <input class="form-control" type="date" required>
+                </div>
+
+
+
+
+                <button class="submit-btn">Check availability</button>
+
+            </form>
+        </div>
+        <div id="templeSummary">CARD FOR TEMPLE SUMMARY</div>
     </main>
     <footer>
 
+        <div id="about">
+            <h3>About Us</h3>
+            <p>Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages
+                specialized
+                hotel
+                accommodations near
+                temple locations of The Church of Jesus Christ of Latter-day Saints around the world.
+            </p>
+            <p> The owner-operated company caters to temple workers, patrons, and their families by providing
+                specialized
+                services and accommodations that meet the needs of those patrons.</p>
+            <p>The hotel accommodations and services are available to anyone willing to abide by the terms and
+                policies
+                outlined by the company.</p>
+        </div>
+        <div id="contact">
+            <h3>Contact Us</h3>
+
+            <p>
+                <box-icon name='phone' type='solid'></box-icon>
+            </p>
+            <p>240.458.6254
+            </p>
+            <p>
+                <box-icon name='mail-send'></box-icon>
+            </p>
+            <p>templeinnandsuites@hotel.com
+            </p>
+            <p>
+                <box-icon type='solid' name='map'></box-icon>
+            </p>
+
+            <p>4800 Montgomery Ln #300, <br>Bethesda, MD 20814
+            </p>
+        </div>
+
+        <div id="follow">
+            <h4>Follow Us</h4>
+            <a target="_blank" href="https://www.facebook.com/">
+                <box-icon type='logo' name='facebook-circle'></box-icon>
+            </a>
+            <a target="_blank" href="https://twitter.com/?lang=en">
+                <box-icon name='twitter' type='logo'></box-icon>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/">
+                <box-icon name='instagram-alt' type='logo'></box-icon>
+            </a>
+        </div>
+
+
+
     </footer>
     <script src="js/style.js"></script>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 </body>
 
 
