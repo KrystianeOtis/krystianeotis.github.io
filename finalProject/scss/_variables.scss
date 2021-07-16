@@ -1,11 +1,4 @@
-// #005C7A
-// #4D1932
-// #8B5B6E
 // #EED5D8
-
-$primaryColor: rgba(63, 5, 33, 0.88);
-
-
 
 $fontFamilyHr: 'Vollkorn SC',
 serif;
@@ -21,10 +14,13 @@ $gutter: 2%;
 $content-width: 1000px;
 $breakpoint: 799px;
 $nav-height: 80px;
-$nav-background: #2c2022;
+$nav-background: black; //#2c2022
 $nav-font-color: #ffffff;
-$link-hover-color: #574145;
-$active-link-color:#BDA5A8;
+$link-hover-color: rgb(32, 31, 31);
+$active-link-color:#382f30;
+
+//Footer
+$footer-background: rgba(241, 221, 223, 0.692);
 
 //accordian
 $bg: #fff;
