@@ -704,8 +704,8 @@ nav ul li ul li a {
 
 .container {
   margin: 0 auto;
-  padding: 4rem;
-  width: 48rem;
+  padding: 2rem;
+  max-width: 48rem;
   background: white;
   border: solid 5px rgba(241, 221, 223, 0.692);
 }
