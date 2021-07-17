@@ -197,10 +197,62 @@
         }
     }
 }
-@media only screen and (min-width: 32.5em) {
+form{
+    font-family: $fontFamily;
+}
+form#reservation-form{
+    padding: 2rem;
+    input{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+}
+#form-option-grid {
+    display: grid;
 
+    grid-template-columns: 100px 1fr;
+        #bed-options{
+            grid-column: span 2;
+        }
 }
 
+@media only screen and (min-width: 32.5em) {
+
+#name-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    #fname {
+        grid-column: 1;
+    }
+}
+
+#address-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    #street {
+        grid-column: span 2;
+    }
+}
+
+#check-in-grid{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    #check-in {
+        grid-column: 1;
+    }
+    #check-out {
+        grid-column: 2;
+    }
+}
+
+}
 
 
 @media only screen and (min-width: 63.5em) {

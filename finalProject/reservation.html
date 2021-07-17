@@ -20,7 +20,8 @@
     <section class="navigation">
         <div class="nav-container">
             <div class="brand">
-                <a href="https://krystianeotis.github.io/finalProject/index.html">Temple Inn & Suites
+                <a href="https://krystianeotis.github.io/finalProject/index.html"><img src="images/templewhite50.png"
+                        alt="Temple Inn & Suites Logo">
                 </a>
             </div>
             <nav>
@@ -71,168 +72,103 @@
             including the location, date, number and type of rooms, registrant's full name, email, phone, home state or
             country, and special accommodations/comments. You will need to use the CSS grid method for the layout of
             your reservation form for full credit.</p>
-        <form action="">
+        <h1>Reserve Your Next Trip</h1>
+        <form action="" id="reservation-form">
             <!--  General -->
-            <div class="form-group">
-                <h2 class="heading">Reserve Your Next Trip</h2>
-                <div class="controls">
-                    <input type="text" id="name" class="floatLabel" name="name">
-                    <label for="name">Name</label>
-                </div>
-                <div class="controls">
-                    <input type="text" id="email" class="floatLabel" name="email">
-                    <label for="email">Email</label>
-                </div>
-                <div class="controls">
-                    <input type="tel" id="phone" class="floatLabel" name="phone">
-                    <label for="phone">Phone</label>
-                </div>
-                <div class="grid">
-                    <div class="col-2-3">
-                        <div class="controls">
-                            <input type="text" id="street" class="floatLabel" name="street">
-                            <label for="street">Street</label>
-                        </div>
-                    </div>
-                    <!-- <div class="col-1-3">
-                        <div class="controls">
-                            <input type="number" id="street-number" class="floatLabel" name="street-number">
-                            <label for="street-number">Number</label>
-                        </div>
-                    </div> -->
-                </div>
-                <div class="grid">
-                    <div class="col-2-3">
-                        <div class="controls">
-                            <input type="text" id="city" class="floatLabel" name="city">
-                            <label for="city">City</label>
-                        </div>
-                    </div>
-                    <div class="controls">
-                        <input type="text" id="state" class="floatLabel" name="state">
-                        <label for="state">State</label>
-                    </div>
-                    <div class="col-1-3">
-                        <div class="controls">
-                            <input type="text" id="post-code" class="floatLabel" name="post-code">
-                            <label for="post-code">Zip Code</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="controls">
-                    <input type="text" id="country" class="floatLabel" name="country">
-                    <label for="country">Country</label>
-                </div>
+            <h2 class="heading">Personal Information</h2>
+            <div id="name-grid">
+                <label for="name">Name</label>
+                <input type="text" id="fname" name="name" placeholder="First" required>
+                <input type="text" id="lname" name="name" placeholder="Last" required>
+
             </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="### ### ####" required>
+
+            </div>
+            <div id="address-grid">
+                <label>Address</label>
+                <div id="street"><input type="text" name="street" placeholder="Street Address" required></div>
+                <div id="city">
+                    <input type="text" name="city" placeholder="City" required>
+                </div>
+                <div id="state"> <input type="text" name="state" placeholder="State" required></div>
+                <div id="post-code"> <input type="text" name="post-code" placeholder="Postal / Zip Code" required>
+                </div>
+                <div id="country"> <input type="text" name="country" placeholder="Country" required></div>
+
+
+            </div>
+
             <!--  Details -->
-            <div class="form-group">
-                <h2 class="heading">Details</h2>
-                <div class="grid">
-                    <div class="col-1-4 col-1-4-sm">
-                        <div class="controls">
-                            <input type="date" id="arrive" class="floatLabel" name="arrive"
-                                value="<?php echo date('Y-m-d'); ?>">
-                            <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Check
-                                In</label>
-                        </div>
-                    </div>
-                    <div class="col-1-4 col-1-4-sm">
-                        <div class="controls">
-                            <input type="date" id="depart" class="floatLabel" name="depart"
-                                value="<?php echo date('Y-m-d'); ?>" />
-                            <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Check
-                                Out</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <span class="form-label">Adults</span>
-                            <select class="form-control">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                            </select>
-                            <span class="select-arrow"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <span class="form-label">Children</span>
-                            <select class="form-control">
-                                <option>0</option>
-                                <option>1</option>
-                                <option>2</option>
-                            </select>
-                            <span class="select-arrow"></span>
-                        </div>
-                    </div>
-                    <!-- <div class="col-1-3 col-1-3-sm">
-                        <div class="controls">
-                            <i class="fa fa-sort"></i>
-                            <select class="floatLabel">
-                                <option value="blank"></option>
-                                <option value="1">1</option>
-                                <option value="2" selected>2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>
-                            <label for="fruit"><i class="fa fa-male"></i>&nbsp;&nbsp;Adults</label>
-                        </div>
-                    </div>
-                    <div class="col-1-3 col-1-3-sm">
-                        <div class="controls">
-                            <i class="fa fa-sort"></i>
-                            <select class="floatLabel">
-                                <option value="blank"></option>
-                                <option value="0" selected>0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                            <label for="fruit"><i class="fa fa-male"></i>&nbsp;&nbsp;Children</label>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-1-3 col-1-3-sm">
-                        <div class="controls">
-                            <i class="fa fa-sort"></i>
-                            <select class="floatLabel">
-                                <option value="blank"></option>
-                                <option value="deluxe" selected>With Bathroom</option>
-                                <option value="Zuri-zimmer">Without Bathroom</option>
-                            </select>
-                            <label for="fruit">Room</label>
-                        </div>
-                    </div> -->
 
-                    <div class="col-1-3 col-1-3-sm">
-                        <div class="controls">
-                            <i class="fa fa-sort"></i>
-                            <select class="floatLabel">
-                                <option value="blank"></option>
-                                <option value="double-bed" selected>2 Fulls</option>
-                                <option value="single-bed">1 Queen</option>
-                                <option value="double-bed" selected>2 Queens</option>
-                                <option value="single-bed">1 King</option>
-                                <option value="single-bed">King Suite</option>
-                            </select>
-                            <label for="fruit">Bed Options</label>
-                        </div>
-                    </div>
+            <h2 class="heading">Reservation Details</h2>
+            <div id="check-in-grid">
+                <div>
+                    <label for="arrive">&nbsp;&nbsp;Check
+                        In</label>
+                    <input type="date" id="arrive" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+                </div>
+
+                <div>
+                    <label for="depart">&nbsp;&nbsp;Check
+                        Out</label>
+                    <input type="date" id="depart" name="depart" value="<?php echo date('Y-m-d'); ?>"></div>
+
+
+            </div>
+            <section id="form-option-grid">
+                <div class="form-group">
+                    <span class="form-label">Adults</span>
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <span class="select-arrow"></span>
+                </div>
+                <div class="form-group">
+                    <span class="form-label">Children</span>
+                    <select class="form-control">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                    <span class="select-arrow"></span>
+                </div>
+
+                <div id="bed-options">
+                    <label>Bed Options</label>
+                    <select>
+                        <option value="blank"></option>
+                        <option value="double-bed" selected>2 Fulls</option>
+                        <option value="single-bed">1 Queen</option>
+                        <option value="double-bed" selected>2 Queens</option>
+                        <option value="single-bed">1 King</option>
+                        <option value="single-bed">King Suite</option>
+                    </select>
 
                 </div>
-                <div class="grid">
-                    <!-- <p class="info-text">Please describe your needs e.g. Extra beds, children's cots</p>
-                    <br>
-                    <div class="controls">
-                        <textarea name="comments" class="floatLabel" id="comments"></textarea>
-                        <label for="comments">Comments</label>
-                    </div> -->
-                    <button type="submit" value="Submit" class="col-1-4">Submit</button>
+            </section>
+            </div>
+            <div>
+                <br>
+                <div>
+                    <label for="comments">Special mentions, requests or requirements:</label>
+
+                    <textarea name="comments" id="comments"></textarea>
+
                 </div>
-            </div> <!-- /.form-group -->
+                <button id="btn" type="submit" value="Submit">Reserve</button>
+            </div>
+
         </form>
     </main>
     <footer>
