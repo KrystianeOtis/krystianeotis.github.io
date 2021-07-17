@@ -109,6 +109,19 @@
             <!--  Details -->
 
             <h2 class="heading">Reservation Details</h2>
+
+            <div>
+                <label for="destination-choice">Destination</label>
+                <input list="destination-list" id="destination-choice" name="destination-choice"
+                    placeholder="Enter Destination" required>
+                <datalist id="destination-list">
+                    <option value="Anchorage, AK">
+                    <option value="Las Vagas, NV">
+                    <option value="Rancho Cordova, CA">
+                    <option value="Cedar City, UT">
+                    <option value="Omaha, NE">
+                </datalist>
+            </div>
             <div id="check-in-grid">
                 <div>
                     <label for="arrive">&nbsp;&nbsp;Check

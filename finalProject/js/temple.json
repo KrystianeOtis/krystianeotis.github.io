@@ -8,6 +8,13 @@
       "state":"AK",
       "zip":99516,
       "imageurl":"https://assets.ldscdn.org/22/b3/22b36eeb6bcf2bb8f9f23a905f1434599ee6b4f4/anchorage_alaska_temple_lds.jpeg",
+      "summary":"The Anchorage Alaska Temple is the 54th dedicated temple in operation and was the first temple built in Alaska. This temple stands just east of highly traveled Seward Highway in southern Anchorage. A beautiful grove of trees and the majestic Chugach Mountains create a stunning backdrop for this holy house. The temple is part of a complex with the Anchorage Alaska Stake Center; the two buildings share a common parking lot.",
+      "architectural":[
+        "Site: 5.4 acres",
+        "Exterior Finish: Stone-clad Sierra white granite quarried from near Fresno, California",
+        "Architectural Features: Single attached spire with an angel Moroni statue",
+        "Ordinance Rooms: Two instruction rooms (two-stage progressive), one sealing room, and one baptistry",
+        "Total Floor Area: 11,937 square feet"],
       "covidPhase":
         "Phase 3: Temple open for all living ordinances and limited proxy ordinances"
       ,
@@ -39,7 +46,14 @@
       "city":"Las Vegas",
       "state":"NV",
       "zip":89110,
-      "imageurl":"https://assets.ldscdn.org/a2/87/a2876cf93e9b9908d223e09f4be65ae23cead8d4/las_vegas_temple_lds.jpg",
+      "imageurl":"https://churchofjesuschristtemples.org/assets/img/temples/_temp/043-Las-Vegas-Nevada-Temple.jpg",
+      "summary":"The Las Vegas Nevada Temple is the 43rd dedicated temple in operation. Sitting on the eastern edge of the city—far from the glitz and glamour of the world-famous Las Vegas Strip—the Las Vegas Nevada Temple is a spiritual beacon in the City of Lights. The six soaring spires rising from the building echo the arresting red desert peaks of nearby Sunrise Mountain. Flourishing flowers and trees adorn the verdant grounds of the temple. Visitors are welcome to walk the surrounding pathways to feel the peace that eminates from this sacred structure.",
+      "architectural":[
+        "Site: 10.3 acres",
+        "Exterior Finish: White precast stone walls and copper roof and detailing",
+        "Architectural Features: Six attached spires with an angel Moroni statue",
+        "Ordinance Rooms: Four instruction rooms, five sealing rooms, and one baptistry",
+        "Total Floor Area: 80,350 square feet"],
       "covidPhase":
         "Phase 3: Temple open for all living ordinances and limited proxy ordinances"
       ,
@@ -68,7 +82,14 @@
       "city":"Omaha",
       "state":"NE",
       "zip":68112,
-      "imageurl":"https://assets.ldscdn.org/f0/65/f065b89d6ab929f0dd1621d62e7f0b16f8ec23a3/winter_quarters_temple_lds.jpeg",
+      "imageurl":"https://churchofjesuschristtemples.org/assets/img/temples/winter-quarters-nebraska-temple/winter-quarters-nebraska-temple-317-main.jpg",
+      "summary":"The Winter Quarters Nebraska Temple is the 104th dedicated temple in operation and was the first temple built in Nebraska. This temple is a sister building to the Snowflake Arizona Temple. It is one of three temples built in locations of historic significance for the early Church. (The other two temples are the Palmyra New York Temple and the Nauvoo Illinois Temple.) The dedicatory services of the Winter Quarter Nebraska Temple were broadcast over the Church's encrypted satellite system to stake centers and Church facilities throughout North America.",
+      "architectural":[
+        "Site: 1.92 acres",
+        "Exterior Finish: Bethel white granite",
+        "Architectural Features: Single attached spire with an angel Moroni statue",
+        "Ordinance Rooms: Two instruction rooms (two-stage progressive), two sealing rooms, and one baptistry",
+        "Total Floor Area: 16,000 square feet"],
       "covidPhase":
         "Phase 3: Temple open for all living ordinances and limited proxy ordinances"
       ,
@@ -99,7 +120,14 @@
       "city":"Rancho Cordova",
       "state":"CA",
       "zip":95742,
-      "imageurl":"https://assets.ldscdn.org/22/e4/22e4430b9d30b0ddf01189d7ff4e7e303cd91229/sacramento_temple_lds.jpeg",
+      "imageurl":"https://churchofjesuschristtemples.org/assets/img/temples/sacramento-california-temple/sacramento-california-temple-8098-main.jpg",
+      "summary":"The Sacramento California Temple shares a large parcel of Church-owned property with a meetinghouse in the Folsom California Stake overlooking Lake Natoma. Located off Highway 50 in Rancho Cordova, 20 miles east of Sacramento, the site was once owned by Aerojet General Corp. for use as a recreational center. During a large downsize of the company in 1971, the Church acquired the 47 acres where a chapel was built onto the existing gym and other areas converted to classrooms. It provides for numerous church activities including sand volleyball, picnics, camping, and ward group activities. The beautiful piece of property is on a hill overlooking the foothills of the Sierra Nevada Mountains. The majestic oak trees surrounding the site create a serene natural setting.",
+      "architectural":[
+        "Site: 46 acres",
+        "Exterior Finish: Light gray granite",
+        "Architectural Features: Single attached end spire with an angel Moroni statue",
+        "Ordinance Rooms: Two instruction rooms (two-stage progressive), four sealing rooms, and one baptistry",
+        "Total Floor Area: 19,500 square feet"],
       "covidPhase":
         "Phase 3: Temple open for all living ordinances and limited proxy ordinances"
       ,
@@ -143,7 +171,15 @@
       "city":"Apex",
       "state":"NC",
       "zip":27502,
-      "imageurl":"https://assets.ldscdn.org/e7/42/e742580e631a084b2b3c57580040637ceee8dec8/raleigh_north_carolina_temple.jpeg",
+      "imageurl":"https://churchofjesuschristtemples.org/assets/img/temples/raleigh-north-carolina-temple/raleigh-north-carolina-temple-6727-main.jpg",
+      "summary":"The Raleigh North Carolina Temple was the 68th dedicated temple in operation, and it was the first temple built in North Carolina. The Raleigh North Carolina Temple closed on January 7, 2018, for extensive renovation. During the remodel, crews will upgrade the mechanical and electrical systems, make spaces ADA compliant, move windows and doors to accommodate minor floor plan changes, enclose the entrance canopy, and raise the height of the steeple by 10 feet. During the closure, temple patrons were accommodated at temples located in neighboring state",
+      "architectural":[
+        "Site: 3.17 acres",
+        "Exterior Finish: Beige-colored limestone",
+        "Architectural Features: Single attached spire with an angel Moroni statue",
+        "Ordinance Rooms: Two instruction rooms (two-stage progressive), two sealing rooms, and one baptistry",
+        "Total Floor Area: 12,864 square feet"
+      ],
       "covidPhase":
         "Phase 3: Temple open for all living ordinances and limited proxy ordinances"
       ,
@@ -172,6 +208,13 @@
       "state":"UT",
       "zip":84720,
       "imageurl":"https://assets.ldscdn.org/b2/89/b2891eb1787414ec6995a32c42d03981732c2d6a/cedar_city_utah_temple_exterior.jpeg",
+      "summary": "The Cedar City Temple is the 159th dedicated temple in operation. On April 6, 2013, during the Saturday morning session of the 183rd Annual General Conference, President Thomas S. Monson announced that a new temple would be constructed in the city of Cedar City, Utah. The Cedar City Utah Temple will be the seventeenth in Utah, following the Provo City Center Temple, which is currently under construction. There are nearly two million Church members in Utah. Members of The Church of Jesus Christ of Latter-day Saints in Cedar City currently participate in temple ordinances at the St. George Utah Temple, located approximately 50 miles to the south. The St. George temple serves members from 48 stakes in Southern Utah, Eastern Nevada, and Northern Arizona.",
+      "architectural":[
+        "Site: 9.5 acres",
+        "Architectural Features: Single attached end tower with an angel Moroni statue",
+        "Ordinance Rooms: Two instruction rooms, three sealing rooms, and one baptistry",
+        "Total Floor Area: 42,657 square feet"
+      ],
       "covidPhase":
         "Phase 3: Temple open for all living ordinances and limited proxy ordinances"
       ,
