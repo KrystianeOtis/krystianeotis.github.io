@@ -1,16 +1,20 @@
 /*
-#005C7A
-#4D1932
-#8B5B6E
+
 #EED5D8
 */
 
 /*Small media*/
+.square {
+    height: 100px;
+    max-width: 100%;
 
-p{
-     font-family: 'Mate',
-     serif;
 }
+
+p {
+    font-family: 'Mate',
+        serif;
+}
+
 main {
     margin: 0 auto;
     max-width: 360px;
@@ -19,13 +23,12 @@ main {
 }
 
 body {
-    margin: 0;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 0;
 }
 
 header {
-
-    text-align: center;
     padding: 8px;
 
 }
@@ -33,22 +36,8 @@ header {
 footer {
     text-align: center;
     padding: 8px;
-    background-color: #4D1932;
-    color: white;
-
 }
 
-#byui {
-    color: white;
-    padding: 0px;
-}
-
-.logo {
-
-    width: 100%;
-    margin-bottom: 5%;
-    margin-top: 10%;
-}
 
 
 h1,
@@ -56,200 +45,49 @@ h2,
 h3,
 h4,
 h5 {
-     font-family: 'Vollkorn SC',
-     serif;
+    font-family: 'Vollkorn SC',
+        serif;
 }
 
 .subheading {
-    border-bottom: solid #4D1932;
+    border-bottom: solid #000000;
     margin-bottom: 0;
 }
+
 .para {
     font-family: 'Mate',
-    serif;
+        serif;
 
 
 }
-
-
-/*CSS for Menu/Nav bar*/
-nav,
 footer {
     margin: 0 auto;
     max-width: 360px;
-    background-color: #4D1932;
+
 }
 
-nav {
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-#navigation {
-    list-style: none;
-    padding: 0;
-    grid-template-columns: auto;
-    display: grid;
-}
-
-#navigation li:first-child {
-    display: block;
-}
-
-#navigation li {
-    display: none;
-}
-
-#navigation a {
-    display: block;
-    padding: 0.75rem;
-    text-align: left;
-    text-decoration: none;
-    font-family: 'Raleway',
-        sans-serif;
-    color: white;
-    font-weight: 700;
-}
-
-#navigation a:hover,
-#navigation a .active:hover {
-    color: white;
-    background-color: #4D1932;
-}
-
-#navigation a.active {
-    background-color: #4D1932;
-    color: white;
-    /* border-bottom: 5px solid black; */
-}
-
-#navigation.responsive li {
-    display: block;
-}
-
-/*Color Scheme and Color Scheme Shapes*/
-.hexcode {
-    color: white;
-}
 
 .colors p {
     float: left;
-    margin-left: 140px;
+    margin-left: 40px;
 
 }
-
-#triangle-topleft1 {
-    width: 0;
-    height: 0;
-    border-top: 100px solid #005C7A;
-    border-right: 100px solid transparent;
+.black{
+background-color: black;
+color: white;
 }
-
-#triangle-bottomright1 {
-    width: 0;
-    height: 0;
-    border-bottom: 100px solid #005C7A;
-    border-left: 100px solid transparent;
-    float: right;
+.white{
+background-color: white;
 }
-
-#triangle-topleft2 {
-    width: 0;
-    height: 0;
-    border-top: 100px solid #4D1932;
-    border-right: 100px solid transparent;
+.light-pink{
+    background-color: #EED5D8;
 }
-
-#triangle-bottomright2 {
-    width: 0;
-    height: 0;
-    border-bottom: 100px solid #4D1932;
-    border-left: 100px solid transparent;
-    float: right;
+.transparent{
+background-color: rgba(241, 221, 223, 0.692);
 }
-
-#triangle-topleft3 {
-    width: 0;
-    height: 0;
-    border-top: 100px solid #8B5B6E;
-    border-right: 100px solid transparent;
-}
-
-#triangle-bottomright3 {
-    width: 0;
-    height: 0;
-    border-bottom: 100px solid #8B5B6E;
-    border-left: 100px solid transparent;
-    float: right;
-}
-
-#triangle-topleft4 {
-    width: 0;
-    height: 0;
-    border-top: 100px solid #EED5D8
-;
-    border-right: 100px solid transparent;
-}
-
-#triangle-bottomright4 {
-    width: 0;
-    height: 0;
-    border-bottom: 100px solid #EED5D8;
-    border-left: 100px solid transparent;
-    float: right;
-}
-
-/* #triangle-topleft5 {
-    width: 0;
-    height: 0;
-    border-top: 100px solid #C0DFA1;
-    border-right: 100px solid transparent;
-}
-
-#triangle-bottomright5 {
-    width: 0;
-    height: 0;
-    border-bottom: 100px solid #C0DFA1;
-    border-left: 100px solid transparent;
-    float: right;
-} */
-
-/*External link to color palette*/
-#color-palette,
-#color-palette a {
-    text-align: center;
-    color: #8B5B6E;
-}
-
-#color-palette a:hover,
-#color-palette a .active:hover {
-    color: #8B5B6E;
-}
-
 
 /*Medium media*/
 @media only screen and (min-width: 34.5em) {
-    nav {
-        max-width: 100%;
-    }
-
-    #navigation {
-        grid-template-columns: repeat(7, auto);
-    }
-
-    #navigation li {
-        display: block;
-        /*change state in small view*/
-    }
-
-    #navigation a {
-        text-align: center;
-    }
-
-    #navigation li:first-child {
-        display: none;
-    }
-
     footer,
     #byui {
         background-color: white;
@@ -263,9 +101,5 @@ nav {
 
 /*Large media*/
 @media only screen and (min-width: 54.5em) {
-    #navigation {
-        width: 800px;
-        margin: 16px auto;
-    }
 
 }
