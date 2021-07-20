@@ -27,8 +27,14 @@ async function getTemples() {
                     let imageurl = document.createElement('img'); // adds image elements
 
                     h2.textContent = temples[i].name;
+                    address.textContent = temples[i].address;
+                    city.textContent = temples[i].city;
+                    state.textContent = temples[i].state;
+                    zip.textContent = temples[i].zip;
                     history.textContent = 'Milestones: ' + temples[i].history;
                     services.textContent = 'Services: ' + temples[i].services;
+                    covidPhase.textContent = temples[i].covidPhase;
+                    closures.textContent = temples[i].closures;
                     architectural.textContent = 'Architectural Features: ' + temples[i].architectural;
 
                     imageurl.setAttribute('src', temples[i]['imageurl']); //adds the correct image to match town from local file
@@ -36,10 +42,15 @@ async function getTemples() {
 
                     card.appendChild(text); //append div to section
                     text.appendChild(h2); // appendChild - appends a node as the last child of a node
+                    text.appendChild(address);
+                    text.appendChild(city);
+                    text.appendChild(state);
+                    text.appendChild(zip);
                     text.appendChild(history);
                     text.appendChild(services);
                     text.appendChild(architectural);
-
+                    text.appendChild(covidPhase);
+                    text.appendChild(closures);
                     card.appendChild(photoDiv)
                     photoDiv.appendChild(imageurl);
 
