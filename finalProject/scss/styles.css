@@ -715,6 +715,11 @@ nav ul li ul li a {
   margin: 2em 0;
 }
 
+#reservation-div {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 #reservation-div h1 {
   text-decoration: underline;
 }
@@ -732,15 +737,32 @@ form#reservation-form {
   width: 90%;
   border: 3px solid #f1f1f1;
   background-color: white;
-  padding: .5rem;
+  padding: .7rem;
 }
 
 form#reservation-form input {
-  width: 100%;
+  width: 90%;
+  margin: 10px;
 }
 
 form#reservation-form textarea {
   width: 100%;
+}
+
+.form-div {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.form-div-options {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#form-button {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-left: 32%;
 }
 
 #form-option-grid {
@@ -877,8 +899,8 @@ body p {
 #contact {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
   padding-right: 40px;
   padding-left: 40px;
 }

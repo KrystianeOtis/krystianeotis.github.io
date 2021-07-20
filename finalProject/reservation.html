@@ -75,23 +75,23 @@
                 <!--  General -->
                 <h1>Room Reservation</h1>
                 <h2 class="heading">Personal Information</h2>
-                <div id="name-grid">
+                <div class="form-div" id="name-grid">
                     <label for="name">Name</label>
                     <input type="text" id="fname" name="name" placeholder="First" required>
                     <input type="text" id="lname" name="name" placeholder="Last" required>
 
                 </div>
-                <div>
+                <div class="form-div">
                     <label for="email">Email</label>
                     <input type="text" id="email" name="email" required>
 
                 </div>
-                <div>
+                <div class="form-div">
                     <label for="phone">Phone</label>
                     <input type="tel" id="phone" name="phone" placeholder="### ### ####" required>
 
                 </div>
-                <div id="address-grid">
+                <div class="form-div"  id="address-grid">
                     <label>Address</label>
                     <div id="street"><input type="text" name="street" placeholder="Street Address" required></div>
                     <div id="city">
@@ -109,7 +109,7 @@
 
                 <h2 class="heading">Reservation Details</h2>
 
-                <div>
+                <div class="form-div">
                     <label for="destination-choice">Destination</label>
                     <input list="destination-list" id="destination-choice" name="destination-choice"
                         placeholder="Enter Destination" required>
@@ -122,21 +122,21 @@
                     </datalist>
                 </div>
                 <div id="check-in-grid">
-                    <div>
-                        <label for="arrive">&nbsp;&nbsp;Check
+                    <div class="form-div">
+                        <label for="arrive">Check
                             In</label>
                         <input type="date" id="arrive" name="arrive" value="<?php echo date('Y-m-d'); ?>">
                     </div>
 
-                    <div>
-                        <label for="depart">&nbsp;&nbsp;Check
+                    <div class="form-div">
+                        <label for="depart">Check
                             Out</label>
                         <input type="date" id="depart" name="depart" value="<?php echo date('Y-m-d'); ?>"></div>
 
 
                 </div>
-                <section id="form-option-grid"></section>
-                <div class="form-group">
+                <!-- <section id="form-option-grid"></section> -->
+                <div class="form-group form-div-options">
                     <span class="form-label">Adults</span>
                     <select class="form-control">
                         <option>1</option>
@@ -146,7 +146,7 @@
                     </select>
                     <span class="select-arrow"></span>
                 </div>
-                <div class="form-group">
+                <div class="form-group form-div-options">
                     <span class="form-label">Children</span>
                     <select class="form-control">
                         <option>0</option>
@@ -156,7 +156,7 @@
                     <span class="select-arrow"></span>
                 </div>
 
-                <div id="bed-options">
+                <div id="bed-options" class="form-div-options">
                     <label>Bed Options</label>
                     <select>
                         <option value="blank"></option>
@@ -168,16 +168,17 @@
                     </select>
 
                 </div>
-                </section>
+                <!-- </section> -->
                 <div>
                     <br>
-                    <div>
+                    <div class="form-div">
                         <label for="comments">Special mentions, requests or requirements:</label>
 
                         <textarea name="comments" id="comments"></textarea>
 
                     </div>
-                    <button id="btn" type="submit" value="Submit">Reserve</button>
+                    <div id="form-button"><button id="btn" type="submit" value="Submit">Reserve</button></div>
+
                 </div>
 
 
