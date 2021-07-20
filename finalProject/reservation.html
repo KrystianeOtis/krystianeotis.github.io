@@ -68,75 +68,73 @@
 
 
     <main>
-        <p>The reservation page contains a form that collects relevant information when making a normal stay reservation
-            including the location, date, number and type of rooms, registrant's full name, email, phone, home state or
-            country, and special accommodations/comments. You will need to use the CSS grid method for the layout of
-            your reservation form for full credit.</p>
-        <h1>Reserve Your Next Trip</h1>
-        <form action="" id="reservation-form">
-            <!--  General -->
-            <h2 class="heading">Personal Information</h2>
-            <div id="name-grid">
-                <label for="name">Name</label>
-                <input type="text" id="fname" name="name" placeholder="First" required>
-                <input type="text" id="lname" name="name" placeholder="Last" required>
+        <div id="reservation-div">
+            <h1>Reserve Your Next Trip</h1>
+            <img src="images/jennifer-latuperisa-andresen-Cj7a21nHLyo-unsplash.jpg" alt="">
+            <form action="" id="reservation-form">
+                <!--  General -->
+                <h2 class="heading">Personal Information</h2>
+                <div id="name-grid">
+                    <label for="name">Name</label>
+                    <input type="text" id="fname" name="name" placeholder="First" required>
+                    <input type="text" id="lname" name="name" placeholder="Last" required>
 
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" required>
-
-            </div>
-            <div>
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="### ### ####" required>
-
-            </div>
-            <div id="address-grid">
-                <label>Address</label>
-                <div id="street"><input type="text" name="street" placeholder="Street Address" required></div>
-                <div id="city">
-                    <input type="text" name="city" placeholder="City" required>
                 </div>
-                <div id="state"> <input type="text" name="state" placeholder="State" required></div>
-                <div id="post-code"> <input type="text" name="post-code" placeholder="Postal / Zip Code" required>
-                </div>
-                <div id="country"> <input type="text" name="country" placeholder="Country" required></div>
-
-
-            </div>
-
-            <!--  Details -->
-
-            <h2 class="heading">Reservation Details</h2>
-
-            <div>
-                <label for="destination-choice">Destination</label>
-                <input list="destination-list" id="destination-choice" name="destination-choice"
-                    placeholder="Enter Destination" required>
-                <datalist id="destination-list">
-                    <option value="Anchorage, AK">
-                    <option value="Las Vagas, NV">
-                    <option value="Rancho Cordova, CA">
-                    <option value="Cedar City, UT">
-                    <option value="Omaha, NE">
-                </datalist>
-            </div>
-            <div id="check-in-grid">
                 <div>
-                    <label for="arrive">&nbsp;&nbsp;Check
-                        In</label>
-                    <input type="date" id="arrive" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
+
                 </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="### ### ####" required>
+
+                </div>
+                <div id="address-grid">
+                    <label>Address</label>
+                    <div id="street"><input type="text" name="street" placeholder="Street Address" required></div>
+                    <div id="city">
+                        <input type="text" name="city" placeholder="City" required>
+                    </div>
+                    <div id="state"> <input type="text" name="state" placeholder="State" required></div>
+                    <div id="post-code"> <input type="text" name="post-code" placeholder="Postal / Zip Code" required>
+                    </div>
+                    <div id="country"> <input type="text" name="country" placeholder="Country" required></div>
+
+
+                </div>
+
+                <!--  Details -->
+
+                <h2 class="heading">Reservation Details</h2>
 
                 <div>
-                    <label for="depart">&nbsp;&nbsp;Check
-                        Out</label>
-                    <input type="date" id="depart" name="depart" value="<?php echo date('Y-m-d'); ?>"></div>
+                    <label for="destination-choice">Destination</label>
+                    <input list="destination-list" id="destination-choice" name="destination-choice"
+                        placeholder="Enter Destination" required>
+                    <datalist id="destination-list">
+                        <option value="Anchorage, AK">
+                        <option value="Las Vagas, NV">
+                        <option value="Rancho Cordova, CA">
+                        <option value="Cedar City, UT">
+                        <option value="Omaha, NE">
+                    </datalist>
+                </div>
+                <div id="check-in-grid">
+                    <div>
+                        <label for="arrive">&nbsp;&nbsp;Check
+                            In</label>
+                        <input type="date" id="arrive" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+                    </div>
+
+                    <div>
+                        <label for="depart">&nbsp;&nbsp;Check
+                            Out</label>
+                        <input type="date" id="depart" name="depart" value="<?php echo date('Y-m-d'); ?>"></div>
 
 
-            </div>
-            <section id="form-option-grid">
+                </div>
+                <section id="form-option-grid"></section>
                 <div class="form-group">
                     <span class="form-label">Adults</span>
                     <select class="form-control">
@@ -169,20 +167,22 @@
                     </select>
 
                 </div>
-            </section>
-            </div>
-            <div>
-                <br>
+                </section>
                 <div>
-                    <label for="comments">Special mentions, requests or requirements:</label>
+                    <br>
+                    <div>
+                        <label for="comments">Special mentions, requests or requirements:</label>
 
-                    <textarea name="comments" id="comments"></textarea>
+                        <textarea name="comments" id="comments"></textarea>
 
+                    </div>
+                    <button id="btn" type="submit" value="Submit">Reserve</button>
                 </div>
-                <button id="btn" type="submit" value="Submit">Reserve</button>
-            </div>
 
-        </form>
+
+
+            </form>
+        </div>
     </main>
     <footer>
 

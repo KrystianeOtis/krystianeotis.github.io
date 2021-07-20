@@ -1,0 +1,102 @@
+//MOBILE VIEW
+#reservation-div {
+    img {
+        display: none;
+    }
+}
+
+form {
+    font-family: $fontFamily;
+}
+
+form#reservation-form {
+    margin: 0 auto;
+    width: 90%;
+    border: 3px solid #f1f1f1;
+    background-color: white;
+    padding: .5rem;
+
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
+
+#form-option-grid {
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    #bed-options {
+        grid-column: span 2;
+    }
+}
+
+//TABLET VIEW
+@media only screen and (min-width: 32.5em) {
+
+    #name-grid {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        #fname {
+            grid-column: 1;
+        }
+    }
+
+    #address-grid {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        #street {
+            grid-column: span 2;
+        }
+    }
+
+    #check-in-grid {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        #check-in {
+            grid-column: 1;
+        }
+
+        #check-out {
+            grid-column: 2;
+        }
+    }
+
+}
+
+//DESKTOP VIEW
+@media only screen and (min-width: 63.5em) {
+    #reservation-div {
+        margin: 0 auto;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 50px;
+
+        img {
+            display: inline-block;
+            grid-column: 1;
+
+            max-height: 800px;
+            object-fit: cover;
+        }
+    }
+
+    form#reservation-form {
+        margin: 0 auto;
+        width: 100%;
+        border: 3px solid #f1f1f1;
+        background-color: white;
+        padding: 2rem;
+    }
+}

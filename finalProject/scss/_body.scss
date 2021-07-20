@@ -1,3 +1,4 @@
+//MOBILE VIEW
 //button over image
 #book {
     margin: 0 auto;
@@ -17,6 +18,7 @@
     text-align: center;
     justify-items: center;
 }
+
 * {
     box-sizing: border-box;
 
@@ -25,6 +27,7 @@
         box-sizing: border-box;
     }
 }
+
 #btn {
     cursor: pointer;
     position: relative;
@@ -75,12 +78,13 @@
     }
 }
 
-#templeEvent{
+#templeEvent {
     margin: 0 auto;
     width: 80%;
     border: 3px solid #f1f1f1;
     background-color: white;
 }
+
 //Accordion
 
 .container {
@@ -89,7 +93,8 @@
     max-width: 48rem;
     background: white;
     border: solid 5px $footer-background;
-    img{
+
+    img {
         width: 100%;
     }
 }
@@ -197,65 +202,9 @@
         }
     }
 }
-form{
-    font-family: $fontFamily;
-}
-form#reservation-form{
-    padding: 2rem;
-    input{
-        width: 100%;
-    }
-    textarea{
-        width: 100%;
-    }
-}
-#form-option-grid {
-    display: grid;
 
-    grid-template-columns: 100px 1fr;
-        #bed-options{
-            grid-column: span 2;
-        }
-}
+//TABLET VIEW
+@media only screen and (min-width: 32.5em) {}
 
-@media only screen and (min-width: 32.5em) {
-
-#name-grid {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    #fname {
-        grid-column: 1;
-    }
-}
-
-#address-grid {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    #street {
-        grid-column: span 2;
-    }
-}
-
-#check-in-grid{
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-    #check-in {
-        grid-column: 1;
-    }
-    #check-out {
-        grid-column: 2;
-    }
-}
-
-}
-
-
-@media only screen and (min-width: 63.5em) {
-
-}
-
+//DESKTOP VIEW
+@media only screen and (min-width: 63.5em) {}
