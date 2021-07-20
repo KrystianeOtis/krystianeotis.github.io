@@ -612,17 +612,60 @@ nav ul li ul li a {
   .nav-dropdown {
     position: static;
   }
-}
-
-@media screen and (min-width: 799px) {
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1fr;
+  }
+  #contact {
+    -ms-grid-rows: 50px 70px 70px 70px;
+        grid-template-rows: 50px 70px 70px 70px;
+  }
+  #contact h3 {
+    margin-bottom: 0px;
+  }
+  #contact p {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 5px;
+  }
   #about {
     display: inline-block;
   }
+  #about h3 {
+    text-align: center;
+  }
+  #follow {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 799px) {
   .nav-list {
     display: block !important;
   }
   .nav-container {
     padding-right: 40px;
+  }
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  #contact p {
+    margin-left: 5px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #about {
+    display: inline-block;
+  }
+  #about h3 {
+    text-align: center;
   }
 }
 
@@ -695,11 +738,11 @@ nav ul li ul li a {
   height: 100%;
 }
 
-#templeSummary {
+#templeEvent {
   margin: 0 auto;
   width: 80%;
   border: 3px solid #f1f1f1;
-  background-color: red;
+  background-color: white;
 }
 
 .container {

@@ -12,16 +12,18 @@ async function getTempleEvent(temple) {
             for (let i = 0; i < temples.length; i++) {
                 if (temples[i].name == temple) {
 
-                    for (let x = 0; x < temples[i].summary.length; x++) {
-                        let p = document.createElement('p');
-                        p.textContent = temples[i].summary;
 
-                        let openingdiv = document.getElementById('templeEvent')
+                    let p = document.createElement('p');
+                    p.textContent = temples[i].summary;
+                    
 
-                        openingdiv.appendChild(p);
-                    }
+
+                    let openingdiv = document.getElementById('templeEvent')
+
+                    openingdiv.appendChild(p);
+
 
                 }
             }
-        });
-}
+        })
+};
