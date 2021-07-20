@@ -1,47 +1,61 @@
-async function getTowns() { // async function - The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
-    const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'; // url for the town data api
-
-    fetch(requestURL) //a basic fetch() method and feed it the required argument, the URL and use the .then() method that returns a Promise which response we will work with as an argument to an anonymous function.
+async function getTemples() {
+    const requestURL = 'https://krystianeotis.github.io/finalProject/js/temple.json';
+    fetch(requestURL)
         .then(function (response) {
             return response.json();
         })
         .then(function (jsonObject) {
             console.table(jsonObject); // temporary checking for valid response and data parsing
 
-            const towns = jsonObject['towns']; //store the results of the converted response into an array
-            for (let i = 0; i < towns.length; i++) { // for loop to iterate through the towns array
-                if (towns[i].name == 'Preston' || towns[i].name == 'Fish Haven' || towns[i].name == 'Soda Springs') {
-                    let card = document.createElement('section'); // turning each card into a section
-                    
-                    let text = document.createElement('div'); // create a div
-                    let h2 = document.createElement('h2'); // giving each section a heading2
-                    let motto = document.createElement('h3'); // giving each section a heading3
-                    let yearFounded = document.createElement('p'); //paragraph elements
-                    let currentPopulation = document.createElement('p');
-                    let averageRainfall = document.createElement('p');
-                    let photoDiv = document.createElement('div')
-                    let photo = document.createElement('img'); // adds image elements
+            const temples = jsonObject['temples']; //store the results of the converted response into an array
+            for (let i = 0; i < temples.length; i++) { // for loop to iterate through the temples array
+                if (temples[i].name == 'Cedar City Utah Temple' || temples[i].name == 'Anchorage Alaska Temple' || temples[i].name == 'Winter Quarters Nebraska Temple' || temples[i].name == 'Sacramento California Temple' || temples[i].name == 'Raleigh North Carolina Temple' || temples[i].name == 'Las Vegas Nevada Temple') {
 
-                    h2.textContent = towns[i].name;
-                    motto.textContent = towns[i].motto;
-                    yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
-                    currentPopulation.textContent = 'Population: ' + towns[i].currentPopulation;
-                    averageRainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
 
-                    photo.setAttribute('src', 'images/' + towns[i]['photo']); //adds the correct image to match town from local file
-                    photo.setAttribute('alt', towns[i].name); // sets the alt to town name
+                    let h2 = document.getElementById('templeName'); // giving each section a heading2
 
-                    card.appendChild(text); //append div to section
+                    let covidPhase = document.getElementById('covidPhase'); //paragraph elements
+                    let architectural = document.getElementById('p');
+                    let summary = document.getElementById('p');
+                    let photo = document.getElementById('img'); // adds image elements
+
+                    for (let x = 0; x < temples[i].history.length; x++) {
+                        let p = document.createElement('p');
+                        p.textContent = temples[i].history[x];
+
+                        let openingdiv = document.getElementById('history')
+
+                        openingdiv.appendChild(p);
+                    }
+                     for (let x = 0; x < temples[i].services.length; x++) {
+                         let p = document.createElement('p');
+                         p.textContent = temples[i].services[x];
+
+                         let openingdiv = document.getElementById('services')
+
+                         openingdiv.appendChild(p);
+                     }
+
+                    h2.textContent = temples[i].name;
+                    history.textContent = temples[i].history;
+                    covidPhase.textContent = temples[i].covidPhase;
+                    architectural.textContent = temples[i].architectural;
+                    summary.textContent = temples[i].summary;
+
+                    photo.setAttribute('src', temples[i]['imageurl']); //adds the correct image to match town from local file
+                    photo.setAttribute('alt', temples[i].name); // sets the alt to town name
+
+
                     text.appendChild(h2); // appendChild - appends a node as the last child of a node
-                    text.appendChild(motto);
-                    text.appendChild(yearFounded);
-                    text.appendChild(currentPopulation);
-                    text.appendChild(averageRainfall);
+                    text.appendChild(history);
+                    text.appendChild(covidPhase);
+                    text.appendChild(architectural);
+                    text.appendChild(summary);
 
                     card.appendChild(photoDiv)
                     photoDiv.appendChild(photo);
 
-                    document.querySelector('div.cards').appendChild(card);
+                    // document.querySelector('div.cards').appendChild(card);
                 }
             }
         });
@@ -52,5 +66,5 @@ function cardnav() {
 }
 
 window.addEventListener('load', (event) => { //registers when page is loaded
-    getTowns();
+    getTemples();
 })
