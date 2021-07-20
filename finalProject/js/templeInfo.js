@@ -10,51 +10,40 @@ async function getTemples() {
             const temples = jsonObject['temples']; //store the results of the converted response into an array
             for (let i = 0; i < temples.length; i++) { // for loop to iterate through the temples array
                 if (temples[i].name == 'Cedar City Utah Temple' || temples[i].name == 'Anchorage Alaska Temple' || temples[i].name == 'Winter Quarters Nebraska Temple' || temples[i].name == 'Sacramento California Temple' || temples[i].name == 'Raleigh North Carolina Temple' || temples[i].name == 'Las Vegas Nevada Temple') {
-                    let container = document.getElementById('container')
+                    let card = document.createElement('section'); // turning each card into a section
 
-                    let h2 = document.getElementById('templeName'); // giving each section a heading2
-
-                    let covidPhase = document.getElementById('covidPhase'); //paragraph elements
-                    // let architectural = document.getElementById('architectural');
-                    let summary = document.getElementById('summary');
-                    let photo = document.getElementById('img'); // adds image elements
-
-                    for (let x = 0; x < temples[i].history.length; x++) {
-                        let p = document.createElement('p');
-                        p.textContent = temples[i].history[x];
-
-                        let openingdiv = document.getElementById('history')
-
-                        openingdiv.appendChild(p);
-                    }
-                     for (let x = 0; x < temples[i].services.length; x++) {
-                         let p = document.createElement('p');
-                         p.textContent = temples[i].services[x];
-
-                         let openingdiv = document.getElementById('services')
-
-                         openingdiv.appendChild(p);
-                     }
+                    let text = document.createElement('div'); // create a div
+                    let h2 = document.createElement('h2'); // giving each section a heading2
+                    let address = document.createElement('p');
+                    let city = document.createElement('p');
+                    let state = document.createElement('p');
+                    let zip = document.createElement('p');
+                    let history = document.createElement('p'); //paragraph elements
+                    let services = document.createElement('p');
+                    let architectural = document.createElement('p');
+                    let covidPhase = document.createElement('p');
+                    let closures = document.createElement('p');
+                    let photoDiv = document.createElement('div')
+                    let imageurl = document.createElement('img'); // adds image elements
 
                     h2.textContent = temples[i].name;
-                    history.textContent = temples[i].history;
-                    covidPhase.textContent = temples[i].covidPhase;
-                    // architectural.textContent = temples[i].architectural;
-                    summary.textContent = temples[i].summary;
+                    history.textContent = 'Milestones: ' + temples[i].history;
+                    services.textContent = 'Services: ' + temples[i].services;
+                    architectural.textContent = 'Architectural Features: ' + temples[i].architectural;
 
-                    photo.setAttribute('src', temples[i]['imageurl']); //adds the correct image to match town from local file
-                    photo.setAttribute('alt', temples[i].name); // sets the alt to town name
+                    imageurl.setAttribute('src', temples[i]['imageurl']); //adds the correct image to match town from local file
+                    imageurl.setAttribute('alt', temples[i].name); // sets the alt to town name
 
+                    card.appendChild(text); //append div to section
+                    text.appendChild(h2); // appendChild - appends a node as the last child of a node
+                    text.appendChild(history);
+                    text.appendChild(services);
+                    text.appendChild(architectural);
 
-                    container.appendChild(h2); // appendChild - appends a node as the last child of a node
-                    container.appendChild(history);
-                    container.appendChild(covidPhase);
-                    // text.appendChild(architectural);
-                    container.appendChild(summary);
+                    card.appendChild(photoDiv)
+                    photoDiv.appendChild(imageurl);
 
-                    container.appendChild(photo);
-
-                    // document.querySelector('div.cards').appendChild(card);
+                    document.querySelector('div.cards').appendChild(card);
                 }
             }
         });
