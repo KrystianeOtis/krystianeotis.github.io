@@ -88,7 +88,7 @@ body {
     }
 }
 
-#about{
+#about {
     display: none;
 }
 
@@ -100,7 +100,7 @@ body {
     }
 
     #contact {
-        grid-template-rows: 50px 70px 70px 70px;
+        grid-template-rows: 50px 60px 60px 60px;
 
 
         h3 {
@@ -117,6 +117,7 @@ body {
 
     #about {
         display: inline-block;
+         justify-self: center;
 
         h3 {
             text-align: center;
@@ -142,12 +143,19 @@ body {
 
         p {
             margin-left: 5px;
-            align-self: center;
+            
         }
+    }
+
+    #follow {
+        grid-column: 3;
+
     }
 
     #about {
         display: inline-block;
+        width: 80%;
+        justify-self: center;
 
         h3 {
             text-align: center;
