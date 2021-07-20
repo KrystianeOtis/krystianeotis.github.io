@@ -724,10 +724,6 @@ nav ul li ul li a {
   text-decoration: underline;
 }
 
-#reservation-div img {
-  display: none;
-}
-
 form {
   font-family: "Mate", serif;
 }
@@ -737,12 +733,17 @@ form#reservation-form {
   width: 90%;
   border: 3px solid #f1f1f1;
   background-color: white;
-  padding: .7rem;
+  padding: 1rem;
+}
+
+form#reservation-form h1 {
+  text-align: center;
 }
 
 form#reservation-form input {
-  width: 90%;
-  margin: 10px;
+  width: 100%;
+  margin: 5px;
+  display: block;
 }
 
 form#reservation-form textarea {
@@ -760,9 +761,13 @@ form#reservation-form textarea {
 }
 
 #form-button {
+  text-align: center;
   margin-bottom: 20px;
   margin-top: 40px;
-  margin-left: 32%;
+}
+
+#form-button button {
+  width: 150px;
 }
 
 #form-option-grid {
@@ -782,8 +787,29 @@ form#reservation-form textarea {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
   #name-grid #fname {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  #email-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #email-grid #email {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  #phone-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #phone-grid #phone {
     -ms-grid-column: 1;
     grid-column: 1;
   }
@@ -792,6 +818,7 @@ form#reservation-form textarea {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
   #address-grid #street {
     grid-column: span 2;
@@ -801,6 +828,7 @@ form#reservation-form textarea {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
   #check-in-grid #check-in {
     -ms-grid-column: 1;
@@ -816,32 +844,19 @@ form#reservation-form textarea {
   #reservation-div {
     margin: 0 auto;
     width: 80%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  #reservation-div img {
-    display: inline-block;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    max-height: 800px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -ms-grid-column-align: stretch;
-        justify-self: stretch;
-    z-index: -1;
-  }
   form#reservation-form {
     margin: 0 auto;
-    width: 100%;
+    width: 70%;
     border: 3px solid #f1f1f1;
     background-color: white;
     padding: 2rem;
+  }
+  form#reservation-form h1 {
+    text-align: center;
+    margin-bottom: 50px;
   }
 }
 
