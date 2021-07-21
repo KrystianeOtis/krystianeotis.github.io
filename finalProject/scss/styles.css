@@ -937,22 +937,54 @@ form#reservation-form textarea {
   max-width: 100%;
 }
 
-#wedding-services {
+#wedding-services div {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   border: 3px solid #f1f1f1;
   -webkit-box-shadow: 1px 1px 10px black;
           box-shadow: 1px 1px 10px black;
   background-color: white;
   padding: 1rem;
+  margin-bottom: 40px;
 }
 
 #wedding-services h1 {
   text-align: center;
 }
 
+#wedding-services h2 {
+  text-align: center;
+}
+
 #wedding-services img {
   max-width: 100%;
+}
+
+@media only screen and (min-width: 32.5em) {
+  #wedding-services {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  #wedding-services img {
+    width: 240px;
+    height: 238px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 63.5em) {
+  #wedding-services div {
+    width: 80%;
+  }
+  #wedding-services img {
+    width: 300px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 div.cards {
@@ -1039,6 +1071,10 @@ div.cards ul li {
 #contact-us-section {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+#contact-us-section h2 {
+  text-align: center;
 }
 
 form#contact-form {
