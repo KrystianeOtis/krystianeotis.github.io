@@ -1,15 +1,22 @@
 //MOBILE VIEW
 div.cards {
     margin: 0 auto;
-    max-width: 400px;
-    h2{
+    max-width: 90%;
+
+    h2 {
         font-family: $fontFamilyHr;
         text-decoration: underline;
-    }
-    h3{
-      font-family: $fontFamilyHr;
+        text-align: center;
+        line-height: 32px;
     }
 
+    h3 {
+        font-family: $fontFamilyHr;
+    }
+p{
+    font-size: 17px;
+     letter-spacing: 1px;
+}
     ul {
         font-family: $fontFamily;
         line-height: 25px;
@@ -17,6 +24,7 @@ div.cards {
         li {
             margin-top: 10px;
             margin-bottom: 10px;
+             letter-spacing: 1px;
         }
 
     }
@@ -26,17 +34,37 @@ div.cards {
 .cards section {
     border: 3px solid #f1f1f1;
     background-color: white;
-    padding: 10px;
+    padding: 1em;
     margin-bottom: 1em;
     box-shadow: 1px 1px 10px black;
     justify-content: center;
-    margin: 5%;
+
 }
 
 .cards div img {
     max-width: 100%;
     box-shadow: 1px 1px 10px black;
     object-fit: cover;
+}
+
+div#weatherDiv {
+    border: 3px solid #f1f1f1;
+    box-shadow: 1px 1px 10px rgba(54, 54, 54, 0.411);
+    background: $trasparent;
+    padding: .5em;
+    margin-bottom: 20px;
+
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        letter-spacing: 1px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+
 }
 
 //TABLET VIEW

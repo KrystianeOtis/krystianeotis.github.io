@@ -1121,16 +1121,23 @@ form#reservation-form textarea {
 
 div.cards {
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 90%;
 }
 
 div.cards h2 {
   font-family: "Vollkorn SC", serif;
   text-decoration: underline;
+  text-align: center;
+  line-height: 32px;
 }
 
 div.cards h3 {
   font-family: "Vollkorn SC", serif;
+}
+
+div.cards p {
+  font-size: 17px;
+  letter-spacing: 1px;
 }
 
 div.cards ul {
@@ -1141,19 +1148,19 @@ div.cards ul {
 div.cards ul li {
   margin-top: 10px;
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 .cards section {
   border: 3px solid #f1f1f1;
   background-color: white;
-  padding: 10px;
+  padding: 1em;
   margin-bottom: 1em;
   -webkit-box-shadow: 1px 1px 10px black;
           box-shadow: 1px 1px 10px black;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 5%;
 }
 
 .cards div img {
@@ -1162,6 +1169,25 @@ div.cards ul li {
           box-shadow: 1px 1px 10px black;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+div#weatherDiv {
+  border: 3px solid #f1f1f1;
+  -webkit-box-shadow: 1px 1px 10px rgba(54, 54, 54, 0.411);
+          box-shadow: 1px 1px 10px rgba(54, 54, 54, 0.411);
+  background: rgba(241, 221, 223, 0.692);
+  padding: .5em;
+  margin-bottom: 20px;
+}
+
+div#weatherDiv h3 {
+  text-align: center;
+}
+
+div#weatherDiv p {
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 18px;
 }
 
 @media only screen and (min-width: 32.5em) {

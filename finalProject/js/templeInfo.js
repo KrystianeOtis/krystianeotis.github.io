@@ -73,7 +73,7 @@ async function getTemples() {
                     covidPhase.textContent = temples[i].covidPhase;
 
 
-                    weatherSummary.textContent = 'Weather Summary'
+                    weatherSummary.textContent = 'Current Weather Summary'
 
 
 
@@ -87,6 +87,7 @@ async function getTemples() {
                     closureslist.setAttribute('id', 'closureslist');
                     imageurl.setAttribute('src', temples[i]['imageurl']);
                     imageurl.setAttribute('alt', temples[i].name); // sets the alt to temple name
+                    weatherDiv.setAttribute('id', 'weatherDiv');
                     weatherSummary.setAttribute('id', 'weatherSummary');
                     condition.setAttribute('id', 'condition' + i);
                     temp.setAttribute('id', 'temp' + i);
@@ -139,7 +140,7 @@ function getWeather(zip, num) {
         .then((jsObject) => {
             console.log(jsObject);
 
-            document.getElementById('condition' + num).textContent = 'Current Condition: ' + jsObject.weather[0].main;
+            document.getElementById('condition' + num).textContent = 'Condition: ' + jsObject.weather[0].main;
             document.getElementById('temp' + num).textContent = 'Temperature: ' + Math.round(jsObject.main.temp_max) + '°F';
             document.getElementById('windChill' + num).textContent = 'Wind Chill: ' + calcWindChill(jsObject.main.temp_max, jsObject.wind.speed);
             document.getElementById('humidity' + num).textContent = 'Humidity: ' + Math.round(jsObject.main.humidity) + '%';
