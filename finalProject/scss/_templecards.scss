@@ -13,10 +13,12 @@ div.cards {
     h3 {
         font-family: $fontFamilyHr;
     }
-p{
-    font-size: 17px;
-     letter-spacing: 1px;
-}
+
+    p {
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
     ul {
         font-family: $fontFamily;
         line-height: 25px;
@@ -24,7 +26,7 @@ p{
         li {
             margin-top: 10px;
             margin-bottom: 10px;
-             letter-spacing: 1px;
+            letter-spacing: 1px;
         }
 
     }
@@ -68,47 +70,7 @@ div#weatherDiv {
 }
 
 //TABLET VIEW
-@media only screen and (min-width: 32.5em) {
-    div.cards {
-
-        justify-content: center;
-        max-width: 90%;
-    }
-
-    .cards section {
-        margin: 10px;
-
-
-
-
-    }
-
-    .cards div img {
-        align-content: center;
-    }
-
-    .cards section:nth-child(odd) {
-        flex-direction: row-reverse;
-
-    }
-}
+@media only screen and (min-width: 32.5em) {}
 
 //DESKTOP VIEW
-@media only screen and (min-width: 63.5em) {
-    div.cards {
-        max-width: 80%;
-    }
-
-    .cards section {
-
-        max-width: 80%;
-    }
-
-    .cards section div {
-        display: block;
-    }
-
-    .cards div img {
-        max-width: 700px;
-    }
-}
+@media only screen and (min-width: 63.5em) {}

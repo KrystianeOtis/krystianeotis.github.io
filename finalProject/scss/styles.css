@@ -1109,11 +1109,11 @@ form#reservation-form textarea {
 
 @media only screen and (min-width: 63.5em) {
   #wedding-services div {
-    width: 80%;
+    width: 90%;
   }
   #wedding-services img {
-    width: 300px;
-    height: 250px;
+    width: 550px;
+    height: 450px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -1234,6 +1234,8 @@ div#weatherDiv p {
 
 #contact-us-section h2 {
   text-align: center;
+  font-family: "Vollkorn SC", serif;
+  font-size: 28px;
 }
 
 form#contact-form {
