@@ -84,21 +84,14 @@ div#weatherDiv {
 
 //DESKTOP VIEW
 @media only screen and (min-width: 63.5em) {
-    // div.cards {
-    //     max-width: 100%;
-    // }
+    div.cards {
+        max-width: 60%;
+    }
 
-    // .cards section {
+    .cards div img {
+        width: 1200px;
+        height: 730px;
+        object-fit: cover;
+    }
 
-    //     max-width: 80%;
-    // }
-
-
-
-    // .cards {
-    //     img {
-    //         max-width: 100%;
-    //     }
-
-    // }
 }
