@@ -151,9 +151,11 @@ hr {
         grid-column: 3;
         grid-row: 2;
     }
-#book{
-    width: 80%;
-}
+
+    #book {
+        width: 80%;
+    }
+
     #templeEvent {
 
         width: 80%;
@@ -167,6 +169,12 @@ hr {
         }
 
 
+    }
+
+    #templeImg {
+        height: 500px;
+        width: 1070px;
+        object-fit: cover;
     }
 
     #templeSummary {
