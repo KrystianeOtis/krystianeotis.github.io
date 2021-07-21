@@ -70,7 +70,35 @@ div#weatherDiv {
 }
 
 //TABLET VIEW
-@media only screen and (min-width: 32.5em) {}
+@media only screen and (min-width: 32.5em) {
+    // div.cards {
+
+    // }
+
+
+    // .cards div img {
+    //     align-content: center;
+    // }
+
+}
 
 //DESKTOP VIEW
-@media only screen and (min-width: 63.5em) {}
+@media only screen and (min-width: 63.5em) {
+    // div.cards {
+    //     max-width: 100%;
+    // }
+
+    // .cards section {
+
+    //     max-width: 80%;
+    // }
+
+
+
+    // .cards {
+    //     img {
+    //         max-width: 100%;
+    //     }
+
+    // }
+}

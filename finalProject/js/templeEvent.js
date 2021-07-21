@@ -22,7 +22,7 @@ async function getTempleEvent(temple) {
                     name.textContent = temples[i].name;
                     phone.textContent = temples[i].phone;
                     summary.textContent = temples[i].summary;
-                    address.textContent = temples[i].address + ". " + temples[i].city + ", " + temples[i].state;
+                    address.textContent = temples[i].address + " " + temples[i].city + ", " + temples[i].state;
 
                     imageurl.setAttribute('src', temples[i]['imageurl']);
                     imageurl.setAttribute('alt', temples[i].name); // sets the alt to temple name

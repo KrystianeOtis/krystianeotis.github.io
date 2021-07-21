@@ -5,8 +5,9 @@ h1 {
     letter-spacing: 7px;
     text-decoration: underline;
 }
-hr{
-  font-family: $fontFamilyHr;
+
+hr {
+    font-family: $fontFamilyHr;
 }
 
 //button over image
@@ -101,6 +102,9 @@ hr{
     p {
         padding-left: 1em;
         padding-right: 1em;
+        font-size: $fontSize;
+        line-height: 28px;
+        letter-spacing: 1px;
     }
 
 }
@@ -119,6 +123,8 @@ hr{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
+    letter-spacing: 1px;
+    font-size: 18px;
 }
 
 //TABLET VIEW
@@ -126,6 +132,8 @@ hr{
 
 //DESKTOP VIEW
 @media only screen and (min-width: 63.5em) {
+
+
     #check-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -143,10 +151,12 @@ hr{
         grid-column: 3;
         grid-row: 2;
     }
-
+#book{
+    width: 80%;
+}
     #templeEvent {
 
-
+        width: 80%;
         padding-bottom: 2em;
 
 

@@ -627,6 +627,9 @@ hr {
 #templeEvent p {
   padding-left: 1em;
   padding-right: 1em;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 1px;
 }
 
 #templeAddress,
@@ -645,6 +648,8 @@ hr {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   gap: 10px;
+  letter-spacing: 1px;
+  font-size: 18px;
 }
 
 @media only screen and (min-width: 63.5em) {
@@ -672,7 +677,11 @@ hr {
     -ms-grid-row: 2;
     grid-row: 2;
   }
+  #book {
+    width: 80%;
+  }
   #templeEvent {
+    width: 80%;
     padding-bottom: 2em;
   }
   #templeEvent p {
@@ -1188,43 +1197,6 @@ div#weatherDiv p {
   letter-spacing: 1px;
   text-align: center;
   font-size: 18px;
-}
-
-@media only screen and (min-width: 32.5em) {
-  div.cards {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    max-width: 90%;
-  }
-  .cards section {
-    margin: 10px;
-  }
-  .cards div img {
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  .cards section:nth-child(odd) {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-}
-
-@media only screen and (min-width: 63.5em) {
-  div.cards {
-    max-width: 80%;
-  }
-  .cards section {
-    max-width: 80%;
-  }
-  .cards section div {
-    display: block;
-  }
-  .cards div img {
-    max-width: 700px;
-  }
 }
 
 #contact-us-section {
