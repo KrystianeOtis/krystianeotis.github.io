@@ -535,6 +535,8 @@ h1 {
 
 #book {
   margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
   background-color: rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 1px 1px 10px black;
           box-shadow: 1px 1px 10px black;
@@ -542,10 +544,9 @@ h1 {
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
-  width: 80%;
+  width: 90%;
   padding: 20px;
   text-align: center;
-  justify-items: center;
 }
 
 * {
@@ -597,20 +598,84 @@ h1 {
 #btn:hover {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 #btn:hover:before, #btn:hover:after {
   width: 100%;
   height: 100%;
+  border-color: white;
 }
 
 #templeEvent {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   border: 3px solid #f1f1f1;
   -webkit-box-shadow: 1px 1px 10px black;
           box-shadow: 1px 1px 10px black;
   background-color: white;
+  margin-bottom: 40px;
+}
+
+#templeEvent p {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#templeAddress,
+#templePhone {
+  text-align: center;
+}
+
+#templeImg {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#check-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+@media only screen and (min-width: 63.5em) {
+  #check-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+  #checkinhome {
+    -ms-grid-column-align: end;
+        justify-self: end;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  #checkouthome {
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -ms-grid-column: 3;
+    grid-column: 3;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  #templeEvent {
+    padding-bottom: 2em;
+  }
+  #templeEvent p {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  #templeSummary p {
+    margin-bottom: 3em;
+  }
 }
 
 #reservation-div {
@@ -798,7 +863,7 @@ form#reservation-form textarea {
 
 #amenities {
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
   border: 3px solid #f1f1f1;
   -webkit-box-shadow: 1px 1px 10px black;
           box-shadow: 1px 1px 10px black;

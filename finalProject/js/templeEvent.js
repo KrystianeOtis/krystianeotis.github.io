@@ -12,22 +12,32 @@ async function getTempleEvent(temple) {
             for (let i = 0; i < temples.length; i++) {
                 if (temples[i].name == temple) {
 
-                     let photoDiv = document.createElement('div')
-                     let imageurl = document.createElement('img');
-                    let p = document.createElement('p');
+                    let openingdiv = document.getElementById('templeEvent')
+                    let photoDiv = document.createElement('div')
+                    let imageurl = document.createElement('img');
+                    let name = document.createElement('h1');
+                    let summary = document.createElement('p');
                     let address = document.createElement('p');
-                    p.textContent = temples[i].summary;
+                    let phone = document.createElement('p');
+                    name.textContent = temples[i].name;
+                    phone.textContent = temples[i].phone;
+                    summary.textContent = temples[i].summary;
                     address.textContent = temples[i].address + ". " + temples[i].city + ", " + temples[i].state;
 
                     imageurl.setAttribute('src', temples[i]['imageurl']);
                     imageurl.setAttribute('alt', temples[i].name); // sets the alt to temple name
+                    imageurl.setAttribute('id', 'templeImg');
+                    phone.setAttribute('id', 'templePhone');
+                    address.setAttribute('id', 'templeAddress');
+                    summary.setAttribute('id', 'templeSummary');
 
-                    let openingdiv = document.getElementById('templeEvent')
-                    
+
                     openingdiv.appendChild(photoDiv)
                     photoDiv.appendChild(imageurl);
+                    openingdiv.appendChild(name);
                     openingdiv.appendChild(address);
-                    openingdiv.appendChild(p);
+                    openingdiv.appendChild(phone);
+                    openingdiv.appendChild(summary);
 
 
 

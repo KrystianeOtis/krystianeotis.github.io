@@ -1,17 +1,18 @@
 //MOBILE VIEW
-h1{
+h1 {
     font-family: $fontFamilyHr;
     text-align: center;
     letter-spacing: 7px;
     text-decoration: underline;
 }
+
 //button over image
 #book {
     margin: 0 auto;
-    // margin-top: 20px;
-    // margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     background-color: rgba(0, 0, 0, 0.4);
-     box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px black;
     /* Black w/opacity/see-through */
     color: white;
     font-weight: bold;
@@ -20,10 +21,10 @@ h1{
 
     // transform: translate(-50%, -50%);
 
-    width: 80%;
+    width: 90%;
     padding: 20px;
     text-align: center;
-    justify-items: center;
+
 }
 
 * {
@@ -73,29 +74,91 @@ h1{
         border-top-right-radius: 0px;
         border-bottom-left-radius: 0px;
 
-        // background:rgba(0,0,0,.5);
-        // color:white;
+        background: rgba(0, 0, 0, .5);
+        color: white;
+
         &:before,
         &:after {
 
             width: 100%;
             height: 100%;
-            // border-color:white;
+            border-color: white;
         }
     }
 }
 
 #templeEvent {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     border: 3px solid #f1f1f1;
     box-shadow: 1px 1px 10px black;
     background-color: white;
+    margin-bottom: 40px;
+
+    p {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
 }
 
+#templeAddress,
+#templePhone {
+    text-align: center;
+}
+
+#templeImg {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#check-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
 
 //TABLET VIEW
 @media only screen and (min-width: 32.5em) {}
 
 //DESKTOP VIEW
-@media only screen and (min-width: 63.5em) {}
+@media only screen and (min-width: 63.5em) {
+    #check-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    #checkinhome {
+        justify-self: end;
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #checkouthome {
+        justify-self: start;
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    #templeEvent {
+
+
+        padding-bottom: 2em;
+
+
+        p {
+            padding-left: 3em;
+            padding-right: 3em;
+
+        }
+
+
+    }
+
+    #templeSummary {
+        p {
+            margin-bottom: 3em;
+        }
+    }
+}
