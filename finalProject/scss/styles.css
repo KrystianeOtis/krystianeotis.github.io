@@ -825,22 +825,80 @@ form#reservation-form textarea {
   }
 }
 
-#suites {
+#suites div {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   border: 3px solid #f1f1f1;
   -webkit-box-shadow: 1px 1px 10px black;
           box-shadow: 1px 1px 10px black;
   background-color: white;
   padding: 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-#suites h1 {
+#suites div h1 {
   text-align: center;
 }
 
-#suites img {
-  max-width: 100%;
+#suites div img {
+  width: 325px;
+  height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (min-width: 32.5em) {
+  #suites div {
+    width: 80%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 40px 30px 30px 1fr;
+        grid-template-rows: 40px 30px 30px 1fr;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  #suites div img {
+    height: 250px;
+    width: 325px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #suites div p {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+}
+
+@media only screen and (min-width: 63.5em) {
+  #suites div {
+    width: 80%;
+    display: -ms-grid;
+    display: grid;
+    height: 400px;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -ms-grid-rows: 40px 30px 30px 1fr;
+        grid-template-rows: 40px 30px 30px 1fr;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  #suites div img {
+    height: 360px;
+    width: 600px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #suites div h2 {
+    -ms-grid-column: 3;
+    grid-column: 3;
+  }
+  #suites div p {
+    -ms-grid-column: 3;
+    grid-column: 3;
+  }
 }
 
 #specialized {
