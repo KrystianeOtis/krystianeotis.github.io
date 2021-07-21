@@ -760,16 +760,91 @@ form#reservation-form textarea {
   }
 }
 
+#suites {
+  margin: 0 auto;
+  width: 80%;
+  border: 3px solid #f1f1f1;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+  background-color: white;
+  padding: 1rem;
+}
+
+#suites h1 {
+  text-align: center;
+}
+
+#suites img {
+  max-width: 100%;
+}
+
+#specialized {
+  margin: 0 auto;
+  width: 80%;
+  border: 3px solid #f1f1f1;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+  background-color: white;
+  padding: 1rem;
+}
+
+#specialized h1 {
+  text-align: center;
+}
+
+#specialized img {
+  max-width: 100%;
+}
+
+#amenities {
+  margin: 0 auto;
+  width: 90%;
+  border: 3px solid #f1f1f1;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+  background-color: white;
+  padding: 1rem;
+}
+
+#amenities h1 {
+  text-align: center;
+}
+
+#amenities img {
+  max-width: 100%;
+}
+
+#wedding-services {
+  margin: 0 auto;
+  width: 80%;
+  border: 3px solid #f1f1f1;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+  background-color: white;
+  padding: 1rem;
+}
+
+#wedding-services h1 {
+  text-align: center;
+}
+
+#wedding-services img {
+  max-width: 100%;
+}
+
 div.cards {
   margin-left: auto;
   margin-right: auto;
   max-width: 400px;
 }
 
+div.cards ul li {
+  font-family: "Mate", serif;
+}
+
 .cards section {
   border: 3px solid #f1f1f1;
   background-color: white;
-  text-align: center;
   padding: 10px;
   margin-bottom: 1em;
   -webkit-box-shadow: 1px 1px 10px black;
@@ -793,21 +868,9 @@ div.cards {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     max-width: 700px;
   }
   .cards section {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     margin: 10px;
   }
   .cards div img {
@@ -857,7 +920,7 @@ div.cards {
 
 form#contact-form {
   margin: 0 auto;
-  height: 500px;
+  height: 550px;
   width: 80%;
   border: 3px solid #f1f1f1;
   background-color: white;

@@ -42,7 +42,7 @@
     {
       "name":"Las Vegas Nevada Temple",
       "phone":"702-452-5011",
-      "address":"827 Temple View Dr",
+      "address":"827 Temple View Dr.",
       "city":"Las Vegas",
       "state":"NV",
       "zip":89110,
@@ -78,7 +78,7 @@
     {
       "name":"Winter Quarters Nebraska Temple",
       "phone":"402-453-3406",
-      "address":"8283 N 34th St",
+      "address":"8283 N 34th St.",
       "city":"Omaha",
       "state":"NE",
       "zip":68112,
@@ -115,7 +115,7 @@
     },
     {
       "name":"Sacramento California Temple",
-      "phone":"2110 California Cir",
+      "phone":"2110 California Cir.",
       "address":"8283 N 34th St",
       "city":"Rancho Cordova",
       "state":"CA",
@@ -167,7 +167,7 @@
     {
       "name":"Raleigh North Carolina Temple",
       "phone":"919-362-4135",
-      "address":"574 Bryan Dr",
+      "address":"574 Bryan Dr.",
       "city":"Apex",
       "state":"NC",
       "zip":27502,
@@ -203,7 +203,7 @@
     {
       "name":"Cedar City Utah Temple",
       "phone":"435-572-4150",
-      "address":"280 South Cove Dr",
+      "address":"280 South Cove Dr.",
       "city":"Cedar City",
       "state":"UT",
       "zip":84720,

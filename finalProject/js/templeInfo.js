@@ -15,17 +15,22 @@ async function getTemples() {
                     let text = document.createElement('div'); // create a div
                     let h2 = document.createElement('h2'); // giving each section a heading2
                     let address = document.createElement('p');
+                    let phone = document.createElement('p');
+                    let summary = document.createElement('p');
                     let milestones = document.createElement('h3');
                     let milestonelist = document.createElement('ul');
                     let services = document.createElement('h3');
                     let serviceslist = document.createElement('ul');
-                    let architectural = document.createElement('p');
+                    let architectural = document.createElement('h3');
+                    let architecturallist = document.createElement('ul');
                     let covidPhase = document.createElement('p');
-                    let closures = document.createElement('p');
+                    let closures = document.createElement('h3');
+                    let closureslist = document.createElement('ul');
                     let photoDiv = document.createElement('div')
                     let imageurl = document.createElement('img');
 
                     let weatherDiv = document.createElement('div')
+                    let weatherSummary = document.createElement('h3');
                     let condition = document.createElement('p');
                     let temp = document.createElement('p');
                     let windChill = document.createElement('p');
@@ -33,7 +38,10 @@ async function getTemples() {
                     let windSpeed = document.createElement('p');
 
                     h2.textContent = temples[i].name;
-                    address.textContent = temples[i].address + temples[i].city + temples[i].state + temples[i].zip;
+                    address.textContent = temples[i].address + ' ' + temples[i].city + ', ' + temples[i].state + ', ' + temples[i].zip;
+
+                    phone.textContent = temples[i].phone;
+                    summary.textContent = temples[i].summary;
 
                     milestones.textContent = "Milestones: "
                     // console.log(temples[i].history.length)
@@ -44,43 +52,69 @@ async function getTemples() {
                     }
 
                     services.textContent = "Services: "
-                    console.log(temples[i].services.length)
                     for (let s = 0; s < temples[i].services.length; s++) {
                         let serviceli = document.createElement('li')
                         serviceli.textContent = temples[i].services[s];
                         serviceslist.appendChild(serviceli);
                     }
 
+                    architectural.textContent = "Architectural Features: "
+                    for (let a = 0; a < temples[i].architectural.length; a++) {
+                        let architecturalli = document.createElement('li')
+                        architecturalli.textContent = temples[i].architectural[a];
+                        architecturallist.appendChild(architecturalli);
+                    }
+                    closures.textContent = "Closure Dates: "
+                    for (let c = 0; c < temples[i].closures.length; c++) {
+                        let closureli = document.createElement('li')
+                        closureli.textContent = temples[i].closures[c];
+                        closureslist.appendChild(closureli);
+                    }
                     covidPhase.textContent = temples[i].covidPhase;
-                    closures.textContent = temples[i].closures;
-                    architectural.textContent = 'Architectural Features: ' + temples[i].architectural;
 
-                    milestones.setAttribute('id', 'milestones')
-                    services.setAttribute('id', 'services')
-                    imageurl.setAttribute('src', temples[i]['imageurl']); //adds the correct image to match town from local file
-                    imageurl.setAttribute('alt', temples[i].name); // sets the alt to town name
 
-                    condition.setAttribute('id', 'condition' + i)
-                    temp.setAttribute('id', 'temp' + i)
-                    windChill.setAttribute('id', 'windChill' + i)
-                    humidity.setAttribute('id', 'humidity' + i)
-                    windSpeed.setAttribute('id', 'windSpeed' + i)
+                    weatherSummary.textContent = 'Weather Summary'
+
+
+
+                    milestones.setAttribute('id', 'milestones');
+                    milestonelist.setAttribute('id', 'milestonelist');
+                    services.setAttribute('id', 'services');
+                    serviceslist.setAttribute('id', 'serviceslist');
+                    architectural.setAttribute('id', 'architectural');
+                    architecturallist.setAttribute('id', 'architecturallist');
+                    closures.setAttribute('id', 'closures');
+                    closureslist.setAttribute('id', 'closureslist');
+                    imageurl.setAttribute('src', temples[i]['imageurl']);
+                    imageurl.setAttribute('alt', temples[i].name); // sets the alt to temple name
+                    weatherSummary.setAttribute('id', 'weatherSummary');
+                    condition.setAttribute('id', 'condition' + i);
+                    temp.setAttribute('id', 'temp' + i);
+                    windChill.setAttribute('id', 'windChill' + i);
+                    humidity.setAttribute('id', 'humidity' + i);
+                    windSpeed.setAttribute('id', 'windSpeed' + i);
 
                     card.appendChild(text); //append div to section
                     text.appendChild(h2); // appendChild - appends a node as the last child of a node
                     text.appendChild(address);
+                    text.appendChild(phone);
+                    text.appendChild(covidPhase);
+                    text.appendChild(summary);
                     text.appendChild(milestones);
                     text.appendChild(milestonelist);
                     text.appendChild(services);
                     text.appendChild(serviceslist);
-                    // text.appendChild(history);
                     text.appendChild(architectural);
-                    text.appendChild(covidPhase);
+                    text.appendChild(architecturallist);
                     text.appendChild(closures);
+                    text.appendChild(closureslist);
+
                     card.appendChild(photoDiv)
                     photoDiv.appendChild(imageurl);
 
+                    // WEATHER SUMMARY
                     text.appendChild(weatherDiv);
+                    weatherDiv.appendChild(weatherSummary)
                     weatherDiv.appendChild(condition);
                     weatherDiv.appendChild(temp)
                     weatherDiv.appendChild(windChill)
@@ -98,18 +132,18 @@ async function getTemples() {
 function getWeather(zip, num) {
 
     const CITY_ZIP = zip;
-    const apiURL = `https://api.openweathermap.org/data/2.5/weather?zip=`+CITY_ZIP+`&appid=953894ad13f71540f4d4ee5b185b63d7&units=imperial`;
+    const apiURL = `https://api.openweathermap.org/data/2.5/weather?zip=` + CITY_ZIP + `&appid=953894ad13f71540f4d4ee5b185b63d7&units=imperial`;
 
     fetch(apiURL)
         .then((response) => response.json())
         .then((jsObject) => {
             console.log(jsObject);
 
-            document.getElementById('condition' + num).textContent = jsObject.weather[0].main;
-            document.getElementById('temp' + num).textContent = Math.round(jsObject.main.temp_max);
-            document.getElementById('windChill' + num).textContent = calcWindChill(jsObject.main.temp_max, jsObject.wind.speed);
-            document.getElementById('humidity' + num).textContent = Math.round(jsObject.main.humidity);
-            document.getElementById('windSpeed' + num).textContent = Math.round(jsObject.wind.speed);
+            document.getElementById('condition' + num).textContent = 'Current Condition: ' + jsObject.weather[0].main;
+            document.getElementById('temp' + num).textContent = 'Temperature: ' + Math.round(jsObject.main.temp_max) + '°F';
+            document.getElementById('windChill' + num).textContent = 'Wind Chill: ' + calcWindChill(jsObject.main.temp_max, jsObject.wind.speed);
+            document.getElementById('humidity' + num).textContent = 'Humidity: ' + Math.round(jsObject.main.humidity) + '%';
+            document.getElementById('windSpeed' + num).textContent = 'Wind Speed: ' + Math.round(jsObject.wind.speed) + 'mph';
 
         })
 }

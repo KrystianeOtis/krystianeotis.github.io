@@ -6,7 +6,7 @@
 
 form#contact-form {
     margin: 0 auto;
-    height: 500px;
+    height: 550px;
     width: 80%;
     border: 3px solid #f1f1f1;
     background-color: white;
@@ -64,7 +64,8 @@ form#contact-form {
     #contact-us-section {
         grid-column: 2;
     }
-    #map{
- grid-column: 1;
+
+    #map {
+        grid-column: 1;
     }
 }
