@@ -901,7 +901,7 @@ form#reservation-form textarea {
   }
 }
 
-#specialized {
+.specialized {
   margin: 0 auto;
   width: 80%;
   border: 3px solid #f1f1f1;
@@ -911,15 +911,15 @@ form#reservation-form textarea {
   padding: 1rem;
 }
 
-#specialized h1 {
+.specialized h1 {
   text-align: center;
 }
 
-#specialized img {
+.specialized img {
   max-width: 100%;
 }
 
-#amenities {
+.amenities {
   margin: 0 auto;
   width: 80%;
   border: 3px solid #f1f1f1;
@@ -929,11 +929,11 @@ form#reservation-form textarea {
   padding: 1rem;
 }
 
-#amenities h1 {
+.amenities h1 {
   text-align: center;
 }
 
-#amenities img {
+.amenities img {
   max-width: 100%;
 }
 
