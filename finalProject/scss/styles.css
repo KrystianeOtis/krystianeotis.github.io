@@ -678,10 +678,10 @@ hr {
     grid-row: 2;
   }
   #book {
-    width: 80%;
+    width: 70%;
   }
   #templeEvent {
-    width: 80%;
+    width: 70%;
     padding-bottom: 2em;
   }
   #templeEvent p {
@@ -689,8 +689,6 @@ hr {
     padding-right: 3em;
   }
   #templeImg {
-    height: 900px;
-    width: 1660px;
     max-width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
