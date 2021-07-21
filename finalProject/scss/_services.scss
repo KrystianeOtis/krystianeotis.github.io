@@ -1,7 +1,13 @@
 //MOBILE VIEW
-.specialized {
+
+#services-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#specialized {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     border: 3px solid #f1f1f1;
     box-shadow: 1px 1px 10px black;
     background-color: white;
@@ -12,14 +18,21 @@
 
     }
 
-    img {
-        max-width: 100%;
-    }
+    ul {
+        font-family: $fontFamily;
+        line-height: 25px;
 
+        li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+    }
 }
-.amenities {
+
+#amenities {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     border: 3px solid #f1f1f1;
     box-shadow: 1px 1px 10px black;
     background-color: white;
@@ -30,13 +43,99 @@
 
     }
 
-    img {
-        max-width: 100%;
+    ul {
+        font-family: $fontFamily;
+        line-height: 25px;
+
+        li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
     }
 
 }
+
+#amenities-img {
+
+    margin: 0 auto;
+    width: 90%;
+    border: 3px solid #f1f1f1;
+    box-shadow: 1px 1px 10px black;
+    background-color: white;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+#specialized-img {
+
+    margin: 0 auto;
+    width: 90%;
+    border: 3px solid #f1f1f1;
+    box-shadow: 1px 1px 10px black;
+    background-color: white;
+
+    div {
+        margin-top: 50px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+#bus,
+#lobby,
+#breakfast,
+#pool {
+    display: none;
+}
+
 //TABLET VIEW
-@media only screen and (min-width: 32.5em) {}
+@media only screen and (min-width: 32.5em) {
+
+    #specialized,
+    #amenities {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 55px 1fr;
+
+        h2 {
+            grid-column: span 2;
+        }
+    }
+}
 
 //DESKTOP VIEW
-@media only screen and (min-width: 63.5em) {}
+@media only screen and (min-width: 63.5em) {
+
+    #bus,
+    #lobby,
+    #breakfast,
+    #pool {
+        display: inline-block;
+    }
+
+    #specialized,
+    #amenities {
+        width: 80%;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    #specialized-img,
+    #amenities-img {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        img {
+            object-fit: cover;
+            width: 515px;
+            height: 390px;
+        }
+    }
+
+}

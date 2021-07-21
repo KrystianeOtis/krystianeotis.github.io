@@ -533,6 +533,10 @@ h1 {
   text-decoration: underline;
 }
 
+hr {
+  font-family: "Vollkorn SC", serif;
+}
+
 #book {
   margin: 0 auto;
   margin-top: 20px;
@@ -901,9 +905,14 @@ form#reservation-form textarea {
   }
 }
 
-.specialized {
+#services-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#specialized {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   border: 3px solid #f1f1f1;
   -webkit-box-shadow: 1px 1px 10px black;
           box-shadow: 1px 1px 10px black;
@@ -911,17 +920,23 @@ form#reservation-form textarea {
   padding: 1rem;
 }
 
-.specialized h1 {
+#specialized h1 {
   text-align: center;
 }
 
-.specialized img {
-  max-width: 100%;
+#specialized ul {
+  font-family: "Mate", serif;
+  line-height: 25px;
 }
 
-.amenities {
+#specialized ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#amenities {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   border: 3px solid #f1f1f1;
   -webkit-box-shadow: 1px 1px 10px black;
           box-shadow: 1px 1px 10px black;
@@ -929,12 +944,101 @@ form#reservation-form textarea {
   padding: 1rem;
 }
 
-.amenities h1 {
+#amenities h1 {
   text-align: center;
 }
 
-.amenities img {
+#amenities ul {
+  font-family: "Mate", serif;
+  line-height: 25px;
+}
+
+#amenities ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#amenities-img {
+  margin: 0 auto;
+  width: 90%;
+  border: 3px solid #f1f1f1;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+  background-color: white;
+}
+
+#amenities-img img {
   max-width: 100%;
+}
+
+#specialized-img {
+  margin: 0 auto;
+  width: 90%;
+  border: 3px solid #f1f1f1;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+  background-color: white;
+}
+
+#specialized-img div {
+  margin-top: 50px;
+}
+
+#specialized-img img {
+  max-width: 100%;
+}
+
+#bus,
+#lobby,
+#breakfast,
+#pool {
+  display: none;
+}
+
+@media only screen and (min-width: 32.5em) {
+  #specialized,
+  #amenities {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 55px 1fr;
+        grid-template-rows: 55px 1fr;
+  }
+  #specialized h2,
+  #amenities h2 {
+    grid-column: span 2;
+  }
+}
+
+@media only screen and (min-width: 63.5em) {
+  #bus,
+  #lobby,
+  #breakfast,
+  #pool {
+    display: inline-block;
+  }
+  #specialized,
+  #amenities {
+    width: 80%;
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  #specialized-img,
+  #amenities-img {
+    width: 80%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  #specialized-img img,
+  #amenities-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 515px;
+    height: 390px;
+  }
 }
 
 #wedding-services div {
