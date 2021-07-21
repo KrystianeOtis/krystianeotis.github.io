@@ -5,9 +5,14 @@ div.cards {
     max-width: 400px;
 
     ul {
+        font-family: $fontFamily;
+        line-height: 25px;
+
         li {
-            font-family: $fontFamily;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
+
     }
 
 }

@@ -15,12 +15,19 @@
 
         }
 
-        
+
 
         img {
             width: 325px;
             height: 175px;
             object-fit: cover;
+        }
+        p{
+            line-height: 25px;
+
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 20px;
         }
     }
 
@@ -52,9 +59,12 @@
 
 //DESKTOP VIEW
 @media only screen and (min-width: 63.5em) {
+    .rooms{
+        width: 60%;
+    }
     #suites {
         div {
-            width: 80%;
+            width: 60%;
             display: grid;
             height: 400px;
             grid-template-columns: 2fr 1fr;

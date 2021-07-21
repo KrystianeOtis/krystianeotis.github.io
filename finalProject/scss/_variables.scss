@@ -4,7 +4,8 @@ $fontFamilyHr: 'Vollkorn SC',
 serif;
 $fontFamily: 'Mate',
 serif;
-
+$fontSize:20px;
+$lineHeight:25px;
 $regularWeight: 400;
 $heavyWeight: 700;
 
@@ -14,17 +15,11 @@ $gutter: 2%;
 $content-width: 1000px;
 $breakpoint: 799px;
 $nav-height: 80px;
-$nav-background: black; //#2c2022
+$nav-background: black;
 $nav-font-color: #ffffff;
 $link-hover-color: rgb(32, 31, 31);
-$active-link-color:#382f30;
+$active-link-color:rgba(24, 23, 23, 0.877);
+;
 
 //Footer
 $footer-background: rgba(241, 221, 223, 0.692);
-
-//accordian
-$bg: #fff;
-$text: #7288a2;
-$gray: #4d5974;
-$lightgray: #e5e5e5;
-$blue: #03b5d2;

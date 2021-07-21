@@ -852,6 +852,13 @@ form#reservation-form textarea {
      object-fit: cover;
 }
 
+#suites div p {
+  line-height: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
 @media only screen and (min-width: 32.5em) {
   #suites div {
     width: 80%;
@@ -877,8 +884,11 @@ form#reservation-form textarea {
 }
 
 @media only screen and (min-width: 63.5em) {
+  .rooms {
+    width: 60%;
+  }
   #suites div {
-    width: 80%;
+    width: 60%;
     display: -ms-grid;
     display: grid;
     height: 400px;
@@ -1097,8 +1107,14 @@ div.cards {
   max-width: 400px;
 }
 
-div.cards ul li {
+div.cards ul {
   font-family: "Mate", serif;
+  line-height: 25px;
+}
+
+div.cards ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .cards section {
