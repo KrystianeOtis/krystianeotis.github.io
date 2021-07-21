@@ -526,6 +526,10 @@ nav ul li ul li a {
   .nav-container {
     padding-right: 40px;
   }
+  #nav-list ul a.active {
+    background: white;
+    border-bottom: 5px solid white;
+  }
 }
 
 h1 {
@@ -1204,8 +1208,8 @@ div#weatherDiv p {
     max-width: 60%;
   }
   .cards div img {
-    width: 1200px;
-    height: 730px;
+    width: 1100px;
+    height: 700px;
     -o-object-fit: cover;
        object-fit: cover;
   }

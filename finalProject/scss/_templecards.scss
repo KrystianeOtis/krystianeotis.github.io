@@ -70,28 +70,52 @@ div#weatherDiv {
 }
 
 //TABLET VIEW
-@media only screen and (min-width: 32.5em) {
-    // div.cards {
-
-    // }
-
-
-    // .cards div img {
-    //     align-content: center;
-    // }
-
-}
+@media only screen and (min-width: 32.5em) {}
 
 //DESKTOP VIEW
 @media only screen and (min-width: 63.5em) {
     div.cards {
         max-width: 60%;
+
     }
 
     .cards div img {
-        width: 1200px;
-        height: 730px;
+        width: 1100px;
+        height: 700px;
         object-fit: cover;
     }
+
+    // .cards section {
+    //     div {
+    //         display: grid;
+    //         grid-template-columns: 1fr 1fr ;
+    //         grid-template-rows: 50px 50px 50px 50px 1fr 50px 1fr 1fr 1fr;
+
+    //         h2 {
+    //             grid-column: span 2;
+    //         }
+
+    //         p {
+    //             grid-column: span 2;
+    //         }
+
+    //         #milestones {
+    //             grid-column: 1;
+    //             grid-row:;
+    //         }
+
+    //         #architectural {
+    //             grid-column: 2;
+    //             grid-row: ;
+    //         }
+
+    //         #services {
+    //             grid-column: 1;
+    //             grid-row:;
+    //         }
+    //     }
+
+
+    // }
 
 }

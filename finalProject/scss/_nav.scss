@@ -52,6 +52,8 @@ nav {
             font-size: $fontSize;
             font-family: $fontFamilyHr;
 
+
+
             a,
             a:visited {
                 display: block;
@@ -70,6 +72,8 @@ nav {
                     padding-left: 4px;
                     content: ' ▾';
                 }
+
+
             }
 
             // Dropdown list
@@ -197,5 +201,13 @@ nav {
 
     .nav-container {
         padding-right: 40px;
+    }
+
+    #nav-list ul {
+        a.active {
+            background: white;
+            border-bottom: 5px solid white;
+        }
+
     }
 }
