@@ -2,7 +2,7 @@
 div.cards {
     margin-left: auto;
     margin-right: auto;
-    max-width: 380px;
+    max-width: 400px;
 
 }
 
@@ -18,7 +18,7 @@ div.cards {
 }
 
 .cards div img {
-    max-width: 350px;
+    max-width:100%;
     box-shadow: 1px 1px 10px black;
     object-fit: cover;
 }
@@ -26,7 +26,7 @@ div.cards {
 //TABLET VIEW
 @media only screen and (min-width: 32.5em) {
     div.cards {
-        display: flex;
+
         justify-content: center;
         flex-wrap: wrap;
         flex-direction: column;
@@ -34,7 +34,7 @@ div.cards {
     }
 
     .cards section {
-        display: flex;
+        
         flex-direction: row;
         justify-content: space-around;
         margin: 10px;

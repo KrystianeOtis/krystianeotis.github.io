@@ -763,7 +763,7 @@ form#reservation-form textarea {
 div.cards {
   margin-left: auto;
   margin-right: auto;
-  max-width: 380px;
+  max-width: 400px;
 }
 
 .cards section {
@@ -781,7 +781,7 @@ div.cards {
 }
 
 .cards div img {
-  max-width: 350px;
+  max-width: 100%;
   -webkit-box-shadow: 1px 1px 10px black;
           box-shadow: 1px 1px 10px black;
   -o-object-fit: cover;
@@ -790,9 +790,6 @@ div.cards {
 
 @media only screen and (min-width: 32.5em) {
   div.cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -805,9 +802,6 @@ div.cards {
     max-width: 700px;
   }
   .cards section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -861,14 +855,9 @@ div.cards {
   padding-bottom: 50px;
 }
 
-h1#pretty-heading {
-  position: relative;
-  margin: 100px 0 25px 0;
-  text-align: center;
-}
-
 form#contact-form {
   margin: 0 auto;
+  height: 500px;
   width: 80%;
   border: 3px solid #f1f1f1;
   background-color: white;
@@ -900,6 +889,30 @@ form#contact-form textarea {
 
 #form-button button {
   width: 200px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
+}
+
+@media only screen and (min-width: 63.5em) {
+  #company-info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #contact-us-section {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  #map {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
 }
 
 body {

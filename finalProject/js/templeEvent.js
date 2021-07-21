@@ -12,15 +12,18 @@ async function getTempleEvent(temple) {
             for (let i = 0; i < temples.length; i++) {
                 if (temples[i].name == temple) {
 
-
+                    let imgurl = document
                     let p = document.createElement('p');
+                    let address = document.createElement('p');
                     p.textContent = temples[i].summary;
-                    
+                    address.textContent = temples[i].address + ". " + temples[i].city + ", " + temples[i].state;
+
 
 
                     let openingdiv = document.getElementById('templeEvent')
-
+                    openingdiv.appendChild(address);
                     openingdiv.appendChild(p);
+
 
 
                 }
