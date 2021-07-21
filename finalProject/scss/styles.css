@@ -689,6 +689,7 @@ hr {
     padding-right: 3em;
   }
   #templeImg {
+    height: 800px;
     max-width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
