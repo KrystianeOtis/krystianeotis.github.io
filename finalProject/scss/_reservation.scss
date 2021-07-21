@@ -6,6 +6,8 @@
     h1 {
         text-decoration: underline;
     }
+
+
 }
 
 form {
@@ -24,7 +26,9 @@ form#reservation-form {
         text-align: center;
 
     }
-
+h2 {
+    font-family: $fontFamilyHr;
+}
     input {
         width: 100%;
         margin: 5px;

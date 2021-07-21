@@ -49,6 +49,8 @@ nav {
         li {
             float: left;
             position: relative;
+            font-size: $fontSize;
+            font-family: $fontFamilyHr;
 
             a,
             a:visited {

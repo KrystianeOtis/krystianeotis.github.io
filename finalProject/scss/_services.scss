@@ -17,6 +17,9 @@
         text-align: center;
 
     }
+    h2{
+        font-family: $fontFamilyHr;
+    }
 
     ul {
         font-family: $fontFamily;
@@ -42,7 +45,9 @@
         text-align: center;
 
     }
-
+h2 {
+    font-family: $fontFamilyHr;
+}
     ul {
         font-family: $fontFamily;
         line-height: 25px;
