@@ -1,0 +1,12 @@
+//MOBILE VIEW
+@import "small";
+
+//TABLET VIEW
+@media only screen and (min-width: 32.5em) {
+    @import "medium";
+}
+
+//DESKTOP VIEW
+@media only screen and (min-width: 63.5em) {
+    @import "large";
+}
