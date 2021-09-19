@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation | Temple Inn & Suites</title>
+    <meta name="description" content="Booking and room reservation for Temple Inn & Suites">
+    <link rel="icon" href="images/favicon (4).ico" type="image/gif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate&family=Vollkorn+SC:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="scss/styles.css">
+
+</head>
+
+<body id="app">
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="https://krystianeotis.github.io/finalProject/index.html"><img src="images/templewhite50.png"
+                        alt="Temple Inn & Suites Logo">
+                </a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="https://krystianeotis.github.io/finalProject/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://krystianeotis.github.io/finalProject/temple.html">Temple</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Services</a>
+                        <ul class="nav-dropdown">
+                            <li> <a href="https://krystianeotis.github.io/finalProject/services.html">Amenities</a>
+                            </li>
+                            <li>
+                                <a href="https://krystianeotis.github.io/finalProject/reception.html">Reception</a>
+                            </li>
+                            <li>
+                                <a href="https://krystianeotis.github.io/finalProject/temple-missionary.html">Full-Time
+                                    Temple
+                                    Missionary</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="active"
+                            href="https://krystianeotis.github.io/finalProject/reservation.html">Reservation</a>
+                    </li>
+
+
+                    <li>
+                        <a href="https://krystianeotis.github.io/finalProject/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+
+
+    <main>
+        <div id="reservation-div">
+
+            <form action="" id="reservation-form">
+                <!--  General -->
+                <h1>Room Reservation</h1>
+                <h2 class="heading">Personal Information</h2>
+                <div class="form-div" id="name-grid">
+                    <label for="name">Name</label>
+                    <input type="text" id="fname" name="name" placeholder="First" required>
+                    <input type="text" id="lname" name="name" placeholder="Last" required>
+
+                </div>
+                <div class="form-div" id="email-grid">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
+
+                </div>
+                <div class="form-div" id="phone-grid">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="### ### ####" required>
+
+                </div>
+                <div class="form-div" id="address-grid">
+                    <label>Address</label>
+                    <div id="street"><input type="text" name="street" placeholder="Street Address" required></div>
+                    <div id="city">
+                        <input type="text" name="city" placeholder="City" required>
+                    </div>
+                    <div id="state"> <input type="text" name="state" placeholder="State" required></div>
+                    <div id="post-code"> <input type="text" name="post-code" placeholder="Postal / Zip Code" required>
+                    </div>
+                    <div id="country"> <input type="text" name="country" placeholder="Country" required></div>
+
+
+                </div>
+
+                <!--  Details -->
+
+                <h2 class="heading">Reservation Details</h2>
+
+                <div class="form-div">
+                    <label for="destination-choice">Destination</label>
+                    <input list="destination-list" id="destination-choice" name="destination-choice"
+                        placeholder="Enter Destination" required>
+                    <datalist id="destination-list">
+                        <option value="Anchorage, AK">
+                        <option value="Las Vagas, NV">
+                        <option value="Rancho Cordova, CA">
+                        <option value="Cedar City, UT">
+                        <option value="Omaha, NE">
+                    </datalist>
+                </div>
+                <div id="check-in-grid">
+                    <div class="form-div">
+                        <label for="arrive">Check
+                            In</label>
+                        <input type="date" id="arrive" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+                    </div>
+
+                    <div class="form-div">
+                        <label for="depart">Check
+                            Out</label>
+                        <input type="date" id="depart" name="depart" value="<?php echo date('Y-m-d'); ?>"></div>
+
+
+                </div>
+                <!-- <section id="form-option-grid"></section> -->
+                <div class="form-group form-div-options">
+                    <span class="form-label">Adults</span>
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <span class="select-arrow"></span>
+                </div>
+                <div class="form-group form-div-options">
+                    <span class="form-label">Children</span>
+                    <select class="form-control">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                    <span class="select-arrow"></span>
+                </div>
+
+                <div id="bed-options" class="form-div-options">
+                    <label>Bed Options</label>
+                    <select>
+                        <option value="blank"></option>
+                        <option value="double-bed" selected>2 Fulls</option>
+                        <option value="single-bed">1 Queen</option>
+                        <option value="double-bed" selected>2 Queens</option>
+                        <option value="single-bed">1 King</option>
+                        <option value="single-bed">King Suite</option>
+                    </select>
+
+                </div>
+                <!-- </section> -->
+                <div>
+                    <br>
+                    <div class="form-div">
+                        <label for="comments">Special mentions, requests or requirements:</label>
+
+                        <textarea name="comments" id="comments"></textarea>
+
+                    </div>
+                    <div id="form-button"><button id="btn" type="submit" value="Submit">Reserve</button></div>
+
+                </div>
+
+
+
+            </form>
+        </div>
+    </main>
+    <footer>
+
+        <div id="about">
+            <h3>About Us</h3>
+            <p>Temple Inn & Suites is a hotel chain that builds and manages
+                specialized
+                hotel
+                accommodations near
+                temple locations of The Church of Jesus Christ of Latter-day Saints around the world.
+            </p>
+            <p> The owner-operated company caters to temple workers, patrons, and their families by providing
+                specialized
+                services and accommodations that meet the needs of those patrons.</p>
+
+        </div>
+        <div id="contact">
+            <h3>Contact Us</h3>
+            <img src="images/phone.png" alt="">
+            <p>240.458.6254
+            </p>
+            <img src="images/email.png" alt="">
+            <p>templehotelchain@hotels.com
+            </p>
+            <img src="images/map.png" alt="">
+
+            <p>4800 Montgomery Ln #300, <br>Bethesda, MD 20814
+            </p>
+        </div>
+
+        <div id="follow">
+            <h3>Follow Us</h3>
+            <a target="_blank" href="https://www.facebook.com/">
+                <img src="images/facebook.png" alt="Facebook Logo">
+            </a>
+            <a target="_blank" href="https://twitter.com/?lang=en">
+                <img src="images/twitter.png" alt="Twitter Logo">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/">
+                <img src="images/instagram.png" alt="Instagram Logo">
+            </a>
+        </div>
+
+
+
+    </footer>
+    <script src="js/style.js"></script>
+</body>
+
+
+</html>

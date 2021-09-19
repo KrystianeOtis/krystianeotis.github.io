@@ -1,0 +1,29 @@
+#fullwidth {
+    width: 100%;
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    border: 12px solid black;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+#image {
+    position: relative;
+    width: 500px;
+}
+
+#image img {
+    width: 500px;
+}
+
+.overlay {
+    position: absolute;
+    width: 50px;
+    right: 50%;
+    background-color: white;
+    height: 50px;
+    top: 50%;
+}

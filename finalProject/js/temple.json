@@ -1,0 +1,243 @@
+{
+  "temples": [
+    {
+      "name":"Anchorage Alaska Temple",
+      "phone":"907-348-7890",
+      "address":"13161 Brayton Dr.",
+      "city":"Anchorage",
+      "state":"AK",
+      "zip":99516,
+      "imageurl":"https://assets.ldscdn.org/22/b3/22b36eeb6bcf2bb8f9f23a905f1434599ee6b4f4/anchorage_alaska_temple_lds.jpeg",
+      "summary":"The Anchorage Alaska Temple is the 54th dedicated temple in operation and was the first temple built in Alaska. This temple stands just east of highly traveled Seward Highway in southern Anchorage. A beautiful grove of trees and the majestic Chugach Mountains create a stunning backdrop for this holy house. The temple is part of a complex with the Anchorage Alaska Stake Center; the two buildings share a common parking lot.",
+      "architectural":[
+        "Site: 5.4 acres",
+        "Exterior Finish: Stone-clad Sierra white granite quarried from near Fresno, California",
+        "Architectural Features: Single attached spire with an angel Moroni statue",
+        "Ordinance Rooms: Two instruction rooms (two-stage progressive), one sealing room, and one baptistry",
+        "Total Floor Area: 11,937 square feet"],
+      "covidPhase":
+        "Phase 3: Temple open for all living ordinances and limited proxy ordinances"
+      ,
+      "closures": [
+        "Friday, 20 August 2021 (Limited Operations)",
+        "Saturday, 2 October 2021",
+        "Wednesday, 24 November 2021 - Thursday, 25 November 2021",
+        "Friday, 24 December 2021 - Saturday, 25 December 2021",
+        "Friday, 31 December 2021 - Saturday, 1 January 2022",
+        "Monday, 21 March 2022 - Monday, 16 May 2022"
+      ],
+      "services": [
+        "No clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
+      "history": [
+        "Announced: 4 October 1997",
+        "Groundbreaking: 17 April 1998",
+        "Dedicated: 9 January 1999",
+        "Rededicated: 8 February 2004"
+      ]
+    },
+    {
+      "name":"Las Vegas Nevada Temple",
+      "phone":"702-452-5011",
+      "address":"827 Temple View Dr.",
+      "city":"Las Vegas",
+      "state":"NV",
+      "zip":89110,
+      "imageurl":"https://churchofjesuschristtemples.org/assets/img/temples/_temp/043-Las-Vegas-Nevada-Temple.jpg",
+      "summary":"The Las Vegas Nevada Temple is the 43rd dedicated temple in operation. Sitting on the eastern edge of the city—far from the glitz and glamour of the world-famous Las Vegas Strip—the Las Vegas Nevada Temple is a spiritual beacon in the City of Lights. The six soaring spires rising from the building echo the arresting red desert peaks of nearby Sunrise Mountain. Flourishing flowers and trees adorn the verdant grounds of the temple. Visitors are welcome to walk the surrounding pathways to feel the peace that eminates from this sacred structure.",
+      "architectural":[
+        "Site: 10.3 acres",
+        "Exterior Finish: White precast stone walls and copper roof and detailing",
+        "Architectural Features: Six attached spires with an angel Moroni statue",
+        "Ordinance Rooms: Four instruction rooms, five sealing rooms, and one baptistry",
+        "Total Floor Area: 80,350 square feet"],
+      "covidPhase":
+        "Phase 3: Temple open for all living ordinances and limited proxy ordinances"
+      ,
+      "closures": [
+        "Monday, 5 July 2021 - Monday, 19 July 2021",
+        "Saturday, 2 October 2021",
+        "Thursday, 25 November 2021 - Friday, 26 November 2021",
+        "Friday, 24 December 2021 - Saturday, 25 December 2021"
+      ],
+      "services": [
+        "Clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
+      "history": [
+        "Announced: 7 April 1984",
+        "Groundbreaking: 30 November 1985",
+        "Dedicated: 16 December 1989"
+      ]
+    },
+    {
+      "name":"Winter Quarters Nebraska Temple",
+      "phone":"402-453-3406",
+      "address":"8283 N 34th St.",
+      "city":"Omaha",
+      "state":"NE",
+      "zip":68112,
+      "imageurl":"https://churchofjesuschristtemples.org/assets/img/temples/winter-quarters-nebraska-temple/winter-quarters-nebraska-temple-317-main.jpg",
+      "summary":"The Winter Quarters Nebraska Temple is the 104th dedicated temple in operation and was the first temple built in Nebraska. This temple is a sister building to the Snowflake Arizona Temple. It is one of three temples built in locations of historic significance for the early Church. (The other two temples are the Palmyra New York Temple and the Nauvoo Illinois Temple.) The dedicatory services of the Winter Quarter Nebraska Temple were broadcast over the Church's encrypted satellite system to stake centers and Church facilities throughout North America.",
+      "architectural":[
+        "Site: 1.92 acres",
+        "Exterior Finish: Bethel white granite",
+        "Architectural Features: Single attached spire with an angel Moroni statue",
+        "Ordinance Rooms: Two instruction rooms (two-stage progressive), two sealing rooms, and one baptistry",
+        "Total Floor Area: 16,000 square feet"],
+      "covidPhase":
+        "Phase 3: Temple open for all living ordinances and limited proxy ordinances"
+      ,
+      "closures": [
+        "Saturday, 2 October 2021",
+        "Monday, 11 October 2021 - Monday, 6 December 2021",
+        "Friday, 24 December 2021 - Saturday, 25 December 2021",
+        "Friday, 31 December 2021 - Saturday, 1 January 2022",
+        "Monday, 29 August 2022 - Monday, 26 September 2022"
+
+      ],
+      "services": [
+        "No clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "No distribution center nearby"
+      ],
+      "history": [
+        "Announced: 14 June 1999",
+        "Groundbreaking: 28 November 1999",
+        "Dedicated: 22 April 2001"
+      ]
+    },
+    {
+      "name":"Sacramento California Temple",
+      "phone":"2110 California Cir.",
+      "address":"8283 N 34th St",
+      "city":"Rancho Cordova",
+      "state":"CA",
+      "zip":95742,
+      "imageurl":"https://churchofjesuschristtemples.org/assets/img/temples/sacramento-california-temple/sacramento-california-temple-8098-main.jpg",
+      "summary":"The Sacramento California Temple shares a large parcel of Church-owned property with a meetinghouse in the Folsom California Stake overlooking Lake Natoma. Located off Highway 50 in Rancho Cordova, 20 miles east of Sacramento, the site was once owned by Aerojet General Corp. for use as a recreational center. During a large downsize of the company in 1971, the Church acquired the 47 acres where a chapel was built onto the existing gym and other areas converted to classrooms. It provides for numerous church activities including sand volleyball, picnics, camping, and ward group activities. The beautiful piece of property is on a hill overlooking the foothills of the Sierra Nevada Mountains. The majestic oak trees surrounding the site create a serene natural setting.",
+      "architectural":[
+        "Site: 46 acres",
+        "Exterior Finish: Light gray granite",
+        "Architectural Features: Single attached end spire with an angel Moroni statue",
+        "Ordinance Rooms: Two instruction rooms (two-stage progressive), four sealing rooms, and one baptistry",
+        "Total Floor Area: 19,500 square feet"],
+      "covidPhase":
+        "Phase 3: Temple open for all living ordinances and limited proxy ordinances"
+      ,
+      "closures": [
+        "Saturday, 17 July 2021 (Limited Operations)",
+        "Tuesday, 20 July 2021 (Limited Operations)",
+        "Wednesday, 28 July 2021 (Limited Operations)",
+        "Monday, 9 August 2021 - Monday, 4 October 2021",
+        "Wednesday, 24 November 2021 (Limited Operations)",
+        "Thursday, 25 November 2021",
+        "Friday, 24 December 2021",
+        "Saturday, 25 December 2021",
+        "Friday, 31 December 2021 (Limited Operations)",
+        "Saturday, 1 January 2022",
+        "Tuesday, 1 February 2022 - Monday, 14 February 2022",
+        "Saturday, 2 April 2022",
+        "Tuesday, 2 August 2022 - Monday, 15 August 2022",
+        "Saturday, 1 October 2022",
+        "Wednesday, 23 November 2022 (Limited Operations)",
+        "Thursday, 24 November 2022",
+        "Saturday, 24 December 2022",
+        "Saturday, 31 December 2022 (Limited Operations)"
+
+      ],
+      "services": [
+        "No clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
+      "history": [
+        "Announced: 21 April 2001",
+        "Groundbreaking: 22 August 2004",
+        "Dedicated: 3 September 2006"
+      ]
+    },
+    {
+      "name":"Raleigh North Carolina Temple",
+      "phone":"919-362-4135",
+      "address":"574 Bryan Dr.",
+      "city":"Apex",
+      "state":"NC",
+      "zip":27502,
+      "imageurl":"https://churchofjesuschristtemples.org/assets/img/temples/raleigh-north-carolina-temple/raleigh-north-carolina-temple-6727-main.jpg",
+      "summary":"The Raleigh North Carolina Temple was the 68th dedicated temple in operation, and it was the first temple built in North Carolina. The Raleigh North Carolina Temple closed on January 7, 2018, for extensive renovation. During the remodel, crews will upgrade the mechanical and electrical systems, make spaces ADA compliant, move windows and doors to accommodate minor floor plan changes, enclose the entrance canopy, and raise the height of the steeple by 10 feet. During the closure, temple patrons were accommodated at temples located in neighboring state",
+      "architectural":[
+        "Site: 3.17 acres",
+        "Exterior Finish: Beige-colored limestone",
+        "Architectural Features: Single attached spire with an angel Moroni statue",
+        "Ordinance Rooms: Two instruction rooms (two-stage progressive), two sealing rooms, and one baptistry",
+        "Total Floor Area: 12,864 square feet"
+      ],
+      "covidPhase":
+        "Phase 3: Temple open for all living ordinances and limited proxy ordinances"
+      ,
+      "closures": [
+        "Saturday, 2 October 2021 - Sunday, 3 October 2021",
+        "Monday, 8 November 2021 - Sunday, 2 January 2022"
+      ],
+      "services": [
+        "No clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "No distribution center nearby"
+      ],
+      "history": [
+        "Announced: 3 September 1998",
+        "Groundbreaking: 6 February 1999",
+        "Dedicated: 18 December 1999",
+        "Rededicated: 13 October 2019"
+      ]
+    },
+    {
+      "name":"Cedar City Utah Temple",
+      "phone":"435-572-4150",
+      "address":"280 South Cove Dr.",
+      "city":"Cedar City",
+      "state":"UT",
+      "zip":84720,
+      "imageurl":"https://assets.ldscdn.org/b2/89/b2891eb1787414ec6995a32c42d03981732c2d6a/cedar_city_utah_temple_exterior.jpeg",
+      "summary": "The Cedar City Temple is the 159th dedicated temple in operation. On April 6, 2013, during the Saturday morning session of the 183rd Annual General Conference, President Thomas S. Monson announced that a new temple would be constructed in the city of Cedar City, Utah. The Cedar City Utah Temple will be the seventeenth in Utah, following the Provo City Center Temple, which is currently under construction. There are nearly two million Church members in Utah. Members of The Church of Jesus Christ of Latter-day Saints in Cedar City currently participate in temple ordinances at the St. George Utah Temple, located approximately 50 miles to the south. The St. George temple serves members from 48 stakes in Southern Utah, Eastern Nevada, and Northern Arizona.",
+      "architectural":[
+        "Site: 9.5 acres",
+        "Architectural Features: Single attached end tower with an angel Moroni statue",
+        "Ordinance Rooms: Two instruction rooms, three sealing rooms, and one baptistry",
+        "Total Floor Area: 42,657 square feet"
+      ],
+      "covidPhase":
+        "Phase 3: Temple open for all living ordinances and limited proxy ordinances"
+      ,
+      "closures": [
+        "Saturday, 24 July 2021",
+        "Monday, 6 September 2021",
+        "Saturday, 2 October 2021",
+        "Monday, 11 October 2021 - Monday, 25 October 2021",
+        "Wednesday, 24 November 2021 - Thursday, 25 November 2021",
+        "Friday, 24 December 2021 - Saturday, 25 December 2021",
+        "Friday, 31 December 2021 - Saturday, 1 January 2022"
+      ],
+      "services": [
+        "Clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
+      "history": [
+        "Announced: 6 April 2013",
+        "Groundbreaking: 8 August 2015",
+        "Dedicated: 10 December 2017"
+      ]
+    }
+  ]
+}

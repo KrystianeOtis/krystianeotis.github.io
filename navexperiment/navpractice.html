@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites</title>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate&family=Vollkorn+SC:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="navbar.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="logo">
+            <a href="#">Responsive Nav</a>
+        </div>
+        <nav>
+            <form class="search" action="search.php">
+                <input name="q" placeholder="Search..." type="search">
+            </form>
+            <ul>
+                <li>
+                     <a class="active" href="https://krystianeotis.github.io/finalProject/index.html"><box-icon type='logo' name='facebook-circle'></box-icon>Home</a>
+                </li>
+                <li>
+                    <box-icon name="rocket"></box-icon>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                    <ul class="mega-dropdown">
+                        <li class="row">
+                            <ul class="mega-col">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                            <ul class="mega-col">
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Services</a></li>
+                            </ul>
+                            <ul class="mega-col">
+                                <li><a href="#">Coming Soon</a></li>
+                                <li><a href="#">404 Error</a></li>
+                                <li><a href="#">Search</a></li>
+                                <li><a href="#">Author Page</a></li>
+                            </ul>
+                            <ul class="mega-col">
+                                <li><a href="#">Full Width</a></li>
+                                <li><a href="#">Right Column</a></li>
+                                <li><a href="#">Left Column</a></li>
+                                <li><a href="#">Maintenance</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="">Contact</a>
+                    <ul>
+                        <li><a href="#">About Version</a></li>
+                        <li><a href="#">About Version</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Portfolio</a>
+                </li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="https://krystianeotis.github.io/finalProject/index.html">Temple Inn & Suites
+                </a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a class="active" href="https://krystianeotis.github.io/finalProject/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://krystianeotis.github.io/finalProject/temple.html">Temple</a>
+                    </li>
+
+                    <li>
+                        <a href="https://krystianeotis.github.io/finalProject/services.html">Services</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="https://krystianeotis.github.io/finalProject/reception.html">Reception</a>
+                            </li>
+                            <li>
+                                <a href="https://krystianeotis.github.io/finalProject/temple-missionary.html">Full-Time
+                                    Temple
+                                    Missionary</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="https://krystianeotis.github.io/finalProject/reservation.html">Reservation</a>
+                    </li>
+
+
+                    <li>
+                        <a href="https://krystianeotis.github.io/finalProject/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section> -->
+
+
+
+    <main>
+        <p>home page must include: <br> <br>
+            A call to action to make a hotel reservation
+            <br>Readily available navigation and contact information for the hotel chain
+            <br>Summary information about a temple of your choosing</p>
+        <div id="booking" class="section">
+            <div class="section-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="booking-form">
+                            <div class="form-header">
+                                <h1>Book a Room</h1>
+                            </div>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <span class="form-label">Check In</span>
+                                            <input class="form-control" type="date" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <span class="form-label">Check out</span>
+                                            <input class="form-control" type="date" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!-- <div class="col-md-4">
+                                            <div class="form-group">
+                                                <span class="form-label">No of rooms</span>
+                                                <select class="form-control">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div> -->
+                                    <!-- <div class="col-md-4">
+                                            <div class="form-group">
+                                                <span class="form-label">Adults</span>
+                                                <select class="form-control">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <span class="form-label">Children</span>
+                                                <select class="form-control">
+                                                    <option>0</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div> -->
+                                </div>
+                                <div class="form-btn">
+                                    <button class="submit-btn">Check availability</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/style.js"></script>
+</body>
+
+
+</html>

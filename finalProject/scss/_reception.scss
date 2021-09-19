@@ -1,0 +1,58 @@
+//MOBILE VIEW
+#wedding-services {
+    div {
+        margin: 0 auto;
+        width: 90%;
+        border: 3px solid #f1f1f1;
+        box-shadow: 1px 1px 10px black;
+        background-color: white;
+        padding: 1rem;
+        margin-bottom: 40px;
+    }
+
+
+    h1 {
+        text-align: center;
+
+    }
+    h2{
+      text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+}
+
+//TABLET VIEW
+@media only screen and (min-width: 32.5em) {
+    #wedding-services{
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        img {
+            width: 240px;
+            height:238px;
+            object-fit: cover;
+        }
+    }
+}
+
+//DESKTOP VIEW
+@media only screen and (min-width: 63.5em) {
+    #wedding-services {
+        div {
+
+            width: 90%;
+
+        }
+
+        img {
+           width: 550px;
+           height:450px;
+           object-fit: cover;
+        }
+
+    }
+}

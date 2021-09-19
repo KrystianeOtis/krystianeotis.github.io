@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center</title>
+    <meta name="description"
+        content="Weather center where people can report a storm or unusual weather event in their area">
+    <link rel="icon" href="images/icon3.png" type="image/gif">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/storm.css">
+    <link rel="stylesheet" href="css/nav_footer.css">
+
+
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="https://krystianeotis.github.io/lesson11/index.html"><img src="images/PFPlogo.png"
+                alt="Preston Fishing Pros Logo" /></a>
+        <section id="headings">
+            <h1>Preston Fishing Pros</h1>
+            <div id="motto">Grab your tackle box,<br> We're going fishing!</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="https://krystianeotis.github.io/lesson11/index.html">Home</a></li>
+            <li><a href="https://krystianeotis.github.io/lesson11/preston.html">Preston</a></li>
+            <li><a href="https://krystianeotis.github.io/lesson11/sodasprings.html">Soda Springs</a></li>
+            <li><a href="https://krystianeotis.github.io/lesson11/fishhaven.html">Fish Haven</a></li>
+            <li><a class="active" href="https://krystianeotis.github.io/lesson11/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://krystianeotis.github.io/lesson11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div>
+            <h1 class="subheading">Storm Center</h1>
+        </div>
+
+        <form action="" method="get" id="container">
+
+            <section>
+
+                <h2 class="subheading">Contact Information</h2>
+                <div>
+                    <label for="name">Full Name: </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" placeholder="user@email.com" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required>
+                </div>
+
+                <div> <label for="zip">Zip Code:</label>
+                    <input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)"
+                        autocomplete="shipping postal-codep" required></div>
+
+            </section>
+            <section>
+                <h2 class="subheading">Storm Details</h2>
+                <div>
+                    <label>Storm Date: </label> <input type="date" name="storm-date"></div>
+
+
+                <label for="storm-type-choice">Storm Type:</label>
+                <div>
+                    <input list="storm-type-list" id="storm-type-choice" name="storm-type-choice" />
+                    <datalist id="storm-type-list">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </div>
+
+                <div>
+                    <label class="flexly" for="rating">Storm Severity: &nbsp;&nbsp;&nbsp;</label>
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+
+
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                </div>
+
+                <div><label>
+                        <select name="browsers" id="selectbrowser" onchange="selectResponse()">
+                            <option value="" disabled selected>Select a Region ...</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select></label></div>
+
+                <div class="danger">
+                    <p><b>Are You in Danger?</b><em>(Choose one)</em></p>
+                    <div class="radiobuttons">
+                        <input type="radio" id="radio1" name="time" value="8" checked> <label for="time1">Yes</label>
+                    </div>
+                    <div class="radiobuttons">
+                        <input type="radio" name="time" value="9">
+                        <label>Maybe</label>
+                    </div>
+                    <div class="radiobuttons">
+                        <input type="radio" id="radio" name="time" value="10">
+                        <label for="time3">No</label>
+                    </div>
+
+
+                </div>
+            </section>
+            <section>
+                <h3 class="subheading">Additional Information</h3>
+                <div><label for="msg">Comments:</label>
+                    <textarea id="msg" name="user_message" placeholder="Optional"></textarea></div>
+
+                <div class="button"><button type="submit">Submit Storm Report</button></div>
+            </section>
+        </form>
+
+
+    </main>
+
+    <footer>
+        <section class="contact-info-footer">
+            <div class="right-side">
+                <h4><u>Contact Information</u></h4>
+
+                <i class="material-icons">location_on</i>
+                <p>Preston, Idaho 83263</p>
+
+
+                <i class="material-icons">phone</i>
+                <p>(208) 241-3474</p>
+
+
+                <i class="material-icons">email</i>
+                <p>prestonfishingpros@gmail.com</p>
+
+
+
+                <div class="social-icons">
+                    <a class="icon" target="_blank" href="https://www.facebook.com/"><img src="images/facebook.png"
+                            alt="Facebook Icon" /></a>
+                    <a class="icon" target="_blank" href="https://www.instagram.com/"><img src="images/instagram.png"
+                            alt="Instagram Icon" /></a>
+                    <a class="icon" target="_blank" href="https://twitter.com/explore"><img src="images/twitter.png"
+                            alt="Twitter Icon" /></a>
+                </div>
+            </div>
+            <div id="map"> <img src="images/prestonmap.jpg" alt="Map of Preston Idaho"></div>
+
+        </section>
+        <div>
+            <p class="copyright">
+                &copy; <span id="copyright-year"></span> | <a target="_blank"
+                    href="https://krystianeotis.github.io/index.html">Krystiane Otis</a> | Idaho | <a target="_blank"
+                    href="https://www.byui.edu/online">BYUI Online Learning</a>
+            </p>
+            <p class="dateupdate">
+                <span id="name-of-day"></span>, <span id="day"></span> <span id="month"></span> <span id="year"></span>
+            </p>
+        </div>
+    </footer>
+    <script src="js/dates.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/stormcenter.js"></script>
+</body>
+
+</html>

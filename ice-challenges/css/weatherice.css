@@ -1,0 +1,98 @@
+main {
+    font-family: 'Noto Sans KR', sans-serif;
+    /*display: grid;
+    grid-template-rows: 750px 150px;*/
+    border-radius: 30px;
+    width: 557px;
+    margin: 35px auto;
+    background-image: url(https://byui.instructure.com/courses/139184/files/59232242/preview);
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+body {
+    /* background-repeat:no-repeat; */
+    color: white;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 400;
+    font-style: oblique;
+}
+
+#currentTemp {
+    font-size: 4em;
+    margin: 10px;
+    /*margin-top: ;*/
+}
+
+#currentSection {
+    /*grid-row: 1/2;*/
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    /*margin-top: 130px;*/
+    height: 650px;
+}
+
+#weatherCondition {
+    font-size: 2em;
+}
+
+#forecastSection {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 30px 30px;
+}
+
+#forecastSection div {
+    display: grid;
+    grid-template-columns: 3fr .5fr 50px;
+    margin: 0 25px;
+    align-items: center;
+}
+
+#forecastSection div div {
+    grid-column: 3;
+    padding: 15px;
+    vertical-align: center;
+    margin-left: auto;
+}
+
+#forecastSection div p:nth-child(2) {
+    text-align: right;
+}
+
+#nextDay,
+#nextNextDay {
+    color: rgb(179, 197, 236);
+    border-top: 1px solid rgba(0, 0, 0, .3);
+}
+
+#navigationTag {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    vertical-align: center;
+    text-align: center;
+
+}
+
+#navigationTag p {
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255, .6);
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#navigationTag p:first-child {
+    grid-column: 1;
+    justify-self: left;
+}
+
+#navigationTag p:nth-child(3) {
+    grid-column: 3;
+    justify-self: right;
+}

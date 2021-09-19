@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soda Springs</title>
+    <meta name="description" content="Weather and news information centered around Soda Springs, Idaho.">
+    <link rel="icon" href="images/icon3.png" type="image/gif">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/nav_footer.css">
+    <link rel="stylesheet" href="css/preston.css">
+
+
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="https://krystianeotis.github.io/lesson11/index.html"><img src="images/PFPlogo.png"
+                alt="Preston Fishing Pros Logo" /></a>
+        <section id="headings">
+            <h1>Preston Fishing Pros</h1>
+            <div id="motto">Grab your tackle box,<br> We're going fishing!</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="https://krystianeotis.github.io/lesson11/index.html">Home</a></li>
+            <li><a href="https://krystianeotis.github.io/lesson11/preston.html">Preston</a></li>
+            <li><a class="active" href="https://krystianeotis.github.io/lesson11/sodasprings.html">Soda Springs</a></li>
+            <li><a href="https://krystianeotis.github.io/lesson11/fishhaven.html">Fish Haven</a></li>
+            <li><a href="https://krystianeotis.github.io/lesson11/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://krystianeotis.github.io/lesson11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="subheading">Soda Springs Idaho</h2>
+
+        <picture class="hero-img">
+            <source srcset="images/mountain800.jpg" media="(min-width:34.5em) and (max-width:800px)">
+            <source srcset="images/mountain800.jpg" media="(min-width:800px)">
+            <img class="hero" src="images/mountain360.jpg" alt="Pond surrounded by trees and mountains">
+        </picture>
+
+        <div class="content-box weather">
+            <h3><u>Weather Summary</u></h3>
+            <div class="wrapper">
+                <div id="box1">
+                    <p>Currently: </p>
+                    <p>High:</p>
+                    <p>Wind Chill:</p>
+                    <p>Humidity:</p>
+                    <p>Wind Speed:</p>
+                </div>
+                <div id="box2">
+
+                    <!--currently-->
+                    <p id="condition"></p>
+
+                    <!--high temp-->
+                    <p><span id="temp"></span>°F</p>
+
+                    <!--wind chill-->
+                    <p><span id="windChill"></span></p>
+
+                    <!--humidity-->
+                    <p><span id="humidity"></span>%</p>
+
+                    <!--wind speed-->
+                    <p><span id="windSpeed"></span>mph</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box forecast">
+            <h3><u>5 Day Forecast</u></h3>
+            <div id="forecast">
+                <div id="dayName1"></div>
+                <div id="weatherImg1"></div>
+                <div id="dayTemp1"></div>
+                <div id="dayName2"></div>
+                <div id="weatherImg2"></div>
+                <div id="dayTemp2"></div>
+                <div id="dayName3"></div>
+                <div id="weatherImg3"></div>
+                <div id="dayTemp3"></div>
+                <div id="dayName4"></div>
+                <div id="weatherImg4"></div>
+                <div id="dayTemp4"></div>
+                <div id="dayName5"></div>
+                <div id="weatherImg5"></div>
+                <div id="dayTemp5"></div>
+            </div>
+        </div>
+        <div class="eventsection">
+            <h3>Local Upcoming Events</h3>
+            <div id="events"></div>
+
+        </div>
+
+        <div class="content-box article">
+            <h3><a target="_blank" href="https://visitidaho.org/travel-tips/a-beginners-guide-to-camping-in-idaho/">A
+                    Beginner’s
+                    Guide to Camping in Idaho</a></h3>
+            <p>By Sara Sheehy</a></p>
+
+            <picture id="article-img">
+                <source srcset="images/camping360.jpg" media="(min-width:34.5em) and (max-width:800px)">
+                <source srcset="images/camping360.jpg" media="(min-width:800px)">
+                <img id="article-img" src="images/camping300.jpg" alt="Woman camping with her dog">
+            </picture>
+            <p>A night camped under Idaho’s starry skies is an experience that you won’t soon forget. From the north’s
+                dense forests to the south’s open plains, camping in Idaho is a wonder, full of dramatic landscapes and
+                expansive beauty.</p>
+
+            <p> In the past year, more and more people are embracing camping as a way to spend time with their families,
+                enjoy the outdoors, and explore somewhere new. Idaho is a camper’s dream, offering everything from
+                amenity-rich RV parks to backpacking routes that take you to the wildest corners of the state.</p>
+            <p> New to camping in Idaho? Here’s everything you need to know to get your journey started...<a
+                    target="_blank" href="https://visitidaho.org/travel-tips/idaho-trout-fishing-paradise/">continue to
+                    full article</a>
+            </p>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <section class="contact-info-footer">
+            <div class="right-side">
+                <h4><u>Contact Information</u></h4>
+
+                <i class="material-icons">location_on</i>
+                <p>Preston, Idaho 83263</p>
+
+
+                <i class="material-icons">phone</i>
+                <p>(208) 241-3474</p>
+
+
+                <i class="material-icons">email</i>
+                <p>prestonfishingpros@gmail.com</p>
+
+
+
+                <div class="social-icons">
+                    <a class="icon" target="_blank" href="https://www.facebook.com/"><img src="images/facebook.png"
+                            alt="Facebook Icon" /></a>
+                    <a class="icon" target="_blank" href="https://www.instagram.com/"><img src="images/instagram.png"
+                            alt="Instagram Icon" /></a>
+                    <a class="icon" target="_blank" href="https://twitter.com/explore"><img src="images/twitter.png"
+                            alt="Twitter Icon" /></a>
+                </div>
+            </div>
+            <div id="map"> <img src="images/prestonmap.jpg" alt="Map of Preston Idaho"></div>
+
+        </section>
+        <div>
+            <p class="copyright">
+                &copy; <span id="copyright-year"></span> | <a target="_blank"
+                    href="https://krystianeotis.github.io/index.html">Krystiane Otis</a> | Idaho | <a target="_blank"
+                    href="https://www.byui.edu/online">BYUI Online Learning</a>
+            </p>
+            <p class="dateupdate">
+                <span id="name-of-day"></span>, <span id="day"></span> <span id="month"></span> <span id="year"></span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/dates.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/sodaspringsweather.js"></script>
+    <script src="js/event.js"></script>
+    <script>
+        getWeather();
+        getEvent("Soda Springs");
+    </script>
+
+</body>
+
+</html>

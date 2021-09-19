@@ -1,0 +1,162 @@
+//MOBILE VIEW
+#reservation-div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h1 {
+        text-decoration: underline;
+    }
+
+
+}
+
+form {
+    font-family: $fontFamily;
+}
+
+form#reservation-form {
+    margin: 0 auto;
+    width: 90%;
+    border: 3px solid #f1f1f1;
+     box-shadow: 1px 1px 10px black;
+    background-color: white;
+    padding: 1rem;
+
+    h1 {
+        text-align: center;
+
+    }
+h2 {
+    font-family: $fontFamilyHr;
+}
+    input {
+        width: 100%;
+        margin: 5px;
+        display: block;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
+
+.form-div {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.form-div-options {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#form-button {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+
+    button {
+        width: 150px;
+    }
+
+
+}
+
+#form-option-grid {
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    #bed-options {
+        grid-column: span 2;
+    }
+}
+
+//TABLET VIEW
+@media only screen and (min-width: 32.5em) {
+
+    #name-grid {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        #fname {
+            grid-column: 1;
+        }
+    }
+
+    #email-grid {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        #email {
+            grid-column: 1;
+        }
+    }
+
+    #phone-grid {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        #phone {
+            grid-column: 1;
+        }
+    }
+
+    #address-grid {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        #street {
+            grid-column: span 2;
+        }
+    }
+
+    #check-in-grid {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        #check-in {
+            grid-column: 1;
+        }
+
+        #check-out {
+            grid-column: 2;
+        }
+    }
+
+
+}
+
+//DESKTOP VIEW
+@media only screen and (min-width: 63.5em) {
+    #reservation-div {
+        margin: 0 auto;
+        width: 80%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+
+    form#reservation-form {
+        margin: 0 auto;
+        width: 70%;
+        border: 3px solid #f1f1f1;
+        background-color: white;
+        padding: 2rem;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+
+    }
+}

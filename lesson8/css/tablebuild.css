@@ -1,0 +1,60 @@
+/* The color scheme includes #e7f0ed,
+#e7ffed (data rows) and #628ca6,
+#7fb9c2 along with standard white and black. */
+
+body {
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 292px;
+    font-family: 'Ubuntu',
+        sans-serif;
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -webkit-box-shadow: 10px 10px 10px rgb(112, 150, 173);
+    /* Firefox 3.5 - 3.6 */
+    -moz-box-shadow: 10px 10px 10px rgb(112, 150, 173);
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    box-shadow: 10px 10px 10px rgb(112, 150, 173);
+
+}
+
+table,
+th,
+td {
+    border: 1px solid #BCBDBD;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+
+}
+
+caption {
+    background-color: #7fb9c2;
+    font-size: 1.7em;
+    padding: 12px;
+
+
+}
+
+th {
+    background-color: #628ca6;
+    color: white;
+    font-size: 1.2em;
+}
+
+tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+tr:nth-child(odd) {
+    background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(4) td:nth-child(3) {
+    background-color: #628ca6;
+    color: white;
+}
+
+tfoot td {
+    background-color: #7fb9c2;
+    font-size: small;
+}

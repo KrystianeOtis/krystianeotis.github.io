@@ -1,0 +1,121 @@
+//MOBILE VIEW
+div.cards {
+    margin: 0 auto;
+    max-width: 90%;
+
+    h2 {
+        font-family: $fontFamilyHr;
+        text-decoration: underline;
+        text-align: center;
+        line-height: 32px;
+    }
+
+    h3 {
+        font-family: $fontFamilyHr;
+    }
+
+    p {
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+    ul {
+        font-family: $fontFamily;
+        line-height: 25px;
+
+        li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+    }
+
+}
+
+.cards section {
+    border: 3px solid #f1f1f1;
+    background-color: white;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 1px 1px 10px black;
+    justify-content: center;
+
+}
+
+.cards div img {
+    max-width: 100%;
+    box-shadow: 1px 1px 10px black;
+    object-fit: cover;
+}
+
+div#weatherDiv {
+    border: 3px solid #f1f1f1;
+    box-shadow: 1px 1px 10px rgba(54, 54, 54, 0.411);
+    background: $trasparent;
+    padding: .5em;
+    margin-bottom: 20px;
+
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        letter-spacing: 1px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+}
+
+//TABLET VIEW
+@media only screen and (min-width: 32.5em) {}
+
+//DESKTOP VIEW
+@media only screen and (min-width: 63.5em) {
+    div.cards {
+        max-width: 60%;
+
+    }
+
+    .cards div img {
+        width: 1100px;
+        height: 700px;
+        object-fit: cover;
+    }
+
+    // .cards section {
+    //     div {
+    //         display: grid;
+    //         grid-template-columns: 1fr 1fr ;
+    //         grid-template-rows: 50px 50px 50px 50px 1fr 50px 1fr 1fr 1fr;
+
+    //         h2 {
+    //             grid-column: span 2;
+    //         }
+
+    //         p {
+    //             grid-column: span 2;
+    //         }
+
+    //         #milestones {
+    //             grid-column: 1;
+    //             grid-row:;
+    //         }
+
+    //         #architectural {
+    //             grid-column: 2;
+    //             grid-row: ;
+    //         }
+
+    //         #services {
+    //             grid-column: 1;
+    //             grid-row:;
+    //         }
+    //     }
+
+
+    // }
+
+}
